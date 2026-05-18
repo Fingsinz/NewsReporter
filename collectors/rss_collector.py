@@ -42,7 +42,8 @@ class RSSCollector:
     def __init__(self, config_manager, data_dir: str = "data"):
         self.config_manager = config_manager
         self.data_dir = Path(data_dir)
-        self.data_dir.mkdir(parents=True, exist_ok=True)
+        self.rawdata_dir = self.data_dir / "rawdata"
+        self.rawdata_dir.mkdir(parents=True, exist_ok=True)
 
         self.cache_file = self.data_dir / "rss_cache.json"
         self._cache = self._load_cache()
@@ -79,7 +80,7 @@ class RSSCollector:
     def _save_rawdata(self, items: list[dict], source_name: str):
         data_path = f"{source_name}_{datetime.now().strftime('%Y%m%d')}.json"
 
-        with open(self.data_dir / data_path, "a", encoding="utf-8") as f:
+        with open(self.rawdata_dir / data_path, "a", encoding="utf-8") as f:
             for item in items:
                 json.dump(item, f, ensure_ascii=False)
                 f.write("\n")
