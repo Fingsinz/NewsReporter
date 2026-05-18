@@ -1,0 +1,15 @@
+system:
+  data_dir: data
+  docs_dir: docs
+  log_level: INFO
+  rawdata_dir: rawdata
+  timezone: Asia/Shanghai
+
+rss_sources:
+- enabled: true
+  name: HFDailyPapers
+  url: huggingface/daily-papers
+  fetch_interval: daily
+  tags:
+  - AI
+  - 机器学习
