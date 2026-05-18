@@ -19,7 +19,7 @@ env/
 .idea/
 
 # Data files
-data/rawdata/
+data/
 docs/*.md
 
 # Logs
