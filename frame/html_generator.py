@@ -408,6 +408,16 @@ ACADEMIC_HTML_TEMPLATE = """<!DOCTYPE html>
         </div>
     </article>
     <script>
+    function toggleToc() {{
+        const sidebar = document.getElementById('toc-sidebar');
+        sidebar.classList.toggle('open');
+    }}
+    
+    function closeToc() {{
+        const sidebar = document.getElementById('toc-sidebar');
+        sidebar.classList.remove('open');
+    }}
+    
     document.addEventListener('DOMContentLoaded', function() {{
         const tocLinks = document.querySelectorAll('#toc-sidebar a');
         const headings = [];
@@ -424,7 +434,7 @@ ACADEMIC_HTML_TEMPLATE = """<!DOCTYPE html>
             let currentId = '';
             const scrollPosition = window.scrollY + 100;
             
-            headings.forEach({{ link, heading }} => {{
+            headings.forEach(({{ link, heading }}) => {{
                 if (heading.offsetTop <= scrollPosition) {{
                     currentId = heading.id;
                 }}
@@ -440,16 +450,6 @@ ACADEMIC_HTML_TEMPLATE = """<!DOCTYPE html>
         
         window.addEventListener('scroll', updateActiveLink);
         updateActiveLink();
-        
-        function toggleToc() {{
-            const sidebar = document.getElementById('toc-sidebar');
-            sidebar.classList.toggle('open');
-        }}
-        
-        function closeToc() {{
-            const sidebar = document.getElementById('toc-sidebar');
-            sidebar.classList.remove('open');
-        }}
         
         if (window.innerWidth <= 900) {{
             tocLinks.forEach(link => {{
