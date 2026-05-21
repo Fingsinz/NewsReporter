@@ -1,12 +1,20 @@
 import os
+from datetime import datetime
 from pathlib import Path
 from typing import Optional
+
 import yaml
 from pydantic import BaseModel, Field
-from datetime import datetime
-
 
 # Data Source Configurations
+
+
+class SystemConfig(BaseModel):
+    data_dir: str = "data"
+    rawdata_dir: str = "rawdata"
+    docs_dir: str = "docs"
+    log_level: str = "INFO"
+    timezone: str = "Asia/Shanghai"
 
 
 class RSSSource(BaseModel):
@@ -18,17 +26,17 @@ class RSSSource(BaseModel):
     tags: list[str] = Field(default_factory=list)
 
 
-class SystemConfig(BaseModel):
-    data_dir: str = "data"
-    rawdata_dir: str = "rawdata"
-    docs_dir: str = "docs"
-    log_level: str = "INFO"
-    timezone: str = "Asia/Shanghai"
+class ModelConfig(BaseModel):
+    name: str = Field(default_factory=str)
+    base_url: str = Field(default_factory=str)
+    api_key: str = Field(default_factory=str)
+    model_type: str = Field(default_factory=str)
 
 
 class Config(BaseModel):
     system: SystemConfig = Field(default_factory=SystemConfig)
     rss_sources: list[RSSSource] = Field(default_factory=list)
+    model: ModelConfig = Field(default_factory=ModelConfig)
 
 
 class ConfigManager:

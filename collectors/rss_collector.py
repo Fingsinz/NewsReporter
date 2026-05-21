@@ -2,6 +2,7 @@ import os
 import json
 import feedparser
 import logging
+from config.config import RSSSource
 from pathlib import Path
 from datetime import datetime
 from typing import Optional
@@ -39,8 +40,10 @@ class FeedItem:
 
 
 class RSSCollector:
-    def __init__(self, config_manager, data_dir: str = "data"):
-        self.config_manager = config_manager
+    def __init__(
+        self, config_rss: list[RSSSource], config_manager, data_dir: str = "data"
+    ):
+        self.config_rss = config_rss
         self.data_dir = Path(data_dir)
         self.rawdata_dir = self.data_dir / "rawdata"
         self.rawdata_dir.mkdir(parents=True, exist_ok=True)
@@ -141,7 +144,7 @@ class RSSCollector:
     def collect_all(self) -> dict:
         results = {"total": 0, "by_source": {}, "items": []}
 
-        for source in self.config_manager.config.rss_sources:
+        for source in self.config_rss:
             source_items = self.collect_from_source(source)
             results["by_source"][source.name] = len(source_items)
             results["items"].extend(source_items)
