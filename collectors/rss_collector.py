@@ -43,9 +43,9 @@ class FeedItem:
 
 
 class RSSCollector:
-    def __init__(self, data_dir: str = "data"):
+    def __init__(self, data_dir: str = "data", save_name: str = ""):
         self.data_dir = Path(data_dir)
-        self.rawdata_dir = self.data_dir / "rawdata"
+        self.rawdata_dir = self.data_dir / f"{save_name}"
         self.rawdata_dir.mkdir(parents=True, exist_ok=True)
 
         self.cache_file = self.data_dir / "rss_cache.json"
