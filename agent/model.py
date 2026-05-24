@@ -16,6 +16,7 @@ class Model:
         self.base_url = config_model.base_url
         self.api_key = os.getenv("MODEL_API_KEY", "")
         self.model_type = config_model.model_type
+        self.max_tokens = config_model.max_tokens
 
         self.model_openai: Optional[openai.OpenAI | None] = None
         self.model_anthropic: Optional[anthropic.Client | None] = None
@@ -38,7 +39,7 @@ class Model:
                 messages=[
                     {"role": "user", "content": text},
                 ],
-                max_tokens=16384,
+                max_tokens=self.max_tokens,
             )
             return response.choices[0].message.content
         elif self.model_anthropic and self.model_type == "anthropic":
@@ -47,7 +48,7 @@ class Model:
                 messages=[
                     {"role": "user", "content": text},
                 ],
-                max_tokens=16384,
+                max_tokens=self.max_tokens,
             )
             # TODO: format List[ContentBlock]
             return str(response.content)
