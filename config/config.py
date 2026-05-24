@@ -31,6 +31,7 @@ class ModelConfig(BaseModel):
     base_url: str = Field(default_factory=str)
     api_key: str = Field(default_factory=str)
     model_type: str = Field(default_factory=str)
+    max_tokens: int = Field(default_factory=int)
 
 
 class Config(BaseModel):
