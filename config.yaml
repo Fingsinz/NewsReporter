@@ -15,7 +15,7 @@ rss_sources:
   - 机器学习
 
 model:
-  name: "deepseek-v4-flash" # deepseek-ai/deepseek-v4-pro
-  base_url: "https://api.deepseek.com/" # "https://integrate.api.nvidia.com/v1"
+  name: "deepseek-ai/deepseek-v4-pro" # "deepseek-v4-flash"
+  base_url: "https://integrate.api.nvidia.com/v1" # "https://api.deepseek.com/"
   model_type: openai
   max_tokens: 16384
