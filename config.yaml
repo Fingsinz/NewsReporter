@@ -18,3 +18,4 @@ model:
   name: "deepseek-v4-flash" # deepseek-ai/deepseek-v4-pro
   base_url: "https://api.deepseek.com/" # "https://integrate.api.nvidia.com/v1"
   model_type: openai
+  max_tokens: 16384
