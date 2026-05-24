@@ -117,7 +117,9 @@ class RSSCollector:
                 )
                 items.append(item)
 
-            self._save_item(items)
+            if len(items) != 0:
+                self._save_item(items)
+
             logger.info(f"成功获取 {len(items)} 条记录 from {source.url}")
 
         except Exception as e:
