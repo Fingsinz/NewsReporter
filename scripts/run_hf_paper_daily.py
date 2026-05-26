@@ -68,17 +68,17 @@ def main():
         return
 
     print("Step3: report saving...")
-    year = date.split("年")[0]
-    month = date.split("年")[1].split("月")[0]
+    date_sim = datetime.now().strftime("%Y%m%d")
+    year, month = date_sim[:4], date_sim[4:6]
     markdown_dir = f"{sys_conf.docs_dir}/md/{year}/{month}"
     Path(markdown_dir).mkdir(parents=True, exist_ok=True)
-    output_md = f"{markdown_dir}/HFDailyPapers{date}.md"
+    output_md = f"{markdown_dir}/HFDailyPapers_{date_sim}.md"
     with open(output_md, "w", encoding="utf-8") as f:
         f.write(report)
-
+    
     html_dir = f"{sys_conf.docs_dir}/public/{year}/{month}"
     Path(html_dir).mkdir(parents=True, exist_ok=True)
-    output_html = f"{html_dir}/HFDailyPapers_{date}.html"
+    output_html = f"{html_dir}/HFDailyPapers_{date_sim}.html"
     converter = MarkdownToHTMLConverter()
     converter.save_html(report, f"每日HFDailyPaper-{date}", output_html)
 
