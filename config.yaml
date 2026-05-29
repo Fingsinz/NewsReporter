@@ -15,7 +15,7 @@ rss_sources:
   - 机器学习
 
 model:
-  name: "mimo-v2.5-pro" # "deepseek-ai/deepseek-v4-pro" # "deepseek-v4-flash"
-  base_url: "https://api.xiaomimimo.com/v1" # "https://integrate.api.nvidia.com/v1" # "https://api.deepseek.com/"
+  name: "xiaomi-mimo-v2.5-pro-free" # "deepseek-ai/deepseek-v4-pro" # "deepseek-v4-flash"
+  base_url: "https://aihubmix.com/v1" # "https://integrate.api.nvidia.com/v1" # "https://api.deepseek.com/"
   model_type: openai
   max_tokens: 16384
