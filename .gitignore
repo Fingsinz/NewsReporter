@@ -20,7 +20,6 @@ env/
 
 # Data files
 data/
-docs/*.md
 
 # Logs
 *.log
