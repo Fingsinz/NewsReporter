@@ -34,15 +34,6 @@ jobs:
             "${{ secrets.MODEL_API_KEY }}"
           uv run python -m scripts.run_homepage
 
-      - name: Commit generated files
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git checkout -b gh-pages
-          git add docs/
-          git diff --staged --quiet || git commit -m "docs: update daily HF papers report"
-          git push
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
