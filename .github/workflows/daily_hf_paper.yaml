@@ -17,6 +17,18 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Restore existing gh-pages content
+        run: |
+          git fetch origin gh-pages || true
+          if git branch -r | grep -q 'origin/gh-pages'; then
+            mkdir -p docs
+            git clone --branch gh-pages --depth 1 . gh-pages-temp || true
+            if [ -d gh-pages-temp ]; then
+              cp -r gh-pages-temp/* docs/ 2>/dev/null || true
+              rm -rf gh-pages-temp
+            fi
+          fi
+
       - name: Install uv
         run: |
           curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -35,7 +47,7 @@ jobs:
           uv run python -m scripts.run_homepage
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs/
