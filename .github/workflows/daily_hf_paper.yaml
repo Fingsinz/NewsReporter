@@ -2,7 +2,7 @@ name: Analyze HuggingFace Daily Papers
 
 on:
   schedule:
-    - cron: '0 18 * * *' # every day at UTC+8 18:00
+    - cron: '0 11 * * *' # every day at UTC+8 19:00
   workflow_dispatch: # Allow manual trigger
 
 permissions:
