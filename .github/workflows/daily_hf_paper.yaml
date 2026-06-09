@@ -2,7 +2,7 @@ name: Analyze HuggingFace Daily Papers
 
 on:
   schedule:
-    - cron: '0 11 * * *' # every day at UTC+8 19:00
+    - cron: '0 12 * * *' # every day at UTC+8 19:00
   workflow_dispatch: # Allow manual trigger
 
 permissions:
@@ -19,14 +19,10 @@ jobs:
 
       - name: Restore existing gh-pages content
         run: |
-          git fetch origin gh-pages || true
-          if git branch -r | grep -q 'origin/gh-pages'; then
+          git fetch origin gh-pages --depth 1 || true
+          if git rev-parse --verify origin/gh-pages >/dev/null 2>&1; then
             mkdir -p docs
-            git clone --branch gh-pages --depth 1 . gh-pages-temp || true
-            if [ -d gh-pages-temp ]; then
-              cp -r gh-pages-temp/* docs/ 2>/dev/null || true
-              rm -rf gh-pages-temp
-            fi
+            git archive origin/gh-pages | tar x -C docs/
           fi
 
       - name: Install uv
