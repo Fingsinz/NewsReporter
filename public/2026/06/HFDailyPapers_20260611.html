@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>NewsReporter</title>
+    <title>每日HFDailyPaper-2026年06月11日</title>
     <style>
 
 :root {
@@ -382,9 +382,14 @@ img {
         <button class="toc-close" onclick="closeToc()">×</button>
         <div class="toc">
 <ul>
-<li><a href="#weekly-news">Weekly News</a></li>
-<li><a href="#huggingface-daily-papers">HuggingFace Daily Papers</a><ul>
-<li><a href="#7">近7天</a></li>
+<li><a href="#hfdailypapers-20260611">每日HFDailyPapers-2026年06月11日</a><ul>
+<li><a href="#_1">一、序列模型架构：面向高效与性能的替代方案探索</a></li>
+<li><a href="#_2">二、多模态与具身智能：迈向与物理世界交互的智能体</a></li>
+<li><a href="#_3">三、强化学习与智能体训练：提升推理与决策能力</a></li>
+<li><a href="#_4">四、模型安全与对齐：揭示新的攻击面与防御策略</a></li>
+<li><a href="#_5">五、数据生成与评估基准：面向特定领域的测试工具</a></li>
+<li><a href="#_6">六、训练与推理优化：提升大模型效率与可控性</a></li>
+<li><a href="#_7">七、其他技术进展</a></li>
 </ul>
 </li>
 </ul>
@@ -392,22 +397,25 @@ img {
     </nav>
     <button id="toc-toggle" onclick="toggleToc()"></button>
     <article>
-        <!-- <h1>NewsReporter</h1> -->
-        <h2 id="weekly-news">Weekly News</h2>
-<h2 id="huggingface-daily-papers">HuggingFace Daily Papers</h2>
-<h3 id="7">近7天</h3>
-<ul>
-<li><a href="public/2026/06/HFDailyPapers_20260611.html">HFDailyPapers_20260611</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260610.html">HFDailyPapers_20260610</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260609.html">HFDailyPapers_20260609</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260608.html">HFDailyPapers_20260608</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260607.html">HFDailyPapers_20260607</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260606.html">HFDailyPapers_20260606</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260605.html">HFDailyPapers_20260605</a></li>
-</ul>
+        <!-- <h1>每日HFDailyPaper-2026年06月11日</h1> -->
+        <h1 id="hfdailypapers-20260611">每日HFDailyPapers-2026年06月11日</h1>
+<h2 id="_1">一、序列模型架构：面向高效与性能的替代方案探索</h2>
+<p>近期研究聚焦于探索Transformer之外的序列建模架构，旨在解决其二次计算复杂度带来的成本问题。一项系统评估对比了xLSTM、Mamba-2和Gated DeltaNet三种子二次方（subquadratic）架构在代码模型预训练、代码模型蒸馏以及时序基础模型预训练等复杂任务上的表现。研究结果表明，<a href="https://arxiv.org/abs/2606.12364">xLSTM在所有设置中均展现出最强的总体性能</a>，其优势源于其门控机制实现了更灵活和稳定的状态跟踪与记忆修正能力。这些发现表明，对于具有复杂依赖关系的任务，长短期记忆网络（LSTM）的变体在状态跟踪的鲁棒性方面可能具有独特优势，为高性能序列模型的设计提供了新的可选路径。</p>
+<h2 id="_2">二、多模态与具身智能：迈向与物理世界交互的智能体</h2>
+<p>该方向的研究致力于增强大模型感知、理解并与物理世界交互的能力。框架<a href="https://arxiv.org/abs/2606.12403">World Pilot</a>通过引入世界-动作模型（WAM）的先验知识，为视觉-语言-动作（VLA）模型提供了场景演化预期和轨迹级运动提示，在零样本泛化的操作任务中达到了最先进的成功率。<a href="https://arxiv.org/abs/2606.12195">InternVideo3</a>则通过多模态上下文推理（MCR）和高效注意力机制，增强了开放多模态模型在长程视频理解中的证据积累与验证能力。具身基础模型<a href="https://arxiv.org/abs/2606.11324">Embodied-R1.5</a>整合了具身认知、任务规划等多种能力，在仅8B参数的规模下，于多数具身视觉语言模型基准上超越了包括GPT-5.4在内的领先模型。分析表明，该领域正从静态的图文理解向动态的、闭环的决策与执行演进，核心挑战在于如何将先验知识有效融入决策流程以及处理长程任务。</p>
+<h2 id="_3">三、强化学习与智能体训练：提升推理与决策能力</h2>
+<p>强化学习（RL）正成为提升大模型推理和智能体行为的关键技术，相关工作主要集中在优化训练框架与提升探索效率上。通用自主研究框架<a href="https://arxiv.org/abs/2606.11926">Arbor</a>通过“假设树精炼”（HTR）机制，将研究策略、执行和证据跨时间累积，在多项研究任务中显著优于现有编码智能体。针对RL训练中多Token预测（MTP）接受率下降的瓶颈，研究<a href="https://arxiv.org/abs/2606.12370">Bebop</a>揭示了接受率与模型熵波动的线性负相关关系，并通过端到端的TV损失和拒绝采样，在多个推理任务上实现了高达1.8倍的训练加速。面向多轮智能体RL的<a href="https://arxiv.org/abs/2606.11119">TRACE</a>框架，则通过树状展开分配增强了奖励对比度，在固定采样预算下提升了策略优化效率。这些工作共同推动RL从静态的配方搜索，向策略与训练工具共同进化的自主范式转变。</p>
+<h2 id="_4">四、模型安全与对齐：揭示新的攻击面与防御策略</h2>
+<p>模型安全研究发现了依赖广泛的技术中存在的潜在风险。研究<a href="https://arxiv.org/abs/2606.11817">CodeSpear</a>揭示了一个反直觉的漏洞：旨在提升代码生成可靠性的语法约束解码（GCD）技术本身可被利用作为越狱攻击的表面。为应对此攻击而提出的<a href="https://arxiv.org/abs/2606.11817">CodeShield</a>方法，通过教模型在GCD下生成语义无害的“诱饵代码”来对齐安全性。另一项研究<a href="https://arxiv.org/abs/2606.07943">POISE</a>则展示了对智能体技能的、具有位置感知的隐蔽注入攻击，该攻击能有效绕过当前基于静态扫描的防御。这些发现表明，随着大模型与工具链的深度集成，攻击面也在扩大，需要发展更精细、上下文感知的安全对齐与检测机制。</p>
+<h2 id="_5">五、数据生成与评估基准：面向特定领域的测试工具</h2>
+<p>针对现有能力评估的不足，一系列新的基准和数据集被提出。<a href="https://github.com/opensquilla/claw-swe-bench">Claw-SWE-Bench</a>是一个用于评估通用编码智能体（如OpenClaw）在多语言编码任务上表现的基准，其结果突出了智能体适配器设计对性能的关键影响。<a href="https://arxiv.org/abs/2606.10728">DeNovoSWE</a>提供了一个大规模的“从零生成整个代码仓库”数据集，通过沙盒化智能体工作流构建，用于训练长程软件工程能力。数学推理领域，<a href="https://arxiv.org/abs/2606.10479">ComBench</a>专注于奥林匹克组合数学问题，评估模型的严格证明推理和构造性实现能力，揭示了两种能力间的差异。这些工具为推动智能体在特定复杂任务上的进步提供了可验证的评估标准。</p>
+<h2 id="_6">六、训练与推理优化：提升大模型效率与可控性</h2>
+<p>优化大模型的训练与推理效率是持续的研究重点。在训练方面，<a href="https://arxiv.org/abs/2606.07881">PACI</a>提出了一种无气泡异步流水线并行方法，通过本地梯度累积控制前向/后向权重版本不一致性，在保持同步训练稳定性的同时，显著提升了训练吞吐量。在推理方面，针对视觉语言模型需要输出连续值的任务，<a href="https://arxiv.org/abs/2606.05758">DRIFT</a>提出了一种通用框架，通过结合基础预测器和基于流匹配的细化模块，将生成问题转化为局部残差建模，在多个任务上优于回归和生成基线。<a href="https://github.com/elmma/mllm-reroute/">Reroute</a>则为视觉语言模型的Token减少提出了一种“可恢复路由”替代方案，在激进压缩下保持了定位任务的性能。</p>
+<h2 id="_7">七、其他技术进展</h2>
+<p>其他领域的进展同样值得关注。在时序预测领域，研究<a href="https://arxiv.org/abs/2606.11990">Time-Series Foundation Model Embeddings</a>表明，使用冻结的预训练时序基础模型（如Chronos-2）提取的特征，结合轻量回归头，在工业设备剩余寿命估计任务上优于多种传统基线，展示了基础模型的潜力。在知识管理方面，<a href="https://github.com/bebr2/SKIM">SKIM</a>提出了一种自适应多分辨率的程序性知识压缩框架，能将技能压缩至原始长度的30-60%同时保持任务性能。面向低资源语言翻译，<a href="https://arxiv.org/abs/2606.11786">Lius</a>通过利用双语词典特征和持续指令微调，显著提升了在库邦马来语上的翻译质量。这些工作展示了基础模型技术向不同专业领域和边缘场景的渗透。</p>
 
         <div class="footer">
-            <p>生成时间: 2026年06月11日 16:16:03</p>
+            <p>生成时间: 2026年06月11日 16:16:02</p>
             <p style="text-align: right;">本报告由 NewsReporter 系统自动生成</p>
             <p style="text-align: right;">Generated by NewsReporter System</p>
         </div>
