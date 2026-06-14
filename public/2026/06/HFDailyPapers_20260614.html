@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>NewsReporter</title>
+    <title>每日HFDailyPaper-2026年06月14日</title>
     <style>
 
 :root {
@@ -382,10 +382,13 @@ img {
         <button class="toc-close" onclick="closeToc()">×</button>
         <div class="toc">
 <ul>
-<li><a href="#weekly-news">Weekly News</a></li>
-<li><a href="#huggingface-daily-papers">HuggingFace Daily Papers</a><ul>
-<li><a href="#7">近7天</a></li>
-<li><a href="#_1">历史归档</a></li>
+<li><a href="#hfdailypapers-20260614">每日HFDailyPapers-2026年06月14日</a><ul>
+<li><a href="#agent">一、 智能体（Agent）研究：动态环境、记忆与控制</a></li>
+<li><a href="#_1">二、 多模态与具身智能：统一架构与空间推理</a></li>
+<li><a href="#_2">三、 模型推理与架构优化：效率、推理深度与训练方法</a></li>
+<li><a href="#3d">四、 生成模型：从图像到视频与3D世界</a></li>
+<li><a href="#_3">五、 评估基准与智能体安全</a></li>
+<li><a href="#_4">六、 其他技术进展</a></li>
 </ul>
 </li>
 </ul>
@@ -393,29 +396,25 @@ img {
     </nav>
     <button id="toc-toggle" onclick="toggleToc()"></button>
     <article>
-        <!-- <h1>NewsReporter</h1> -->
-        <h2 id="weekly-news">Weekly News</h2>
-<h2 id="huggingface-daily-papers">HuggingFace Daily Papers</h2>
-<h3 id="7">近7天</h3>
-<ul>
-<li><a href="public/2026/06/HFDailyPapers_20260614.html">HFDailyPapers_20260614</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260613.html">HFDailyPapers_20260613</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260612.html">HFDailyPapers_20260612</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260611.html">HFDailyPapers_20260611</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260610.html">HFDailyPapers_20260610</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260609.html">HFDailyPapers_20260609</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260608.html">HFDailyPapers_20260608</a></li>
-</ul>
-<h3 id="_1">历史归档</h3>
-<details>
-<summary>2026年06月（3篇）</summary>
-
-<a href='public/2026/06/HFDailyPapers_20260607.html'>HFDailyPapers_20260607</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260606.html'>HFDailyPapers_20260606</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260605.html'>HFDailyPapers_20260605</a><br/>
-
-</details>
-
+        <!-- <h1>每日HFDailyPaper-2026年06月14日</h1> -->
+        <h1 id="hfdailypapers-20260614">每日HFDailyPapers-2026年06月14日</h1>
+<h2 id="agent">一、 智能体（Agent）研究：动态环境、记忆与控制</h2>
+<p>当前智能体研究正从静态任务评估转向动态、真实环境建模，并深入探索其控制与记忆机制。<a href="https://arxiv.org/abs/2606.13681">EvoArena</a> 提出了一个模拟环境动态演进的基准，并配套设计了 <a href="https://arxiv.org/abs/2606.13681">EvoMem</a> 记忆范式，以记录记忆的演化历史，实验显示当前智能体在该基准上表现不佳。为优化智能体与环境的交互接口，<a href="https://arxiv.org/abs/2606.12882">HarnessBridge</a> 提出了一个可学习的轻量级控制器，通过端到端训练来投影观测和动作，以替代手动设计的交互框架。在提升智能体可靠性方面，<a href="https://arxiv.org/abs/2606.13174">TRACE</a> 提出将用户修正编译为运行时执行规则，以减少未来交互中的重复错误。同时，<a href="https://arxiv.org/abs/2606.13662">EurekAgent</a> 强调通过环境工程（如权限、预算设计）来约束和引导智能体行为，从而推动自主科学发现。</p>
+<p>分析表明，该领域正致力于使智能体具备环境适应性、记忆连续性和行为可控性。从静态到动态的评估转变，反映了对智能体实际部署能力的更高要求。将用户反馈和环境约束系统性地编译进智能体架构，是解决其可靠性和可控性问题的重要技术路径。</p>
+<h2 id="_1">二、 多模态与具身智能：统一架构与空间推理</h2>
+<p>多模态模型架构正朝着统一处理多种视觉输入和推理任务的方向发展。<a href="https://arxiv.org/abs/2606.13289">HYDRA-X</a> 是首个在单个Vision Transformer内统一图像和视频分词的原生多模态模型。在交互生成方面，<a href="https://arxiv.org/abs/2606.13679">InterleaveThinker</a> 设计了一个多智能体流水线，为现有图像生成器赋予文本-图像交错生成能力，并在推理任务上展现出增强效果。针对空间推理，<a href="https://arxiv.org/abs/2606.13673">SpatialClaw</a> 采用代码作为行动接口，让视觉语言模型（VLM）通过逐步编写可执行代码来灵活组合感知原语，从而提升了3D/4D空间推理的准确性。此外，<a href="https://arxiv.org/abs/2606.13572">ArogyaSutra</a> 针对多语言医疗场景，构建了一个多模态医疗问答数据集和基于演员-评论家的多智能体推理框架。</p>
+<p>分析表明，统一的视觉表征和灵活的行动接口是提升多模态智能体能力的关键。通过代码执行或专门设计的模块来操作底层原语，能够赋予模型更强的任务分解和组合能力。面向垂直领域（如医疗）的多模态系统，需要结合领域知识与语言多样性来设计专门的数据和推理机制。</p>
+<h2 id="_2">三、 模型推理与架构优化：效率、推理深度与训练方法</h2>
+<p>提升大语言模型（LLM）的推理效率和深度是核心研究方向。<a href="https://arxiv.org/abs/2606.13392">MiniMax Sparse Attention (MSA)</a> 是一种块稀疏注意力机制，在超长上下文下大幅降低了计算成本并实现了显著的墙钟时间加速。在推理机制上，<a href="https://arxiv.org/abs/2606.13106">SWITCH</a> 框架通过引入离散的进入和退出标记，使潜在推理块能够兼容标准的在线策略强化学习训练，并提升了可解释性。对于推理加速，<a href="https://arxiv.org/abs/2606.12243">VIA-SD</a> 提出了一种多层次的推测解码框架，通过路由一个轻量级的“瘦验证器”来处理中等置信度的标记，减少了拒绝率并提升了速度。在强化学习训练方面，<a href="https://arxiv.org/abs/2606.10768">N-GRPO</a> 通过在嵌入空间中进行语义邻近混合来注入多样性，从而增强了策略优化的探索能力。</p>
+<p>分析表明，模型优化正从单纯扩大规模转向更精细的计算资源分配和算法设计。稀疏注意力、多层次验证等技术旨在直接解决部署时的效率瓶颈。同时，使复杂推理过程（如潜在思维链）变得可训练、可控制，是提升模型深度推理能力的关键挑战。</p>
+<h2 id="3d">四、 生成模型：从图像到视频与3D世界</h2>
+<p>生成模型在保真度、效率和可控性上持续取得进展。<a href="https://arxiv.org/abs/2606.12575">Z-Image Turbo++</a> 通过教师对齐的端到端蒸馏，实现了高质量的2步图像生成，缩小了少步与多步生成的质量差距。在3D领域，<a href="https://arxiv.org/abs/2606.13364">VideoMDM</a> 仅从2D监督信号训练出3D人体运动先验，证明了其等效性。<a href="https://arxiv.org/abs/2606.13376">MoVerse</a> 构建了一个实时视频世界模型，能从单张窄视场图像生成可交互漫游的360度全景场景。在音频生成方面，<a href="https://arxiv.org/abs/2606.12282">PianoKontext</a> 使用流匹配模型在预训练的潜空间中生成富有表现力的钢琴演奏。</p>
+<p>分析表明，生成模型的前沿探索在于突破输入条件的限制（如单张图像、2D监督）并实现高效、可控的输出。将3D几何先验或动态建模与生成过程相结合，是构建交互式虚拟世界的基础。同时，通过精心设计的蒸馏和训练策略，在极少步骤内生成高质量内容仍是重要的实用化方向。</p>
+<h2 id="_3">五、 评估基准与智能体安全</h2>
+<p>针对智能体能力的评估基准正朝着动态、抗污染和多维度方向发展。<a href="https://arxiv.org/abs/2606.13120">EvoBrowseComp</a> 是一个动态演化的搜索智能体基准，通过实时网络遍历合成问题，旨在防止数据污染和参数记忆。<a href="https://arxiv.org/abs/2606.09426">WeaveBench</a> 是一个针对计算机使用型智能体的长时域混合界面基准，要求智能体协调GUI、CLI和代码操作。在工具使用评估上，<a href="https://arxiv.org/abs/2606.12451">ToolSense</a> 诊断框架揭示了参数化工具检索模型在特定查询下的性能崩溃和知识-检索分离现象。关于安全，研究发现了<a href="https://arxiv.org/abs/2606.07867">智能体的冷启动安全缺口</a>，即会话开始时智能体最脆弱，完成一些常规任务后会变得更安全。</p>
+<p>分析表明，静态、依赖记忆的评估方法难以真实反映智能体能力，动态、可更新的基准成为必要。评估不仅需关注最终结果，还需审视其内部过程和安全性。将安全评估与交互深度关联，为智能体的安全部署策略（如预热）提供了依据。</p>
+<h2 id="_4">六、 其他技术进展</h2>
+<p><a href="https://arxiv.org/abs/2606.13672">WEAVER</a> 提出了一种用于机器人操作的世界模型架构，在保真度、一致性和效率上取得了先进成果，并支持策略评估、改进和规划。<a href="https://arxiv.org/abs/2606.13644">Surflo</a> 通过全局状态潜变量和流匹配，从多视图图像重建可变分辨率的一致3D表面。<a href="https://arxiv.org/abs/2606.13578">LabVLA</a> 针对科学实验室场景，构建了仿真数据引擎和两阶段训练的视觉-语言-动作模型。<a href="https://arxiv.org/abs/2606.10896">Flash-GMM</a> 是一个内存高效的融合内核，实现了在单GPU上大规模运行高斯混合模型，可用于近似最近邻搜索。在软件开发智能体方面，<a href="https://arxiv.org/abs/2606.12674">Evoflux</a> 通过推理时进化搜索来修复可执行工具工作流，提升了小型规划器的可行性。在推理优化方面，<a href="https://arxiv.org/abs/2606.06113">结构化缺陷定位</a> 为文生图像模型的诊断和改进提供了统一接口。</p>
 
         <div class="footer">
             <p>生成时间: 2026年06月14日 14:20:34</p>
