@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>NewsReporter</title>
+    <title>每日HFDailyPaper-2026年06月16日</title>
     <style>
 
 :root {
@@ -382,10 +382,14 @@ img {
         <button class="toc-close" onclick="closeToc()">×</button>
         <div class="toc">
 <ul>
-<li><a href="#weekly-news">Weekly News</a></li>
-<li><a href="#huggingface-daily-papers">HuggingFace Daily Papers</a><ul>
-<li><a href="#7">近7天</a></li>
-<li><a href="#_1">历史归档</a></li>
+<li><a href="#hfdailypapers-20260616">每日HFDailyPapers-2026年06月16日</a><ul>
+<li><a href="#_1">机器人学习与世界模型</a></li>
+<li><a href="#_2">多模态生成与理解</a></li>
+<li><a href="#_3">语言模型推理与训练</a></li>
+<li><a href="#_4">推荐系统优化</a></li>
+<li><a href="#llm">LLM与智能体效率</a></li>
+<li><a href="#_5">安全与评估</a></li>
+<li><a href="#_6">其他动态</a></li>
 </ul>
 </li>
 </ul>
@@ -393,34 +397,31 @@ img {
     </nav>
     <button id="toc-toggle" onclick="toggleToc()"></button>
     <article>
-        <!-- <h1>NewsReporter</h1> -->
-        <h2 id="weekly-news">Weekly News</h2>
-<h2 id="huggingface-daily-papers">HuggingFace Daily Papers</h2>
-<h3 id="7">近7天</h3>
-<ul>
-<li><a href="public/2026/06/HFDailyPapers_20260616.html">HFDailyPapers_20260616</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260615.html">HFDailyPapers_20260615</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260614.html">HFDailyPapers_20260614</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260613.html">HFDailyPapers_20260613</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260612.html">HFDailyPapers_20260612</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260611.html">HFDailyPapers_20260611</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260610.html">HFDailyPapers_20260610</a></li>
-</ul>
-<h3 id="_1">历史归档</h3>
-<details>
-<summary>2026年06月（5篇）</summary>
-
-<a href='public/2026/06/HFDailyPapers_20260609.html'>HFDailyPapers_20260609</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260608.html'>HFDailyPapers_20260608</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260607.html'>HFDailyPapers_20260607</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260606.html'>HFDailyPapers_20260606</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260605.html'>HFDailyPapers_20260605</a><br/>
-
-</details>
-
+        <!-- <h1>每日HFDailyPaper-2026年06月16日</h1> -->
+        <h1 id="hfdailypapers-20260616">每日HFDailyPapers-2026年06月16日</h1>
+<h2 id="_1">机器人学习与世界模型</h2>
+<p>多个研究致力于提升机器人策略的泛化性与物理交互能力。<strong>几何动作模型 (GAM)</strong> 通过重新利用预训练的几何基础模型作为共享底座，直接预测动作与未来几何信息，在仿真与真实机器人任务中表现出更高的准确性、鲁棒性和效率。<strong>Qwen-RobotWorld</strong> 提出了一个语言条件化的视频世界模型，旨在通过视频生成统一机器人的世界建模，支持数据生成、策略评估和语言引导规划。<strong>LaWAM</strong> 则引入了潜在世界动作模型，通过预测紧凑的潜在子目标而非像素级视频来指导策略，显著降低了推理延迟。此外，<strong>HABC</strong> 针对在线强化学习微调中稀疏奖励的问题，提出了分层优势加权方法，在现实世界双臂操作任务中大幅提升了成功率。</p>
+<p>分析表明，机器人学习领域正从依赖2D观测向显式3D几何建模转变，以应对接触丰富的操作任务。将预训练基础模型作为策略网络的共享骨干，并利用其几何先验，是提升策略效率和泛化能力的有效途径。同时，通过潜在空间进行世界模型预测，而非生成高维像素数据，正成为平衡预测质量与计算效率的关键设计范式。</p>
+<h2 id="_2">多模态生成与理解</h2>
+<p>多模态生成技术向更可控、更一致的长程交互方向发展。<strong>DreamX-World 1.0</strong> 是一个通用的交互式文本/图像到视频世界模型，支持相机导航和可提示事件控制，并通过专门的数据引擎和优化架构实现了高分辨率实时生成。<strong>UniDDT</strong> 旨在统一多模态理解和生成任务，其核心是通过一个噪声视觉Transformer编码器在统一的潜在视觉表示空间中工作，并配合独立的解码器来解耦不同的任务，从而缓解任务间的学习冲突。<strong>MMDiff</strong> 则发现扩散变换器在去噪轨迹中蕴含丰富的感知信息，并利用轻量级解码头在单次前向传播中联合生成图像和多种密集感知模态（如深度、语义分割）。</p>
+<p>分析表明，交互式视频生成正通过结合物理引擎渲染、动作数据与强化学习对齐，来增强可控性与物理真实性。统一多模态模型的设计难点在于平衡理解与生成任务间固有的学习冲突，解耦编码与解码器成为一种有效策略。此外，挖掘基础生成模型内部已蕴含的感知知识，是一个高效实现多模态输出的潜在方向。</p>
+<h2 id="_3">语言模型推理与训练</h2>
+<p>研究探索了提升小型语言模型推理能力以及优化训练流程的方法。<strong>VibeThinker-3B</strong> 报告了一个仅有30亿参数的密集模型，在极具挑战性的可验证推理任务上（如AIME26）达到了前沿水平，其性能匹配甚至超越了参数量大数个数量级的旗舰模型。该研究提出了“参数压缩-覆盖假说”。<strong>ExpRL</strong> 探索了一种基于强化学习的中期训练方法，使用大量人类编写的问答数据作为奖励支架，来强化模型的中间推理行为，为后续稀疏奖励的强化学习提供了更好的初始化。<strong>PLD</strong> 提出了一种提示级别蒸馏方法，通过从教师模型中提取显式推理模式并组织到学生的系统提示中，使小型模型在多个基准上接近前沿性能，且几乎无延迟开销。</p>
+<p>分析表明，通过精心设计的后训练流程（如课程学习、强化学习、自蒸馏），小模型在特定可验证任务上可以逼近甚至超越大模型，挑战了模型规模与性能必然正相关的传统认知。强化学习在中训练和后训练阶段的应用，正从简单的模仿学习转向更智能的奖励构建与优势塑造，以更高效地引导模型学习。非参数化的知识迁移方法（如提示工程）在特定场景下，为模型微调提供了一种高效且可解释的替代方案。</p>
+<h2 id="_4">推荐系统优化</h2>
+<p>推荐系统的多任务学习架构迎来革新。<strong>OneRank</strong> 提出了一种原生的基于Transformer的多任务排序框架，旨在消除传统架构中特征编码与多任务预测的分离。它通过任务特定的前向通道和梯度解耦策略，在Transformer堆栈内部直接进行多任务推理，缓解了任务间的干扰与信息瓶颈。在线上和线下实验中均显著优于现有基线。</p>
+<p>分析表明，推荐系统的架构设计正从将Transformer仅作为任务无关的编码器，转向将其深度集成为多任务推理的核心。这种一体化设计有望解决因编码器-预测器分离而导致的信息瓶颈和梯度冲突问题，从而提升模型性能与可扩展性。</p>
+<h2 id="llm">LLM与智能体效率</h2>
+<p>针对大语言模型和智能体系统的效率瓶颈，多项工作提出了创新解决方案。<strong>TokenPilot</strong> 为长期运行的LLM智能体设计了双粒度上下文管理框架，通过稳定提示前缀和生命周期感知的上下文淘汰，在保持性能的同时大幅降低了推理成本。<strong>Tangram</strong> 解决了多轮对话服务中非均匀KV缓存压缩的内存管理难题，通过静态预算预留和分组分页等机制，实现了高达2.6倍的吞吐量提升。<strong>GD2PO</strong> 则针对多维奖励强化学习中的信号冲突问题，提出了一种通过冲突感知过滤和查询级重加权来稳定训练的方法。<strong>FastContext</strong> 将代码智能体中的仓库探索任务分离，由专门的小型探索子智能体负责，从而在提升问题解决率的同时，显著减少了主智能体的token消耗。</p>
+<p>分析表明，优化LLM系统的效率需要从单一环节优化转向全栈协同设计。上下文管理、缓存系统、训练算法和智能体架构是四个关键优化维度。将长序列任务中的不同阶段（如探索与执行）分离，并由专门化的组件处理，是提升复杂智能体系统效率和可靠性的有效范式。</p>
+<h2 id="_5">安全与评估</h2>
+<p>对AI系统安全性和评估方法的研究也在深化。<strong>BadWorld</strong> 揭示了视觉世界模型对对抗性扰动的脆弱性，提出了一种无需未来视频监督的自监督攻击框架，能引发生成内容的严重退化。<strong>Who Flips</strong> 关注语言模型答案的稳定性，提出了一个受控协议来评估模型在面对合理反论时是否会改变正确答案，发现自归因等因素会显著影响模型的坚定性。<strong>VisualClaw</strong> 则构建了一个自进化的多模态智能体，通过混合编码和技能进化来降低部署成本、提升性能，并提出了一个新的智能体基准测试集。</p>
+<p>分析表明，随着世界模型和AI智能体等复杂系统的部署，评估范畴正从传统的准确性指标扩展到鲁棒性、稳定性和安全性。对抗性攻击研究揭示了当前模型在安全关键应用中的潜在风险。而答案稳定性等新评估维度的出现，表明社区正更深入地探究模型认知的可靠性，而非仅仅关注静态基准下的表现。</p>
+<h2 id="_6">其他动态</h2>
+<p><strong>BRDFusion</strong> 结合了物理模型和生成模型用于城市场景逆渲染，实现了高质量且可控的视频生成与编辑。<strong>MMDiff</strong> 展示了如何从冻结的扩散变换器中提取多模态感知特征，用于各种视觉理解任务。<strong>PermaVid</strong> 通过解耦的空间上下文记忆，提升了视频编辑后生成内容的长期一致性。<strong>MVEB</strong> 发布了一个大规模视频嵌入基准，对33个模型进行了全面评估。<strong>EgoPhys</strong> 利用自我中心视频学习可变形物体的通用物理模型，构建物理数字孪生。<strong>HUG</strong> 收集了大规模人类抓取数据集，并训练了生成多样化人类抓取姿态的模型，支持向机器人的零样本迁移。这些工作分别在图形学、多模态感知、视频生成、模型评估、物理建模和机器人操作等细分方向展示了最新进展。</p>
 
         <div class="footer">
-            <p>生成时间: 2026年06月16日 17:10:47</p>
+            <p>生成时间: 2026年06月16日 17:10:46</p>
             <p style="text-align: right;">本报告由 NewsReporter 系统自动生成</p>
             <p style="text-align: right;">Generated by NewsReporter System</p>
         </div>
