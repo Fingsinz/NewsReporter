@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>每日HFDailyPaper-2026年06月17日</title>
+    <style>
+
+:root {
+    --primary-color: #1a365d;
+    --secondary-color: #2c5282;
+    --accent-color: #3182ce;
+    --text-color: #2d3748;
+    --bg-color: #ffffff;
+    --code-bg: #f7fafc;
+    --border-color: #e2e8f0;
+    --table-header-bg: #edf2f7;
+    --blockquote-border: #3182ce;
+    --link-color: #2b6cb0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", "华文中宋", "SimSun", serif;
+    font-size: 14pt;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    max-width: 75%;
+    margin-left: 17%;
+    margin-right: 8%;
+    padding: 40px 60px;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 25px 0 15px 0;
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    color: var(--text-color);
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+}
+
+p {
+    text-align: justify;
+    text-indent: 2em;
+    margin: 10px 0;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    margin: 15px 20px;
+    padding: 10px 20px;
+    border-left: 4px solid var(--blockquote-border);
+    background-color: var(--code-bg);
+    font-style: italic;
+}
+
+ul, ol {
+    margin: 10px 0 10px 40px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+code {
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 10pt;
+    background-color: var(--code-bg);
+    padding: 2px 6px;
+    border-radius: 3px;
+    border: 1px solid var(--border-color);
+}
+
+pre {
+    background-color: var(--code-bg);
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    overflow-x: auto;
+    margin: 15px 0;
+}
+
+pre code {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 11pt;
+}
+
+th, td {
+    border: 1px solid var(--border-color);
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--table-header-bg);
+    font-weight: bold;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 20px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+.meta-info {
+    text-align: center;
+    color: #666;
+    font-size: 10pt;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    font-size: 10pt;
+    color: #666;
+}
+
+#toc-sidebar {
+    position: fixed;
+    left: 20px;
+    top: 80px;
+    width: 20%;
+    max-width: 280px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#toc-sidebar .toc-close {
+    display: none;
+}
+
+#toc-sidebar h3 {
+    font-size: 12pt;
+    margin: 0 0 12px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--primary-color);
+}
+
+#toc-sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#toc-sidebar li {
+    margin: 4px 0;
+}
+
+#toc-sidebar ul ul {
+    margin-left: 15px;
+}
+
+#toc-sidebar a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: "Consolas", "霞鹜文楷";
+    font-size: 12pt;
+    display: block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    transition: all 0.2s;
+}
+
+#toc-sidebar a:hover {
+    background-color: var(--code-bg);
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+#toc-sidebar a.active {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+@media print {
+    #toc-sidebar {
+        display: none;
+    }
+}
+
+#toc-toggle {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    transition: all 0.3s;
+}
+
+#toc-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#toc-toggle::before {
+    content: "☰";
+}
+
+@media (max-width: 900px) {
+    #toc-sidebar {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        max-height: 100vh;
+        margin: 0;
+        padding: 20px;
+        border-radius: 0;
+        border-right: 1px solid var(--border-color);
+        transition: left 0.3s ease;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    #toc-sidebar.open {
+        left: 0;
+    }
+    
+    #toc-sidebar .toc-close {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background: var(--code-bg);
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    body {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    #toc-toggle {
+        display: block;
+    }
+}
+
+.toc {
+    background-color: var(--code-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin: 20px 0 30px 0;
+}
+
+.toc h2 {
+    font-size: 14pt;
+    margin: 0 0 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--primary-color);
+}
+
+.toc ul {
+    margin: 10px 0 0 0;
+    list-style-type: none;
+}
+
+.toc ul ul {
+    margin-left: 20px;
+}
+
+.toc li {
+    margin: 5px 0;
+}
+
+.toc a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
+@media print {
+    body {
+        padding: 20px 40px;
+        max-width: 100%;
+    }
+    
+    pre, code {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav id="toc-sidebar">
+        <h3>目录</h3>
+        <button class="toc-close" onclick="closeToc()">×</button>
+        <div class="toc">
+<ul>
+<li><a href="#hfdailypapers-20260617">每日HFDailyPapers-2026年06月17日</a><ul>
+<li><a href="#_1">循环架构与高效推理</a></li>
+<li><a href="#_2">强化学习与策略优化</a></li>
+<li><a href="#_3">游戏生成与智能体评估基准</a></li>
+<li><a href="#_4">多模态理解与生成统一框架</a></li>
+<li><a href="#_5">世界模型与交互环境构建</a></li>
+<li><a href="#_6">智能体训练与计算机使用能力</a></li>
+<li><a href="#_7">图像生成与编辑技术</a></li>
+<li><a href="#ai">安全与可信AI</a></li>
+<li><a href="#_8">跨语言评估与深度研究</a></li>
+<li><a href="#_9">混合架构与注意力机制分析</a></li>
+<li><a href="#_10">检索增强生成与文档交互</a></li>
+<li><a href="#ai_1">AI在个性化教育中的应用</a></li>
+<li><a href="#_11">其他动态</a></li>
+</ul>
+</li>
+</ul>
+</div>
+    </nav>
+    <button id="toc-toggle" onclick="toggleToc()"></button>
+    <article>
+        <!-- <h1>每日HFDailyPaper-2026年06月17日</h1> -->
+        <h1 id="hfdailypapers-20260617">每日HFDailyPapers-2026年06月17日</h1>
+<h2 id="_1">循环架构与高效推理</h2>
+<p>研究聚焦于通过循环结构提升模型效率与计算能力。LoopCoder-v2探索了并行循环Transformer（PLT）的循环次数选择，发现两循环变体在代码生成等任务上相比无循环基线取得显著提升（如SWE-bench Verified从43.0提升至64.4分），但三循环及以上性能反而下降，揭示了循环次数与收益-成本之间的非单调权衡关系。<a href="https://arxiv.org/abs/2606.18023">LoopCoder-v2</a>。同期工作Looped World Models（LoopWM）将循环架构首次应用于世界建模，通过参数共享的transformer块迭代优化潜在环境状态，实现了高达100倍的参数效率。<a href="https://arxiv.org/abs/2606.18208">Looped World Models</a>。此外，对变宽Transformer的初步探索表明，不同网络层可能扮演不同的计算角色，为动态分配计算资源提供了新思路。<a href="https://arxiv.org/abs/2606.18246">Variable-Width Transformers</a>。
+分析表明，循环架构通过复用参数和自适应计算深度，为平衡模型能力与部署效率提供了新范式。研究趋势显示，循环次数的选择并非越多越好，存在明确的收益-成本拐点，这为设计高效的序列模型和世界模型提供了关键的设计诊断工具。</p>
+<h2 id="_2">强化学习与策略优化</h2>
+<p>针对强化学习（特别是面向语言模型的RL）的稳定性与效率问题，多项研究提出了新方法。Zone of Proximal Policy Optimization（ZPPO）受“最近发展区”理论启发，将教师知识置于提示而非策略梯度中，通过构建对比性提示（如BCQ和NCQ）让学生在自身能力边界内学习，有效避免了策略偏移。在多个规模的视觉语言模型测试中，ZPPO均优于传统蒸馏方法。<a href="https://arxiv.org/abs/2606.18216">ZPPO</a>。Winner Advantage Policy Optimization（WAPO）则从梯度动态角度分析了GRPO等方法不稳定的根源，并提出仅对正优势完成项进行更新的裁剪策略，在数学推理等任务上提升了训练稳定性。<a href="https://arxiv.org/abs/2606.16154">WAPO</a>。同时，OPD-Evolver框架利用在线策略自蒸馏培养智能体的“进化能力”，通过“慢-快”协同循环，使其在多领域基准测试中超越了现有记忆系统和训练方法。<a href="https://arxiv.org/abs/2606.17628">OPD-Evolver</a>。
+分析表明，强化学习在语言模型中的应用正朝着更稳定、更高效且更符合认知科学原理的方向发展。ZPPO等方法将教学过程融入智能体自身的交互循环，避免了外部教师策略的干扰；而WAPO和OPD-Evolver则分别从优化目标和能力进化角度，提升了算法的鲁棒性和样本效率。</p>
+<h2 id="_3">游戏生成与智能体评估基准</h2>
+<p>随着编码智能体能力的提升，端到端的游戏生成成为一个新兴且具挑战性的应用。GameCraft-Bench是一个针对此任务的基准，它要求智能体在真实的游戏引擎（如Godot）中，根据自然语言规范生成完整可玩的游戏。该基准强调对引擎的接地、制品的完整性以及交互验证。评估显示，前沿编码智能体在此任务上表现欠佳，最强智能体仅达到41.46%的通过率，主要瓶颈在于生成的游戏往往缺乏足够的内容、连贯的视觉反馈和完整的游戏体验。<a href="https://arxiv.org/abs/2606.17861">GameCraft-Bench</a>。
+分析表明，游戏生成不仅考验代码生成能力，更对智能体的系统工程、多模态内容整合和交互逻辑设计提出了极高要求。该基准的建立揭示了当前智能体在复杂、多组件交互系统构建方面的局限，为评估和推动编码智能体的发展提供了关键的测试平台。</p>
+<h2 id="_4">多模态理解与生成统一框架</h2>
+<p>研究致力于在单一框架内整合视觉理解与生成能力。UniAR提出了一种统一的自回归框架，其核心在于使用一个共享的离散视觉词表，该词表同时服务于上下文理解（将图像视为token序列）和视觉生成（作为生成目标）。通过结合查找无关的比特级量化和基于扩散的解码器，UniAR在图像生成、编辑和多模态理解任务上均达到了先进水平。<a href="https://arxiv.org/abs/2606.18249">UniAR</a>。对于特定模态，MotionVLA提出了双流频率感知词表，将运动数据解耦为基础姿态流和物理动态流，以解决单码本量化在表征高频物理信号时的偏差问题，提升了基于文本和图像生成人形运动的质量。<a href="https://arxiv.org/abs/2606.15142">MotionVLA</a>。Visual-Seeker则专注于提升多模态智能体的视觉原生推理能力，使其能在搜索过程中主动关注并利用细粒度视觉证据，超越了依赖文本证据轨迹的现有方法。<a href="https://arxiv.org/abs/2606.15231">Visual-Seeker</a>。
+分析表明，多模态模型的发展趋势是追求更深度的表征统一和模态协同。共享词表、频率解耦和主动视觉推理等技术，旨在克服跨模态表征空间的割裂，使模型能够更连贯地理解和生成复杂的多模态内容，尤其是在需要精细控制和长程推理的任务中。</p>
+<h2 id="_5">世界模型与交互环境构建</h2>
+<p>为构建可交互、可控制的世界模型，研究从数据与模型架构两方面进行了探索。ActWorld旨在突破现有世界模型仅支持导航动作的限制，支持中程滚动中的物体交互。它通过构建带标注的交互视频数据集和引入分层的动作感知记忆机制，缓解了数据稀疏和历史信息遗忘的瓶颈，在单一模型中同时支持灵活的导航和丰富的物体交互。<a href="https://arxiv.org/abs/2606.17730">ActWorld</a>。EgoCS-400K则提供了一个大规模的、基于重放的第一人称游戏数据集（来自《反恐精英》比赛），包含精确对齐的视频、动作、状态和事件序列，旨在为世界模型提供具备可执行动作监督的多样化数据。<a href="https://arxiv.org/abs/2606.18180">EgoCS-400K</a>。
+分析表明，世界模型的发展正从被动预测视频帧，向支持主动交互和因果控制的方向演进。这需要模型不仅能理解视觉外观，还需建模物理交互逻辑和状态转移。高质量、带动作标注的交互数据集，以及能够记忆和推理交互历史的模型架构，是实现这一目标的关键。</p>
+<h2 id="_6">智能体训练与计算机使用能力</h2>
+<p>提升智能体（特别是计算机使用智能体）的训练效率和能力是研究热点。ProCUA-SFT针对计算机使用智能体（CUA）训练数据稀缺和质量不高的问题，提出了一条全自动的数据合成流水线，可生成310万步级监督微调样本。基于此数据对UI-TARS 7B进行微调，在OSWorld基准上取得了45%的成功率，较基础模型大幅提升。<a href="https://arxiv.org/abs/2606.17321">ProCUA-SFT</a>。ACE-Ego-0则探索如何统一利用第一人称人类视频和机器人数据进行视觉-语言-动作（VLA）模型的预训练。它通过构建一个从人类视频中提取伪动作轨迹的流水线，并设计可靠性感知的训练目标，成功地将大规模人类监督转化为对机器人操作任务有益的先验知识。<a href="https://arxiv.org/abs/2606.17200">ACE-Ego-0</a>。
+分析表明，解决智能体训练的数据瓶颈至关重要。ProCUA-SFT证明了合成数据流水线的有效性，而ACE-Ego-0则展示了跨具身（人类视频与机器人）数据迁移的可能性。两者都旨在以更低成本、更规模化的方式获取或转化训练数据，从而推动智能体在复杂现实环境中的能力边界。</p>
+<h2 id="_7">图像生成与编辑技术</h2>
+<p>在图像生成与编辑领域，研究致力于提升生成质量、控制精度和编辑的保真度。Spectral Forcing提出了一种免参数、时间条件的频域先验，应用于像素空间扩散模型的噪声输入，通过在不同时间步显式地分离信号和噪声频带，提升了模型计算效率和生成质量。<a href="https://arxiv.org/abs/2606.15236">Spectral Forcing</a>。RefGC-SR^2定义了一个新任务：参考引导的生成内容超分辨率与精炼，旨在利用原始高分辨率参考图像，在后处理阶段同时恢复生成图像丢失的细节、修复生成伪影并进行超分。<a href="https://arxiv.org/abs/2606.15158">RefGC-SR^2</a>。TV-Edit则联合建模文本指令（表达语义意图）和稀疏视觉指令（如拖拽点，提供空间指导），构建了文本-视觉协同编辑框架，实现了比纯文本或纯视觉编辑方法更精确、更符合意图的编辑效果。<a href="https://arxiv.org/abs/2606.16767">TV-Edit</a>。
+分析表明，图像生成与编辑技术正朝着更精细的频域控制、跨阶段信息复用以及多模态指令协同的方向发展。这些方法旨在解决现有技术中存在的生成质量损失、空间控制不精确以及语义与空间意图脱节等问题，以生成更高质量、更可控的视觉内容。</p>
+<h2 id="ai">安全与可信AI</h2>
+<p>对大语言模型进行选择性遗忘（Unlearning）以移除特定知识，同时保持通用能力，是一个关键的安全挑战。RepSelect指出，现有方法之所以容易被逆向（通过微调或少样本提示恢复），是因为它们破坏了与保留集共享的表征。RepSelect提出通过在每次更新前折叠权重梯度的顶部主成分，来隔离并遗忘仅针对目标知识集的特有表征，从而实现更深层、更鲁棒的遗忘。实验表明，该方法对抗逆向攻击的能力远超现有基线。<a href="https://arxiv.org/abs/2606.17168">RepSelect</a>。
+分析表明，模型遗忘技术正从表面性的抑制转向深层表征的隔离与擦除。RepSelect的核心洞察是，鲁棒的遗忘需要精确地识别并仅修改与目标知识相关且独立的表征子空间，避免伤及模型的整体能力和通用知识。</p>
+<h2 id="_8">跨语言评估与深度研究</h2>
+<p>评估AI系统在非英语环境或跨语言场景下的鲁棒性成为新的研究重点。ChLogic是一个中英文对齐的逻辑推理基准，测试模型在将相同逻辑结构表达为多样化中文表面形式时，性能是否下降。实验显示，Qwen3、Ministral等模型在中英文间存在持续的性能差距，且反向翻译的效果在不同难度子集上表现不一。<a href="https://arxiv.org/abs/2606.17905">ChLogic</a>。XBCP（跨语言BrowseComp-Plus）则评估深度研究智能体在支撑性证据为非英语时的表现。结果发现，即使使用强大的多语言检索器，当证据语言与查询语言不一致时，检索召回率、答案准确性和证据引用的可靠性都会显著下降，揭示了跨语言深度研究中检索和智能体层面的双重困难。<a href="https://arxiv.org/abs/2606.15345">XBCP</a>。
+分析表明，当前AI系统（无论是基础语言模型还是深度研究智能体）在跨语言场景下的能力存在脆弱性。中文等非英语语言的多样表面形式，以及跨语言证据的整合，对模型的逻辑一致性和检索-推理协同提出了更高要求，是评估和提升多语言AI系统鲁棒性的重要压力测试。</p>
+<h2 id="_9">混合架构与注意力机制分析</h2>
+<p>对混合Transformer架构中不同注意力模块的作用进行系统分析，有助于指导模型设计。研究发现，高效注意力（如滑动窗口注意力）主要影响长上下文能力的涌现速度，而不同架构在充分训练后最终能达到相近的长上下文性能。机制分析表明，长距离检索主要由全注意力层完成，而高效注意力层则塑造其优化轨迹。一个反直觉的发现是“大窗口懒惰”效应：过大的滑动窗口反而会延迟全注意力层中检索头的形成。基于此，研究提出仅在全注意力层应用无位置编码（NoPE）即可显著提升长上下文性能。<a href="https://arxiv.org/abs/2606.15378">Rethinking the Role of Efficient Attention</a>。
+分析表明，混合架构中的模块并非孤立运作，而是存在复杂的协同与竞争关系。理解高效注意力模块如何影响全注意力层的学习，为通过模块化设计（如选择性应用NoPE）来优化模型在不同上下文长度下的表现提供了理论依据。</p>
+<h2 id="_10">检索增强生成与文档交互</h2>
+<p>提升智能体在大规模语料库上的搜索与推理效率是重要方向。Dr-DCI提出了一种由检索器引导的“直接语料库交互”框架，其核心是将检索作为智能体调用的一种动作，用于动态扩展一个本地工作空间，而非直接在完整语料库上执行慢速、不稳定的命令。这结合了检索器的高召回率和直接交互的灵活性，在Browsecomp-Plus等基准上取得了准确率、效率和成本的平衡。<a href="https://arxiv.org/abs/2606.14885">Dr-DCI</a>。
+分析表明，纯粹的检索或纯粹的直接交互都有局限性。Dr-DCI代表了一种混合范式，通过构建一个动态、可控的本地工作空间来处理证据，为在超大规模语料上实现稳健、高效且可验证的智能体搜索提供了可行方案。</p>
+<h2 id="ai_1">AI在个性化教育中的应用</h2>
+<p>利用多智能体框架实现自适应的个性化教学是AI教育应用的新探索。LectūraAgents模拟教授-学生关系，通过一个主智能体领导下的研究、规划、审查和具身化教学子智能体团队，为学习者生成和呈现个性化的教学材料。该框架特别强调了教学动作（如手写、高亮）与语音的同步对齐，以增强教学的具身性和适应性。评估显示，其在讲座内容质量、具身教学质量和个性化方面优于现有方法。<a href="https://arxiv.org/abs/2606.16428">LectūraAgents</a>。
+分析表明，高级的AI教学助手正从单纯的内容生成，向具备教学策略、具身交互和动态适应能力的智能体系统演进。这要求系统不仅理解学科知识，还需理解教学法和学习者的个体差异。</p>
+<h2 id="_11">其他动态</h2>
+<ul>
+<li><strong>分布式推理系统优化</strong>：对分解式推理架构（将预填充和解码阶段分离到不同GPU池）进行了首次形式化的博弈论分析，将其建模为耦合博弈，并设计了自适应控制器来检测饱和状态、调整路由参数，显著降低了延迟和资源浪费。<a href="https://arxiv.org/abs/2606.17081">The Price of Anarchy in Disaggregated Inference</a>。</li>
+<li><strong>医疗时间序列分析</strong>：提出了TRIAGE框架，通过训练大语言模型对临床结果进行辩证推理（而非二元分类），来对不规则采样的医疗时间序列进行风险预测。该方法能生成连续的风险评分和可解释的临床推理，提升了预测的校准度和临床可用性。<a href="https://arxiv.org/abs/2606.09030">TRIAGE</a>。</li>
+<li><strong>量子计算与AI的交叉研究</strong>：探索了将酉算子映射到大语言模型潜在空间的方法，使模型能够理解和推理量子操作。该方法在Clifford+T电路综合任务上表现与现有方法相当，并展示了通过自然语言指定门约束的能力。<a href="https://arxiv.org/abs/2606.13811">Aligning Quantum Operators with Large Language Models</a>。</li>
+<li><strong>扩散语言模型的后训练</strong>：针对扩散语言模型（dLLMs）提出了首个在线策略自蒸馏框架d-OPSD。它通过使用自生成答案作为后缀条件，并将监督从词元级转向步骤级，使dLLM能从“未来经验”中学习，在推理基准上以远低于强化学习的优化步数超越了基线。<a href="https://arxiv.org/abs/2606.18195">d-OPSD</a>。</li>
+</ul>
+
+        <div class="footer">
+            <p>生成时间: 2026年06月17日 15:54:40</p>
+            <p style="text-align: right;">本报告由 NewsReporter 系统自动生成</p>
+            <p style="text-align: right;">Generated by NewsReporter System</p>
+        </div>
+    </article>
+    <script>
+    function toggleToc() {
+        const sidebar = document.getElementById('toc-sidebar');
+        sidebar.classList.toggle('open');
+    }
+    
+    function closeToc() {
+        const sidebar = document.getElementById('toc-sidebar');
+        sidebar.classList.remove('open');
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        const tocLinks = document.querySelectorAll('#toc-sidebar a');
+        const headings = [];
+        
+        tocLinks.forEach(link => {
+            const id = link.getAttribute('href').substring(1);
+            const heading = document.getElementById(id);
+            if (heading) {
+                headings.push({ link, heading });
+            }
+        });
+        
+        function updateActiveLink() {
+            let currentId = '';
+            const scrollPosition = window.scrollY + 100;
+            
+            headings.forEach(({ link, heading }) => {
+                if (heading.offsetTop <= scrollPosition) {
+                    currentId = heading.id;
+                }
+            });
+            
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', updateActiveLink);
+        updateActiveLink();
+        
+        if (window.innerWidth <= 900) {
+            tocLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    closeToc();
+                });
+            });
+        }
+    });
+    </script>
+</body>
+</html>
