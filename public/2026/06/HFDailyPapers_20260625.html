@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>NewsReporter</title>
+    <title>每日HFDailyPaper-2026年06月25日</title>
     <style>
 
 :root {
@@ -382,10 +382,13 @@ img {
         <button class="toc-close" onclick="closeToc()">×</button>
         <div class="toc">
 <ul>
-<li><a href="#weekly-news">Weekly News</a></li>
-<li><a href="#huggingface-daily-papers">HuggingFace Daily Papers</a><ul>
-<li><a href="#7">近7天</a></li>
-<li><a href="#_1">历史归档</a></li>
+<li><a href="#hfdailypapers-20260625">每日HFDailyPapers-2026年06月25日</a><ul>
+<li><a href="#_1">视频生成的前沿探索：从个性化到时空控制</a></li>
+<li><a href="#_2">多模态推理能力的系统性探索与增强</a></li>
+<li><a href="#_3">语言模型架构与训练范式的多元化路径</a></li>
+<li><a href="#agent">Agent系统：记忆、工具与安全对齐</a></li>
+<li><a href="#_4">大模型的性能优化与安全分析</a></li>
+<li><a href="#_5">其他重要研究进展</a></li>
 </ul>
 </li>
 </ul>
@@ -393,40 +396,29 @@ img {
     </nav>
     <button id="toc-toggle" onclick="toggleToc()"></button>
     <article>
-        <!-- <h1>NewsReporter</h1> -->
-        <h2 id="weekly-news">Weekly News</h2>
-<h2 id="huggingface-daily-papers">HuggingFace Daily Papers</h2>
-<h3 id="7">近7天</h3>
+        <!-- <h1>每日HFDailyPaper-2026年06月25日</h1> -->
+        <h1 id="hfdailypapers-20260625">每日HFDailyPapers-2026年06月25日</h1>
+<h2 id="_1">视频生成的前沿探索：从个性化到时空控制</h2>
+<p>视频生成领域的研究正致力于突破现有范式，提升生成内容的个性化程度、时空一致性与可控性。多项研究聚焦于通过新架构与监督信号来解决核心挑战。例如，<a href="https://arxiv.org/abs/2606.26058">DomainShuttle</a> 提出了一种能在域内高保真与跨域灵活生成间穿梭的方法，以应对开放域主体驱动视频生成的挑战。<a href="https://arxiv.org/abs/2606.26087">MVTrack4Gen</a> 则发现特定注意力层编码了跨视图对应关系，并将多视角点跟踪作为几何监督信号，增强了新视角视频生成的运动一致性。<a href="https://arxiv.org/abs/2606.26092">TryOnCrafter</a> 首次提出了支持相机轨迹可控的虚拟试穿（CaM-VVT）任务框架，通过构建可渲染的4D代理来解耦人物与环境。<a href="https://arxiv.org/abs/2606.21661">UnityShots</a> 则专注于多镜头视频的连贯性生成，设计了基于边界感知门控的记忆驱动系统，以维护跨镜头的主体外观与场景一致性。这些工作共同表明，视频生成正从单一的视觉质量提升，向更精细的时空控制、对象解耦和长程一致性建模深入发展。</p>
+<h2 id="_2">多模态推理能力的系统性探索与增强</h2>
+<p>多模态大语言模型（MLLMs）的推理能力，尤其是在视觉引导下的推理，是当前研究的热点。多项研究从基准测试、训练范式和内在机制等角度进行了深入探索。<a href="https://arxiv.org/abs/2606.25763">ShutterMuse</a> 针对摄影实时指导场景，构建了评估构图与姿态推荐的基准，并训练了一个统一的MLLM作为交互助手。<a href="https://arxiv.org/abs/2606.25319">V-Zero</a> 提出了一种无需答案标签的视觉推理框架，通过对比证据门控实现在策略蒸馏，显著提升了细粒度视觉推理的效率与效果。<a href="https://arxiv.org/abs/2606.24849">IV-CoT</a> 通过隐式视觉思维链，将文本到图像生成中的结构规划与外观渲染解耦，提升了结构感知能力。对<a href="https://arxiv.org/abs/2606.22565">多模态思维链的系统评估</a>则揭示了其“看得轻，想得重”的局限性：在感知任务中可能导致性能下降，且在推理过程中视觉反思能力持续减弱。分析表明，尽管MLLMs在文本推理上进步显著，但如何保持深度的视觉理解与反思，仍是亟待突破的关键瓶颈。</p>
+<h2 id="_3">语言模型架构与训练范式的多元化路径</h2>
+<p>除了占据主导地位的自回归范式，研究界也在积极探索语言模型（LM）的替代架构与训练方法。<a href="https://arxiv.org/abs/2606.25331">iLLaDA</a> 展示了一个从头训练的、拥有80亿参数的全双向注意力掩码扩散语言模型。该模型通过12T tokens的预训练和12 epochs的指令微调，在多个基准上表现出与自回归模型（如Qwen2.5 7B）相当甚至更优的竞争力，证明了扩散式训练是一条可行的强语言模型构建路径。在训练优化方面，<a href="https://arxiv.org/abs/2606.23104">ReNIO</a> 改进了在策略蒸馏（OPD）方法，通过为负向轨迹分配更高重要性权重，更有效地利用了学生模型自身生成的“错误”数据，提升了在数学推理和代码生成任务上的性能。这些研究共同反映了当前领域在追求更强语言能力时，对模型基础架构和学习范式的多元化探索趋势。</p>
+<h2 id="agent">Agent系统：记忆、工具与安全对齐</h2>
+<p>随着AI Agent应用的发展，其系统设计、工具使用和安全性成为关键议题。多项研究聚焦于Agent记忆系统、工具调用行为以及人机对齐。<a href="https://arxiv.org/abs/2606.24775">关于Agent记忆系统的研究</a>从数据管理视角出发，系统评估了12种记忆架构，发现没有单一架构能主导所有场景，有效性高度依赖于记忆结构与任务瓶颈的匹配度，并指出局部维护比全局重组更具成本效益。在工具使用方面，<a href="https://arxiv.org/abs/2606.25605">约束税现象的研究</a> 实证发现，当同时施加工具调用和JSON Schema约束时，多个开源模型会停止调用工具，并提出了“约束优先级反转”假说来解释这一“工具抑制”行为。<a href="https://arxiv.org/abs/2606.20023">过特权工具选择的研究</a> 则揭示了Agent倾向于选择权限过高工具的倾向，并提出了权限感知的后训练防御策略。此外，<a href="https://arxiv.org/abs/2606.21710">PrivacyAlign</a> 强调了将人类隐私判断置于Agent隐私对齐中心的重要性，并引入了基于人类标注的条件化奖励建模。这些研究共同勾勒出构建可靠、高效且安全的Agent系统所需解决的核心挑战。</p>
+<h2 id="_4">大模型的性能优化与安全分析</h2>
+<p>提升大模型的推理效率、降低其成本，并理解其内部行为，是推动技术落地的重要方向。在效率优化方面，<a href="https://arxiv.org/abs/2606.24033">Block-GTQ</a> 提出了一种RoPE感知的KV缓存量化方法，通过为不同能量级的RoPE模块分配不同比特位，在极低比特量化下显著提升了长上下文任务的质量，并实现了数倍的内存节省和速度提升。<a href="https://arxiv.org/abs/2606.25473">Causal-rCM</a> 则将先进的蒸馏框架rCM扩展到自回归视频扩散模型，通过统一教师强制与自强制训练，实现了SOTA的流式视频生成性能，其蒸馏模型在仅需1-2步采样时即可达到高分。在安全与行为理解方面，<a href="https://arxiv.org/abs/2606.25182">对越狱攻击的检测研究</a> 通过分析LLM中间层的熵动态，发现越狱相关的结构信号主要集中在中间层，并利用单调性趋势分数等特征实现了有效的检测。这些工作体现了在模型效率和安全可靠性层面的持续深耕。</p>
+<h2 id="_5">其他重要研究进展</h2>
 <ul>
-<li><a href="public/2026/06/HFDailyPapers_20260625.html">HFDailyPapers_20260625</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260624.html">HFDailyPapers_20260624</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260623.html">HFDailyPapers_20260623</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260622.html">HFDailyPapers_20260622</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260621.html">HFDailyPapers_20260621</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260620.html">HFDailyPapers_20260620</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260619.html">HFDailyPapers_20260619</a></li>
+<li><strong>数据科学智能体</strong>：<a href="https://arxiv.org/abs/2606.25996">Autodata</a> 提出了一种方法，能训练AI智能体充当数据科学家来创建高质量合成数据，并通过元优化进一步提升数据质量。</li>
+<li><strong>持续测试时适应</strong>：<a href="https://arxiv.org/abs/2606.20196">DO-ALL</a> 框架利用数据集蒸馏技术，生成紧凑的源分布摘要，作为稳定参考点，以增强持续测试时适应算法的长期鲁棒性。</li>
+<li><strong>推理索引优化</strong>：<a href="https://arxiv.org/abs/2606.16316">RL-Index</a> 将检索索引构建视为强化学习问题，通过生成显式编码查询-知识关系的摘要来增强文档索引，提升了复杂检索任务的效果并降低了在线延迟。</li>
+<li><strong>多模态代码智能</strong>：<a href="https://arxiv.org/abs/2606.15932">综述</a> 系统梳理了多模态代码智能领域，涵盖从图形用户界面到科学可视化等多个任务域，并强调了未来以验证为中心的研究方向。</li>
+<li><strong>机器人操作评估</strong>：<a href="https://arxiv.org/abs/2606.18239">EBench</a> 提供了一个仿真基准，用于从多维度诊断通用型移动操作策略，揭示了当前SOTA模型在不同能力维度上的显著差异。</li>
+<li><strong>语言模型使用效率</strong>：<a href="https://arxiv.org/abs/2606.24083">CAVEWOMAN研究</a> 通过实验系统分析了在“穴居人”式简短输入/输出压缩下LLM的行为，发现输出压缩能节约成本，而输入压缩往往适得其反。</li>
+<li><strong>Agentic AI综合性指南</strong>：<a href="https://arxiv.org/abs/2606.24937">一份详细的实践指南</a> 覆盖了从LLM基础设施到Agent开发、部署的全栈技术，为构建自主AI系统提供了全面参考。</li>
+<li><strong>文本识别</strong>：<a href="https://arxiv.org/abs/2606.24484">WATERec</a> 针对极具挑战性的艺术字（WordArt）识别任务，构建了大规模合成数据集并提出了支持任意形状输入的模型，在基准上取得了SOTA性能。</li>
 </ul>
-<h3 id="_1">历史归档</h3>
-<details>
-<summary>2026年06月（14篇）</summary>
-
-<a href='public/2026/06/HFDailyPapers_20260618.html'>HFDailyPapers_20260618</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260617.html'>HFDailyPapers_20260617</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260616.html'>HFDailyPapers_20260616</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260615.html'>HFDailyPapers_20260615</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260614.html'>HFDailyPapers_20260614</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260613.html'>HFDailyPapers_20260613</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260612.html'>HFDailyPapers_20260612</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260611.html'>HFDailyPapers_20260611</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260610.html'>HFDailyPapers_20260610</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260609.html'>HFDailyPapers_20260609</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260608.html'>HFDailyPapers_20260608</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260607.html'>HFDailyPapers_20260607</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260606.html'>HFDailyPapers_20260606</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260605.html'>HFDailyPapers_20260605</a><br/>
-
-</details>
-
 
         <div class="footer">
             <p>生成时间: 2026年06月25日 14:46:37</p>
