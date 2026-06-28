@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>NewsReporter</title>
+    <title>每日HFDailyPaper-2026年06月28日</title>
     <style>
 
 :root {
@@ -382,10 +382,14 @@ img {
         <button class="toc-close" onclick="closeToc()">×</button>
         <div class="toc">
 <ul>
-<li><a href="#weekly-news">Weekly News</a></li>
-<li><a href="#huggingface-daily-papers">HuggingFace Daily Papers</a><ul>
-<li><a href="#7">近7天</a></li>
-<li><a href="#_1">历史归档</a></li>
+<li><a href="#hfdailypapers-20260628">每日HFDailyPapers-2026年06月28日</a><ul>
+<li><a href="#_1">图像生成：多能力统一与上下文理解</a></li>
+<li><a href="#_2">具身智能与世界建模</a></li>
+<li><a href="#_3">强化学习、智能体训练与验证</a></li>
+<li><a href="#_4">世界模型优化与评估</a></li>
+<li><a href="#_5">基准测试与能力评估</a></li>
+<li><a href="#_6">大语言模型效率优化</a></li>
+<li><a href="#_7">其他动态</a></li>
 </ul>
 </li>
 </ul>
@@ -393,46 +397,25 @@ img {
     </nav>
     <button id="toc-toggle" onclick="toggleToc()"></button>
     <article>
-        <!-- <h1>NewsReporter</h1> -->
-        <h2 id="weekly-news">Weekly News</h2>
-<h2 id="huggingface-daily-papers">HuggingFace Daily Papers</h2>
-<h3 id="7">近7天</h3>
-<ul>
-<li><a href="public/2026/06/HFDailyPapers_20260628.html">HFDailyPapers_20260628</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260627.html">HFDailyPapers_20260627</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260626.html">HFDailyPapers_20260626</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260625.html">HFDailyPapers_20260625</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260624.html">HFDailyPapers_20260624</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260623.html">HFDailyPapers_20260623</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260622.html">HFDailyPapers_20260622</a></li>
-</ul>
-<h3 id="_1">历史归档</h3>
-<details>
-<summary>2026年06月（17篇）</summary>
-
-<a href='public/2026/06/HFDailyPapers_20260621.html'>HFDailyPapers_20260621</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260620.html'>HFDailyPapers_20260620</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260619.html'>HFDailyPapers_20260619</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260618.html'>HFDailyPapers_20260618</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260617.html'>HFDailyPapers_20260617</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260616.html'>HFDailyPapers_20260616</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260615.html'>HFDailyPapers_20260615</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260614.html'>HFDailyPapers_20260614</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260613.html'>HFDailyPapers_20260613</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260612.html'>HFDailyPapers_20260612</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260611.html'>HFDailyPapers_20260611</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260610.html'>HFDailyPapers_20260610</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260609.html'>HFDailyPapers_20260609</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260608.html'>HFDailyPapers_20260608</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260607.html'>HFDailyPapers_20260607</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260606.html'>HFDailyPapers_20260606</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260605.html'>HFDailyPapers_20260605</a><br/>
-
-</details>
-
+        <!-- <h1>每日HFDailyPaper-2026年06月28日</h1> -->
+        <h1 id="hfdailypapers-20260628">每日HFDailyPapers-2026年06月28日</h1>
+<h2 id="_1">图像生成：多能力统一与上下文理解</h2>
+<p>近期研究致力于解决统一文本到图像生成、局部编辑和全局编辑等多种能力时的冲突问题。<a href="https://arxiv.org/abs/2606.27377">DanceOPD</a>提出了一种面向流匹配模型的在线策略生成场蒸馏框架，通过将每个能力场定义为共享流状态空间上的速度场，使学生模型能从自身滚动状态查询的专家场中学习，以组合不同能力。<a href="https://arxiv.org/abs/2606.26907">Qwen-Image-Agent</a>则针对现实世界请求中上下文缺失的“上下文差距”问题，提出了一个集成规划、推理、搜索、记忆和反馈的统一智能体框架，通过“上下文感知规划”和“上下文 grounding”逐步构建生成所需的完整上下文。分析表明，多能力统一正从简单的模型堆叠转向更精细的场级蒸馏与动态组合。同时，智能体框架正被引入以增强模型对复杂、隐式用户意图的理解和执行能力，提升实际应用中的鲁棒性。</p>
+<h2 id="_2">具身智能与世界建模</h2>
+<p>提升机器人策略的泛化能力和构建物理真实的世界模型是具身智能领域的核心方向。<a href="https://arxiv.org/abs/2606.26025">In-Context World Modeling</a>提出将系统辨识视为上下文适应问题，使机器人策略能通过短暂的历史交互自主推断关键的系统变量，从而适应新的相机视角或机器人形态。<a href="https://arxiv.org/abs/2606.27364">PhysiFormer</a>则展示了一个扩散变换器模型，能够直接在世界坐标系中模拟物体（包括刚体和弹性体）的物理运动，无需显式的归纳偏置即可生成物理上合理的未来顶点轨迹。分析表明，世界模型正从依赖大量环境特定数据训练，转向利用模型自身的上下文学习能力来减少数据需求。同时，在世界坐标系中进行生成建模，为实现视图不变、几何感知的物理模拟提供了新路径。</p>
+<h2 id="_3">强化学习、智能体训练与验证</h2>
+<p>强化学习（RL）在智能体训练中的应用持续深化，但面临稳定性、奖励设计和技能蒸馏等挑战。<a href="https://arxiv.org/abs/2606.26790">OPID</a>提出了一种在线策略技能蒸馏框架，直接从完成的轨迹中提取层次化技能监督，通过关键决策路由机制为策略优化提供密集的、分布匹配的 hindsight 监督信号，以改善样本效率。研究发现，多步工具使用的RL训练可能因特定控制令牌的概率尖峰而导致性能“崩溃”，<a href="https://arxiv.org/abs/2606.26027">相关工作</a>表明，将监督微调（SFT）与RL交替进行可显著提升训练稳定性。此外，<a href="https://arxiv.org/abs/2606.26300">验证难题的研究</a>指出，对于日益强大的智能体，可靠的验证比生成解决方案更困难，验证信号需在可扩展性、忠实度和鲁棒性之间取得平衡，且验证机制必须随生成器共同进化。分析表明，智能体RL正从单一的奖励驱动，转向更精细的层次化技能监督与过程引导。同时，奖励模型的可靠性与验证机制的鲁棒性已成为制约智能体能力上限的关键瓶颈。</p>
+<h2 id="_4">世界模型优化与评估</h2>
+<p>高效且可靠的世界模型对视觉规划至关重要。<a href="https://arxiv.org/abs/2606.26217">Fast LeWorldModel</a>针对联合嵌入预测架构（JEPA）的规划效率问题，提出用动作前缀预测替代反复的局部展开，从而并行预测未来潜在状态，减少了累积误差并显著提升了规划速度。<a href="https://arxiv.org/abs/2606.27326">MMBench2</a>的工作则揭示了世界模型幻觉本质上是数据覆盖问题，并提出了一个包含427小时、210个任务的数据集用于评估。研究识别出三种幻觉模式，并开发了可用于检测和缓解幻觉的信号，证明了基于数据覆盖的引导采样能有效提升模型对新环境的适应能力。分析表明，世界模型的研究重心正从提升生成质量，同时向提升规划效率和增强可靠性（减少幻觉）两个维度拓展。将幻觉视为数据覆盖问题，为通过数据驱动方法系统性改进世界模型提供了理论框架。</p>
+<h2 id="_5">基准测试与能力评估</h2>
+<p>随着智能体能力的提升，对其进行全面、无偏评估的需求日益迫切。<a href="https://arxiv.org/abs/2606.14397">GauntletBench</a>是一个针对网络智能体的基准测试，聚焦于时间感知、图形理解和3D推理等未被充分探索的能力，覆盖视频编辑、电路设计等专业应用。测试结果显示，即使是先进的智能体系统，其成功率也远低于人类，揭示了当前智能体在复杂现实场景中的局限性。<a href="https://arxiv.org/abs/2606.16613">CoffeeBench</a>则引入了一个多智能体经济系统的长期基准，用于评估LLM智能体在通信、交易和利润最大化方面的长期决策能力。分析表明，现有基准正从评估单一、简单的任务，转向评估专业领域中的多维、长期决策能力。这些新基准揭示了智能体在复杂交互、长期规划以及与物理/经济世界深度交互方面的显著差距。</p>
+<h2 id="_6">大语言模型效率优化</h2>
+<p>提升大语言模型（LLM）的推理速度和处理长上下文的能力是关键优化方向。<a href="https://arxiv.org/abs/2606.18394">JetSpec</a>针对投机解码的扩展瓶颈，提出一种结合单次前向传播效率和分支因果条件的并行树草稿框架，在H100 GPU上实现了最高9.64倍的加速。<a href="https://arxiv.org/abs/2606.26875">InfoKV</a>则关注长上下文推理中的KV缓存压缩问题，引入了一种基于熵感知的框架，通过结合token级的预测不确定性来评估token重要性，其效果优于仅依赖注意力权重的传统方法。分析表明，解码加速技术正通过更精细的草稿生成机制来突破传统方法的权衡。同时，KV缓存压缩正从单纯基于上下文相关性，转向结合信息论信号以更全面地评估token的长期影响，从而提升长上下文任务的性能。</p>
+<h2 id="_7">其他动态</h2>
+<p>其他多项研究也呈现了多样化的进展。在<strong>视频理解</strong>方面，<a href="https://arxiv.org/abs/2606.26904">Robust-TO</a>框架通过整合逐帧可信度评估，解决了视频推理模型在视觉证据退化时的“盲目信任”问题。在<strong>多模态表示学习</strong>方面，<a href="https://arxiv.org/abs/2606.27313">ViQ</a>提出了一种视觉量化表示框架，旨在平衡离散表示中的语义和细节，并支持原生分辨率输入，实现了与多模态大语言模型训练时高达20%-70%的加速。在<strong>工具使用与智能体</strong>方面，<a href="https://arxiv.org/abs/2606.24551">一项研究</a>通过匹配执行层基准对比了GUI和CLI智能体，发现两者分别受制于交互可靠性不足和技能覆盖度不全的瓶颈。此外，<a href="https://arxiv.org/abs/2606.27288">一项关于LLM组合策略的研究</a>分析了路由、投票等系统的收益上限，指出其收益受制于所有模型同时出错的概率。</p>
 
         <div class="footer">
-            <p>生成时间: 2026年06月28日 14:04:23</p>
+            <p>生成时间: 2026年06月28日 14:04:22</p>
             <p style="text-align: right;">本报告由 NewsReporter 系统自动生成</p>
             <p style="text-align: right;">Generated by NewsReporter System</p>
         </div>
