@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>NewsReporter</title>
+    <title>每日HFDailyPaper-2026年06月30日</title>
     <style>
 
 :root {
@@ -382,10 +382,13 @@ img {
         <button class="toc-close" onclick="closeToc()">×</button>
         <div class="toc">
 <ul>
-<li><a href="#weekly-news">Weekly News</a></li>
-<li><a href="#huggingface-daily-papers">HuggingFace Daily Papers</a><ul>
-<li><a href="#7">近7天</a></li>
-<li><a href="#_1">历史归档</a></li>
+<li><a href="#hfdailypapers-20260630">每日HFDailyPapers-2026年06月30日</a><ul>
+<li><a href="#_1">智能体与工具使用优化</a></li>
+<li><a href="#_2">高效视觉生成模型</a></li>
+<li><a href="#_3">评估基准与标准化</a></li>
+<li><a href="#_4">训练与推理效率优化</a></li>
+<li><a href="#_5">世界模型与具身交互</a></li>
+<li><a href="#_6">其他动态</a></li>
 </ul>
 </li>
 </ul>
@@ -393,48 +396,23 @@ img {
     </nav>
     <button id="toc-toggle" onclick="toggleToc()"></button>
     <article>
-        <!-- <h1>NewsReporter</h1> -->
-        <h2 id="weekly-news">Weekly News</h2>
-<h2 id="huggingface-daily-papers">HuggingFace Daily Papers</h2>
-<h3 id="7">近7天</h3>
-<ul>
-<li><a href="public/2026/06/HFDailyPapers_20260630.html">HFDailyPapers_20260630</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260629.html">HFDailyPapers_20260629</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260628.html">HFDailyPapers_20260628</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260627.html">HFDailyPapers_20260627</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260626.html">HFDailyPapers_20260626</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260625.html">HFDailyPapers_20260625</a></li>
-<li><a href="public/2026/06/HFDailyPapers_20260624.html">HFDailyPapers_20260624</a></li>
-</ul>
-<h3 id="_1">历史归档</h3>
-<details>
-<summary>2026年06月（19篇）</summary>
-
-<a href='public/2026/06/HFDailyPapers_20260623.html'>HFDailyPapers_20260623</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260622.html'>HFDailyPapers_20260622</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260621.html'>HFDailyPapers_20260621</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260620.html'>HFDailyPapers_20260620</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260619.html'>HFDailyPapers_20260619</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260618.html'>HFDailyPapers_20260618</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260617.html'>HFDailyPapers_20260617</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260616.html'>HFDailyPapers_20260616</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260615.html'>HFDailyPapers_20260615</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260614.html'>HFDailyPapers_20260614</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260613.html'>HFDailyPapers_20260613</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260612.html'>HFDailyPapers_20260612</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260611.html'>HFDailyPapers_20260611</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260610.html'>HFDailyPapers_20260610</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260609.html'>HFDailyPapers_20260609</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260608.html'>HFDailyPapers_20260608</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260607.html'>HFDailyPapers_20260607</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260606.html'>HFDailyPapers_20260606</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260605.html'>HFDailyPapers_20260605</a><br/>
-
-</details>
-
+        <!-- <h1>每日HFDailyPaper-2026年06月30日</h1> -->
+        <h1 id="hfdailypapers-20260630">每日HFDailyPapers-2026年06月30日</h1>
+<h2 id="_1">智能体与工具使用优化</h2>
+<p>近期的研究聚焦于提升智能体的效率、可靠性与策略遵从性。<a href="https://arxiv.org/abs/2606.30616">Agents-A1</a> 提出了一种通过“扩展智能体视野”而非模型参数来达到万亿参数级性能的方法，利用35B的MoE模型在长期任务中实现了与更大模型相当的结果。在工具使用方面，<a href="https://arxiv.org/abs/2606.30251">TACO</a> 提出了一种优化代码工具调用信用分配的强化学习方法，通过自监督方式判断工具调用的有用性。针对智能体的安全性与策略遵循，<a href="https://arxiv.org/abs/2606.29225">PolicyGuard</a> 引入了一个基于对话上下文推理策略的子智能体验证器，而 <a href="https://arxiv.org/abs/2606.29887">SafePyramid</a> 则构建了一个用于评估模型理解应用特定安全策略能力的基准。这些工作共同指向智能体发展的核心挑战：如何在复杂、长期、多步交互中做出可靠、高效且安全的决策。</p>
+<h2 id="_2">高效视觉生成模型</h2>
+<p>多项研究致力于在降低计算开销的同时，维持或提升视觉生成模型的质量。<a href="https://arxiv.org/abs/2606.30017">Flux-GS</a> 针对移动端实时高斯渲染，通过蒙特卡洛能量聚合和属性条件增强模块，在大幅减少参数的同时保持了视觉质量。<a href="https://arxiv.org/abs/2606.29814">Nemotron-Labs-Diffusion-Image</a> 为高分辨率文生图任务提出了掩码离散扩散模型，引入了token编辑机制和分组交叉熵损失来解决信号稀疏和自纠正能力缺失的问题。<a href="https://arxiv.org/abs/2606.26016">MIMFlow</a> 则统一了掩码图像建模与归一化流，在统一框架中联合优化语义、像素重建和生成流。这些进展表明，生成模型的优化正从单纯追求规模转向更精细的架构创新与计算效率权衡。</p>
+<h2 id="_3">评估基准与标准化</h2>
+<p>为应对模型在真实世界复杂场景中评估不足的问题，一系列新的基准被提出。<a href="https://arxiv.org/abs/2606.29537">OSWorld 2.0</a> 构建了包含108个长周期真实世界工作流的计算机使用基准，发现当前最强的智能体也仅能完成约20%的任务。<a href="https://arxiv.org/abs/2606.30410">BeyondArena</a> 是首个针对表格数据的统一整体基准，覆盖多种任务类型、数据规模和学科领域，评估发现表格基础模型仅在中小型独立同分布数据上表现优异。<a href="https://arxiv.org/abs/2606.29445">VG-GUIBench</a> 和 <a href="https://arxiv.org/abs/2606.28480">TUA-Bench</a> 则分别评估了模型从视频教程学习GUI操作和在终端环境中执行通用任务的能力。这些基准测试揭示了当前模型在处理非标准、长期和复杂现实任务时的显著局限性。</p>
+<h2 id="_4">训练与推理效率优化</h2>
+<p>提升大规模模型训练和推理的效率是另一个关键方向。<a href="https://arxiv.org/abs/2606.24143">AsyncOPD</a> 首次系统研究了异步在策略蒸馏中的陈旧数据问题，发现使用前向KL散度并重新计算梯度可以有效维持模型精度，并将训练吞吐量提升1.6至3.8倍。<a href="https://arxiv.org/abs/2606.30634">One-Step Gradient Delay</a> 的研究挑战了异步流水线并行中梯度延迟必然导致不稳定的传统观念，指出优化器的选择（如Muon）至关重要。在推理层面，<a href="https://arxiv.org/abs/2502.16886">ReFreeKV</a> 提出了无需预设阈值的KV缓存压缩方法，能够自适应调整缓存预算，提高了在多样化输入上的鲁棒性。<a href="https://arxiv.org/abs/2606.30084">InnerZoom</a> 则通过单次前向传播内的跨层证据桥接，在GUI定位任务中实现了精度提升和延迟降低的双重目标。</p>
+<h2 id="_5">世界模型与具身交互</h2>
+<p>构建能够理解和模拟物理世界的模型是通往通用智能的重要路径。<a href="https://arxiv.org/abs/2606.30292">DreamForge-World 0.1 Preview</a> 展示了一个可在消费级GPU上实时交互的世界模型预览，支持键盘鼠标控制与多种操作模式。<a href="https://arxiv.org/abs/2606.30045">Walking in the Implicit</a> 提出了一种以场景为中心的范式，将交互式生成解耦为紧凑隐式场景状态的随机转移和确定性的姿态条件渲染，提升了长期一致性。<a href="https://arxiv.org/abs/2606.29501">A2World</a> 则通过在大量机器人操作数据上预训练动作条件世界模型，学习可迁移的动力学先验，可用于构建任务专用模拟器或策略模型。这些工作共同探索了如何让模型有效表征动态环境并支持交互式探索。</p>
+<h2 id="_6">其他动态</h2>
+<p>其他重要进展包括：<a href="https://arxiv.org/abs/2606.29705">GUICrafter</a> 利用大量未标注屏幕截图通过弱监督和课程学习训练GUI智能体，显著降低了数据需求。<a href="https://arxiv.org/abs/2606.30308">ViDiHand</a> 利用预训练视频扩散模型的表示来重建手部运动，展示了生成模型作为新感知基础的潜力。<a href="https://arxiv.org/abs/2606.25363">TheoremGraph</a> 构建了跨非形式化与形式化数学的统一陈述级依赖图，为数学知识检索提供了基础设施。<a href="https://arxiv.org/abs/2606.30170">NMO Benchmark</a> 将生成式分子设计评估扩展到纳米技术领域，用基于量子模拟的真实目标替代了代理指标。</p>
 
         <div class="footer">
-            <p>生成时间: 2026年06月30日 14:33:25</p>
+            <p>生成时间: 2026年06月30日 14:33:24</p>
             <p style="text-align: right;">本报告由 NewsReporter 系统自动生成</p>
             <p style="text-align: right;">Generated by NewsReporter System</p>
         </div>
