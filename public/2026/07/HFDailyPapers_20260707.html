@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>每日HFDailyPaper-2026年07月07日</title>
+    <style>
+
+:root {
+    --primary-color: #1a365d;
+    --secondary-color: #2c5282;
+    --accent-color: #3182ce;
+    --text-color: #2d3748;
+    --bg-color: #ffffff;
+    --code-bg: #f7fafc;
+    --border-color: #e2e8f0;
+    --table-header-bg: #edf2f7;
+    --blockquote-border: #3182ce;
+    --link-color: #2b6cb0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", "华文中宋", "SimSun", serif;
+    font-size: 14pt;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    max-width: 75%;
+    margin-left: 17%;
+    margin-right: 8%;
+    padding: 40px 60px;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 25px 0 15px 0;
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    color: var(--text-color);
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+}
+
+p {
+    text-align: justify;
+    text-indent: 2em;
+    margin: 10px 0;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    margin: 15px 20px;
+    padding: 10px 20px;
+    border-left: 4px solid var(--blockquote-border);
+    background-color: var(--code-bg);
+    font-style: italic;
+}
+
+ul, ol {
+    margin: 10px 0 10px 40px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+code {
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 10pt;
+    background-color: var(--code-bg);
+    padding: 2px 6px;
+    border-radius: 3px;
+    border: 1px solid var(--border-color);
+}
+
+pre {
+    background-color: var(--code-bg);
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    overflow-x: auto;
+    margin: 15px 0;
+}
+
+pre code {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 11pt;
+}
+
+th, td {
+    border: 1px solid var(--border-color);
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--table-header-bg);
+    font-weight: bold;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 20px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+.meta-info {
+    text-align: center;
+    color: #666;
+    font-size: 10pt;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    font-size: 10pt;
+    color: #666;
+}
+
+#toc-sidebar {
+    position: fixed;
+    left: 20px;
+    top: 80px;
+    width: 20%;
+    max-width: 280px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#toc-sidebar .toc-close {
+    display: none;
+}
+
+#toc-sidebar h3 {
+    font-size: 12pt;
+    margin: 0 0 12px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--primary-color);
+}
+
+#toc-sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#toc-sidebar li {
+    margin: 4px 0;
+}
+
+#toc-sidebar ul ul {
+    margin-left: 15px;
+}
+
+#toc-sidebar a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: "Consolas", "霞鹜文楷";
+    font-size: 12pt;
+    display: block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    transition: all 0.2s;
+}
+
+#toc-sidebar a:hover {
+    background-color: var(--code-bg);
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+#toc-sidebar a.active {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+@media print {
+    #toc-sidebar {
+        display: none;
+    }
+}
+
+#toc-toggle {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    transition: all 0.3s;
+}
+
+#toc-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#toc-toggle::before {
+    content: "☰";
+}
+
+@media (max-width: 900px) {
+    #toc-sidebar {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        max-height: 100vh;
+        margin: 0;
+        padding: 20px;
+        border-radius: 0;
+        border-right: 1px solid var(--border-color);
+        transition: left 0.3s ease;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    #toc-sidebar.open {
+        left: 0;
+    }
+    
+    #toc-sidebar .toc-close {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background: var(--code-bg);
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    body {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    #toc-toggle {
+        display: block;
+    }
+}
+
+.toc {
+    background-color: var(--code-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin: 20px 0 30px 0;
+}
+
+.toc h2 {
+    font-size: 14pt;
+    margin: 0 0 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--primary-color);
+}
+
+.toc ul {
+    margin: 10px 0 0 0;
+    list-style-type: none;
+}
+
+.toc ul ul {
+    margin-left: 20px;
+}
+
+.toc li {
+    margin: 5px 0;
+}
+
+.toc a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
+@media print {
+    body {
+        padding: 20px 40px;
+        max-width: 100%;
+    }
+    
+    pre, code {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav id="toc-sidebar">
+        <h3>目录</h3>
+        <button class="toc-close" onclick="closeToc()">×</button>
+        <div class="toc">
+<ul>
+<li><a href="#hfdailypapers-20260707">每日HFDailyPapers-2026年07月07日</a><ul>
+<li><a href="#3d">3D场景生成与重建</a></li>
+<li><a href="#_1">视觉基础模型与表示学习</a></li>
+<li><a href="#_2">具身智能与世界模型</a></li>
+<li><a href="#_3">推理、验证与效率优化</a></li>
+<li><a href="#_4">多模态与音频处理</a></li>
+<li><a href="#gui">GUI智能体与工具使用</a></li>
+<li><a href="#_5">安全、评测与基准</a></li>
+<li><a href="#_6">其他研究动态</a></li>
+</ul>
+</li>
+</ul>
+</div>
+    </nav>
+    <button id="toc-toggle" onclick="toggleToc()"></button>
+    <article>
+        <!-- <h1>每日HFDailyPaper-2026年07月07日</h1> -->
+        <h1 id="hfdailypapers-20260707">每日HFDailyPapers-2026年07月07日</h1>
+<p>本报告基于近期发布的AI/ML领域研究论文，按主题方向进行归纳分析，旨在呈现关键研究进展与技术趋势。</p>
+<h2 id="3d">3D场景生成与重建</h2>
+<p>近期研究致力于统一3D场景的生成与重建范式，并扩展其规模与能力。<a href="https://arxiv.org/abs/2607.05373">PixWorld</a> 提出在像素空间进行扩散建模，通过统一模型联合处理重建与生成任务，并引入几何感知损失以获取3D结构监督。<a href="https://arxiv.org/abs/2607.05392">SynCity 3000</a> 则专注于大规模场景生成，其框架将图像到3D的生成器适配为卷积算子，从而扩展至整个场景尺寸。<a href="https://arxiv.org/abs/2607.05376">MV-Forcing</a> 针对长时序多视角视频生成，通过在单一扩散模型中组合时间与视角自回归，并利用4D几何桥接实现了任意长度的几何一致生成。</p>
+<p>分析表明，该领域正从分离的范式走向统一，核心挑战在于如何在保持生成质量的同时，有效融合多视角和长时序的几何一致性。像素空间的监督、卷积式扩展以及显式几何桥接，代表了提升场景生成可控性与真实感的不同技术路径。</p>
+<h2 id="_1">视觉基础模型与表示学习</h2>
+<p>视觉预训练方法正朝着更精细的空间感知和更高效的表示方向发展。<a href="https://arxiv.org/abs/2607.05247">Vision Pretraining for Dense Spatial Perception</a> 提出了掩码边界建模作为自监督范式，动态学习亚像素边界表示，并以此指导密集视觉token学习，其构建的LingBot-Vision在深度估计等任务上表现出色。另一项工作<a href="https://arxiv.org/abs/2607.04605">Do All Visual Tokens Matter Equally?</a> 关注视觉token压缩对检索性能的影响，其提出的SaMer框架通过对象感知的token合并，在减少超过93%图像侧token的同时，提升了检索召回率和短语级定位能力。</p>
+<p>分析表明，提升视觉基础模型的空间结构理解能力是一个重要趋势。边界建模为学习结构化表示提供了新的自监督信号。同时，在需要精细证据保留的任务（如多向量检索）中，简单的token压缩可能损害关键信息，对象感知的合并策略能在效率与精度间取得更好平衡。</p>
+<h2 id="_2">具身智能与世界模型</h2>
+<p>具身智能领域的研究聚焦于提升机器人策略的泛化能力、构建可靠的世界模型以及优化学习过程。<a href="https://arxiv.org/abs/2607.04988">InternVLA-A1.5</a> 构建了一个统一理解、潜在前瞻和行动的策略模型，通过保留VLM语义并在潜在空间进行未来预测，继承了预训练视频生成模型的动力学先验。<a href="https://arxiv.org/abs/2607.05390">Deform360</a> 提供了一个大规模的可变形物体视觉触觉数据集，用于系统评估2D视频模型与3D粒子模型在预测物体动力学方面的优劣。<a href="https://arxiv.org/abs/2607.05155">EdgeBench</a> 则通过对大量真实环境交互任务的分析，首次发现了智能体在环境学习中性能遵循对数sigmoid缩放定律的证据。</p>
+<p>分析表明，统一的具身智能模型通过架构设计（如潜在前瞻）来平衡语义理解与物理动力学建模。对于复杂环境（如可变形物体），世界模型的评估基准和数据集至关重要。此外，对智能体在线学习过程进行量化，有助于理解和预测其能力发展规律。</p>
+<h2 id="_3">推理、验证与效率优化</h2>
+<p>提升大语言模型及相关系统的推理效率、验证精度和训练稳定性是当前研究热点。<a href="https://arxiv.org/abs/2607.05391">LLM-as-a-Verifier</a> 将验证能力视为新的缩放轴，提出了一种通用验证框架，通过对评分token logits的期望生成连续分数，实现了更精细的反馈。<a href="https://arxiv.org/abs/2607.05061">KVpop</a> 针对自回归解码中KV缓存增长的问题，提出一种基于预测性在线剪枝的压缩策略，通过监督未来注意力信号来做出缓存保留决策。<a href="https://arxiv.org/abs/2607.04033">OmniOpt</a> 则对现代优化器进行了系统性调查，通过统一的元管线和双维度分类法，为大规模模型训练中的优化器选择提供了框架和基准。</p>
+<p>分析表明，验证与推理优化正从启发式规则转向基于学习或更精细化的方法。LLM-as-a-Verifier通过概率公式扩展了验证的维度；KVpop将缓存剪枝决策与未来效用直接关联；而对优化器的系统性梳理则有助于研究者在不同约束条件下做出更优选择。</p>
+<h2 id="_4">多模态与音频处理</h2>
+<p>统一的多模态模型和实时交互能力是音频领域的重要进展。<a href="https://arxiv.org/abs/2607.05196">Nemotron-Labs-Audex-30B-A3B</a> 是一个统一的音频文本LLM，采用单一Transformer解码器架构，将音频输入和量化音频输出token与文本token统一处理，在多项音频理解和生成任务上达到SOTA，同时保持了骨干文本模型的能力。<a href="https://arxiv.org/abs/2607.04443">Wan-Streamer v0.2</a> 是延迟保持版本的音视频交互模型，它将交互输出流分辨率从192x336提升至640x368，同时维持约200毫秒的端到端信号延迟。</p>
+<p>分析表明，构建统一音频智能模型的关键在于设计能够无缝融合不同模态token的架构，并配合大规模、高质量的多模态数据。在实时交互场景中，提升分辨率而不增加感知延迟需要精细的系统工程设计，例如将高消耗的生成任务并行化。</p>
+<h2 id="gui">GUI智能体与工具使用</h2>
+<p>GUI智能体的研究开始关注跨平台能力、持续学习以及研究工作流的自动化。<a href="https://arxiv.org/abs/2607.04425">UI-MOPD</a> 首次将多教师在线蒸馏引入GUI智能体的持续学习，通过构建高质量跨平台数据集Uni-GUI，并动态选择平台特定教师进行知识迁移，以平衡跨平台能力保留与新平台适应。<a href="https://arxiv.org/abs/2607.04438">ResearchStudio-Reel</a> 与<a href="https://arxiv.org/abs/2607.04439">ResearchStudio-Idea</a> 构成了一个自动化研究工作流套件，分别致力于将论文自动转化为可编辑的海报、视频和博客，以及基于证据的研究构思生成。</p>
+<p>分析表明，GUI智能体正从单一平台任务执行向多平台、持续学习演进，基于教师蒸馏的方法为管理平台特异性和共享知识提供了可行路径。同时，利用LLM智能体自动化研究工作的“最后一公里”，有望显著提升学术产出的效率。</p>
+<h2 id="_5">安全、评测与基准</h2>
+<p>对智能体系统进行规模化安全测试和可靠评估成为迫切需求。<a href="https://arxiv.org/abs/2607.01793">Vera</a> 提出了一个端到端的自动化安全测试框架，通过文献驱动的风险探索、组合式安全用例构建以及基于证据的自适应执行，对多个生产级智能体框架进行了测试，发现了显著的安全弱点。<a href="https://arxiv.org/abs/2607.02642">GigaWorld-1</a> 系统研究了世界模型作为机器人策略评估器的关键属性，并基于分析提出了一套设计路线图，最终实现了专为策略评估优化的世界模型GigaWorld-1。</p>
+<p>分析表明，随着智能体自主性和能力的提升，传统的安全测试方法难以应对，需要模块化、可执行的测试基础设施。对于具身智能，理解世界模型的评估能力（如长期一致性）比短期视觉逼真度更为关键，这为构建可靠的“评估器”模型指明了方向。</p>
+<h2 id="_6">其他研究动态</h2>
+<p>其他研究包括：<a href="https://arxiv.org/abs/2607.03973">MANCE</a> 提出了一种流形感知的概念擦除方法，通过将干预约束在表示流形上，在擦除目标概念时更好地保留了其他信息。<a href="https://arxiv.org/abs/2607.03524">Perceptual Flow Matching</a> 在预训练的感知模型特征空间中进行流匹配监督，实现了将采样步骤从35-50步减少到4-8步的同时保持生成质量。<a href="https://arxiv.org/abs/2607.04428">dOPSD</a> 针对扩散语言模型，提出了一种新的在策略自蒸馏方法，从模型自身的去噪轨迹中衍生教师优势，改善了推理能力。此外，还有关于音乐味觉预测、抑郁检测基准、半监督分割中的对比学习方法以及用于胸部CT合成的可控生成模型等工作。</p>
+
+        <div class="footer">
+            <p>生成时间: 2026年07月07日 14:53:26</p>
+            <p style="text-align: right;">本报告由 NewsReporter 系统自动生成</p>
+            <p style="text-align: right;">Generated by NewsReporter System</p>
+        </div>
+    </article>
+    <script>
+    function toggleToc() {
+        const sidebar = document.getElementById('toc-sidebar');
+        sidebar.classList.toggle('open');
+    }
+    
+    function closeToc() {
+        const sidebar = document.getElementById('toc-sidebar');
+        sidebar.classList.remove('open');
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        const tocLinks = document.querySelectorAll('#toc-sidebar a');
+        const headings = [];
+        
+        tocLinks.forEach(link => {
+            const id = link.getAttribute('href').substring(1);
+            const heading = document.getElementById(id);
+            if (heading) {
+                headings.push({ link, heading });
+            }
+        });
+        
+        function updateActiveLink() {
+            let currentId = '';
+            const scrollPosition = window.scrollY + 100;
+            
+            headings.forEach(({ link, heading }) => {
+                if (heading.offsetTop <= scrollPosition) {
+                    currentId = heading.id;
+                }
+            });
+            
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', updateActiveLink);
+        updateActiveLink();
+        
+        if (window.innerWidth <= 900) {
+            tocLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    closeToc();
+                });
+            });
+        }
+    });
+    </script>
+</body>
+</html>
