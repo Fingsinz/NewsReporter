@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>每日HFDailyPaper-2026年07月11日</title>
+    <style>
+
+:root {
+    --primary-color: #1a365d;
+    --secondary-color: #2c5282;
+    --accent-color: #3182ce;
+    --text-color: #2d3748;
+    --bg-color: #ffffff;
+    --code-bg: #f7fafc;
+    --border-color: #e2e8f0;
+    --table-header-bg: #edf2f7;
+    --blockquote-border: #3182ce;
+    --link-color: #2b6cb0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", "华文中宋", "SimSun", serif;
+    font-size: 14pt;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    max-width: 75%;
+    margin-left: 17%;
+    margin-right: 8%;
+    padding: 40px 60px;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 25px 0 15px 0;
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    color: var(--text-color);
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+}
+
+p {
+    text-align: justify;
+    text-indent: 2em;
+    margin: 10px 0;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    margin: 15px 20px;
+    padding: 10px 20px;
+    border-left: 4px solid var(--blockquote-border);
+    background-color: var(--code-bg);
+    font-style: italic;
+}
+
+ul, ol {
+    margin: 10px 0 10px 40px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+code {
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 10pt;
+    background-color: var(--code-bg);
+    padding: 2px 6px;
+    border-radius: 3px;
+    border: 1px solid var(--border-color);
+}
+
+pre {
+    background-color: var(--code-bg);
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    overflow-x: auto;
+    margin: 15px 0;
+}
+
+pre code {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 11pt;
+}
+
+th, td {
+    border: 1px solid var(--border-color);
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--table-header-bg);
+    font-weight: bold;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 20px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+.meta-info {
+    text-align: center;
+    color: #666;
+    font-size: 10pt;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    font-size: 10pt;
+    color: #666;
+}
+
+#toc-sidebar {
+    position: fixed;
+    left: 20px;
+    top: 80px;
+    width: 20%;
+    max-width: 280px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#toc-sidebar .toc-close {
+    display: none;
+}
+
+#toc-sidebar h3 {
+    font-size: 12pt;
+    margin: 0 0 12px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--primary-color);
+}
+
+#toc-sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#toc-sidebar li {
+    margin: 4px 0;
+}
+
+#toc-sidebar ul ul {
+    margin-left: 15px;
+}
+
+#toc-sidebar a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: "Consolas", "霞鹜文楷";
+    font-size: 12pt;
+    display: block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    transition: all 0.2s;
+}
+
+#toc-sidebar a:hover {
+    background-color: var(--code-bg);
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+#toc-sidebar a.active {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+@media print {
+    #toc-sidebar {
+        display: none;
+    }
+}
+
+#toc-toggle {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    transition: all 0.3s;
+}
+
+#toc-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#toc-toggle::before {
+    content: "☰";
+}
+
+@media (max-width: 900px) {
+    #toc-sidebar {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        max-height: 100vh;
+        margin: 0;
+        padding: 20px;
+        border-radius: 0;
+        border-right: 1px solid var(--border-color);
+        transition: left 0.3s ease;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    #toc-sidebar.open {
+        left: 0;
+    }
+    
+    #toc-sidebar .toc-close {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background: var(--code-bg);
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    body {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    #toc-toggle {
+        display: block;
+    }
+}
+
+.toc {
+    background-color: var(--code-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin: 20px 0 30px 0;
+}
+
+.toc h2 {
+    font-size: 14pt;
+    margin: 0 0 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--primary-color);
+}
+
+.toc ul {
+    margin: 10px 0 0 0;
+    list-style-type: none;
+}
+
+.toc ul ul {
+    margin-left: 20px;
+}
+
+.toc li {
+    margin: 5px 0;
+}
+
+.toc a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
+@media print {
+    body {
+        padding: 20px 40px;
+        max-width: 100%;
+    }
+    
+    pre, code {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav id="toc-sidebar">
+        <h3>目录</h3>
+        <button class="toc-close" onclick="closeToc()">×</button>
+        <div class="toc">
+<ul>
+<li><a href="#hfdailypapers-20260711">每日HFDailyPapers-2026年07月11日</a><ul>
+<li><a href="#_1">科学推理与智能体基准测试</a></li>
+<li><a href="#_2">视频生成、理解与视觉表征</a></li>
+<li><a href="#_3">大语言模型优化、长上下文与内存机制</a></li>
+<li><a href="#_4">特定领域应用：药物发现、音频与医疗影像</a></li>
+<li><a href="#_5">其他动态</a></li>
+</ul>
+</li>
+</ul>
+</div>
+    </nav>
+    <button id="toc-toggle" onclick="toggleToc()"></button>
+    <article>
+        <!-- <h1>每日HFDailyPaper-2026年07月11日</h1> -->
+        <h1 id="hfdailypapers-20260711">每日HFDailyPapers-2026年07月11日</h1>
+<h2 id="_1">科学推理与智能体基准测试</h2>
+<p>概述部分显示，多项研究致力于解决AI系统在复杂推理和真实世界任务中的评估难题。<strong>IdeaGene-Bench (IG-Bench)</strong> <a href="https://arxiv.org/abs/2607.08758">link</a> 提出了一个基于“思想基因组”概念的基准，用于衡量AI遵循科学继承结构和生成新颖想法的能力，实验表明当前最强的LLM在此类组合推理任务上准确率仅为27.3%，存在明显的瓶颈。<strong>UniClawBench</strong> <a href="https://arxiv.org/abs/2607.08768">link</a> 则是首个面向主动智能体的能力驱动型基准，通过拆解技能使用、探索、长上下文推理等五大基础能力，并在实时Docker环境中进行细粒度评估，揭示了基础模型能力与框架设计对性能的联合影响。<strong>CausalDS</strong> <a href="https://arxiv.org/abs/2607.08093">link</a> 针对数据科学智能体，构建了包含合成因果结构和自然语言故事的基准，旨在评估模型在因果推理、工具使用和不确定性量化方面的综合表现，特别是处理“无答案”情境的拒答能力。</p>
+<p>分析表明，AI评估正从单一的性能指标转向多维度的能力解构与因果逻辑验证。IG-Bench和UniClawBench均强调了对“过程”而非仅“结果”的评估，前者关注科学创新的继承脉络，后者关注智能体在动态环境中的步骤级表现。CausalDS则填补了符号因果推理与实际数据分析之间的空白。这些基准的共同趋势是引入更严格的现实约束（如实时容器、合成因果结构），以暴露现有模型在复杂逻辑链和长期依赖中的脆弱性，推动模型从模式匹配向真正理解与推理演进。</p>
+<h2 id="_2">视频生成、理解与视觉表征</h2>
+<p>视频领域近期成果集中在提升生成质量、推理能力及移动端部署效率。<strong>LongE2V</strong> <a href="https://arxiv.org/abs/2607.08770">link</a> 利用预训练视频扩散模型先验，结合自回归展开和自适应上下文切换，解决了从稀疏事件流重建长视界视频的时序漂移问题，实现了重建、预测和插帧的统一框架。<strong>OpenCoF</strong> <a href="https://arxiv.org/abs/2607.08763">link</a> 提出“帧链”（Chain-of-Frame）推理概念，通过引入显式的视觉和文本推理令牌，增强了视频模型在时间序列中的逻辑连贯性，并在多个推理基准上取得显著增益。<strong>Canvas360</strong> <a href="https://arxiv.org/abs/2607.08765">link</a> 专注于全景图生成，通过几何感知预训练和并行深度生成，提升了全景图像的几何一致性和对象畸变细节捕捉能力。<strong>SAM-MT</strong> <a href="https://arxiv.org/abs/2607.08688">link</a> 基于SAM2架构，通过解耦掩码注意力和稀疏内存机制，实现了实时多目标视频分割，将延迟与目标数量解绑。<strong>Vidu S1</strong> <a href="https://arxiv.org/abs/2607.03118">link</a> 和 <strong>CineMobile</strong> <a href="https://arxiv.org/abs/2607.03803">link</a> 分别代表了云端和端侧的视频生成突破，前者支持语音控制的无限长实时视频生成，后者通过蒸馏剪枝和混合量化，在移动设备上实现了电影级镜头运动的快速生成。<strong>Video-Oasis</strong> <a href="https://arxiv.org/abs/2603.29616">link</a> 则对现有视频理解基准进行了审计，发现半数样本存在非视觉捷径，揭示了当前视频LLM在纯视觉理解上的巨大能力缺口。<strong>RCORE</strong> <a href="https://arxiv.org/abs/2601.16211">link</a> 针对零样本组合动作识别，通过引入时序顺序正则化，缓解了模型过度依赖物体特征而忽视时序证据的问题。</p>
+<p>分析表明，视频AI的发展呈现出“两端分化”与“内在机理深化”的双重趋势。一端是追求极致的实时性与端侧部署（如Vidu S1, CineMobile, SAM-MT），通过架构创新和量化技术降低算力门槛；另一端是深入探究视频生成的物理一致性与逻辑推理能力（如LongE2V, OpenCoF, Canvas360），试图让模型理解时空动态而非仅仅拟合像素分布。同时，Video-Oasis和RCORE的研究提醒业界，当前的性能提升可能部分源于数据集偏差，未来需通过更严谨的诊断基准来验证模型是否真正掌握了视觉语义与时序因果。</p>
+<h2 id="_3">大语言模型优化、长上下文与内存机制</h2>
+<p>在LLM核心能力优化方面，<strong>Jet-Long</strong> <a href="https://arxiv.org/abs/2607.07740">link</a> 提出了一种无需微调的零样本长上下文扩展方法，通过动态双焦点RoPE和注意力合并机制，在保持短上下文精度的同时有效外推长距离依赖，显著提升了RULER等基准的表现。<strong>Linear Attention Architectures</strong> <a href="https://arxiv.org/abs/2607.07953">link</a> 系统比较了多种线性注意力架构（如DeltaNet系列），发现纯线性栈虽吞吐量高，但混合栈在损失控制上更具优势，并提出了跨层值路由（CLVR）以进一步提升性能。<strong>UP (Unbounded Positive Asymmetric Optimization)</strong> <a href="https://arxiv.org/abs/2607.06987">link</a> 针对强化学习中的探索-稳定性困境，提出了一种非对称优化目标，通过对正优势无界梯度释放以增强探索，同时保留负优势的裁剪以防止不稳定，从而提升了多种RL算法的性能。<strong>Remember When It Matters</strong> <a href="https://arxiv.org/abs/2607.08716">link</a> 引入了“行为状态衰减”概念，设计了一个主动记忆智能体，通过选择性注入结构化记忆提醒，有效改善了长视界任务中决策信息的丢失问题。</p>
+<p>分析表明，LLM的技术重心正从单纯的规模扩张转向效率与稳定性的精细化调控。Jet-Long和线性注意力研究旨在突破Transformer二次计算复杂度的限制，实现更高效或更长的上下文处理；UP和主动记忆机制则聚焦于训练和推理过程中的策略优化，解决RL训练的不稳定性和长程依赖中的信息遗忘问题。这些工作共同指向一个方向：未来的LLM系统将更多依赖模块化的、即插即用的优化组件（如记忆模块、RoPE修正、非对称优化）来弥补架构本身的局限，而非完全依赖新的基础架构。</p>
+<h2 id="_4">特定领域应用：药物发现、音频与医疗影像</h2>
+<p>在垂直应用领域，AI正通过融合领域知识来提升生成与重建的质量。<strong>DrugGen 2</strong> <a href="https://arxiv.org/abs/2607.08404">link</a> 将疾病本体论整合进分子生成模型，通过结合疾病背景和目标蛋白序列，显著提高了候选药物的结合亲和力和结构新颖性，特别是在糖尿病肾病相关靶点上表现出色。<strong>aria</strong> <a href="https://arxiv.org/abs/2607.08526">link</a> 是一个专为设备端设计的原生音频生成运行时，通过八位量化和激活引导技术，在树莓派等资源受限设备上实现了Stable Audio 3的高效运行，展示了语义音频在物联网场景的潜力。<strong>PhyMRI-SR</strong> <a href="https://arxiv.org/abs/2607.06238">link</a> 重新定义了MRI超分辨率问题，将其视为物理感知的重建过程，利用2D高斯溅射和物理约束信号建模，动态优化分辨率与信噪比配置，取得了优于传统确定性映射的效果。<strong>PAST-TIDE</strong> <a href="https://arxiv.org/abs/2607.04690">link</a> 针对低资源阿拉伯语立场检测，通过原型锚定语句调优和主题不变归一化，在少样本设置下保持了竞争力。</p>
+<p>分析表明，领域专用AI的核心价值在于对物理规律和业务逻辑的深度嵌入。DrugGen 2和PhyMRI-SR均摒弃了黑盒式的端到端映射，转而引入领域特定的约束（如疾病本体、MRI物理方程），从而在生成结果的合理性和可靠性上超越了通用模型。aria则证明了通过极致的工程优化（量化、原生运行时），AI生成能力可以下沉至边缘设备，拓展了应用场景的边界。这些案例提示，在医疗、制药和嵌入式音频等高要求领域，结合领域先验知识的混合架构将是未来的主流方向。</p>
+<h2 id="_5">其他动态</h2>
+<p><strong>ARDY</strong> <a href="https://arxiv.org/abs/2607.08741">link</a> 提出了一种流式生成框架，用于实时交互式3D人体运动生成，通过混合表示和自回归变换器去噪器，平衡了轨迹控制精度与生成效率，适用于动画和机器人领域。<strong>Flash-BoN</strong> <a href="https://arxiv.org/abs/2607.04461">link</a> 改进了扩散模型的推理时扩展，通过组合时间步截断、层跳过和激活代理等技术生成廉价草稿，显著提升了基于墙钟时间的生成效率。<strong>Can Dialects Be Steered Like Languages?</strong> <a href="https://arxiv.org/abs/2607.03936">link</a> 探索了在不微调的情况下，通过稀疏神经元分析和向量引导来操控阿拉伯语LLM的方言生成能力，揭示了方言特征在模型内部几何结构中的编码方式。<strong>A Sparse and Truncated State Vector Simulator for Peaked Circuits</strong> <a href="https://arxiv.org/abs/2607.07816">link</a> 介绍了一种针对峰值量子电路的经典近似模拟方法，通过稀疏状态向量存储实现高效仿真。</p>
+
+        <div class="footer">
+            <p>生成时间: 2026年07月11日 13:41:44</p>
+            <p style="text-align: right;">本报告由 NewsReporter 系统自动生成</p>
+            <p style="text-align: right;">Generated by NewsReporter System</p>
+        </div>
+    </article>
+    <script>
+    function toggleToc() {
+        const sidebar = document.getElementById('toc-sidebar');
+        sidebar.classList.toggle('open');
+    }
+    
+    function closeToc() {
+        const sidebar = document.getElementById('toc-sidebar');
+        sidebar.classList.remove('open');
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        const tocLinks = document.querySelectorAll('#toc-sidebar a');
+        const headings = [];
+        
+        tocLinks.forEach(link => {
+            const id = link.getAttribute('href').substring(1);
+            const heading = document.getElementById(id);
+            if (heading) {
+                headings.push({ link, heading });
+            }
+        });
+        
+        function updateActiveLink() {
+            let currentId = '';
+            const scrollPosition = window.scrollY + 100;
+            
+            headings.forEach(({ link, heading }) => {
+                if (heading.offsetTop <= scrollPosition) {
+                    currentId = heading.id;
+                }
+            });
+            
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', updateActiveLink);
+        updateActiveLink();
+        
+        if (window.innerWidth <= 900) {
+            tocLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    closeToc();
+                });
+            });
+        }
+    });
+    </script>
+</body>
+</html>
