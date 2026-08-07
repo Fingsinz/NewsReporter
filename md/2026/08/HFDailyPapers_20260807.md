@@ -1,0 +1,67 @@
+# 每日HFDailyPapers-2026年08月07日
+
+## 智能体强化学习与训练范式
+
+**AgentOPSD** 提出了一种无需批评家（critic-free）的递归自蒸馏方法，用于解决智能体强化学习中的回合级信用分配问题。该方法通过聚合词元级教师-学生对数概率差异，并在对数几率空间中递归更新贝叶斯信念状态，将稀疏的结果监督转化为回合级信用信号 [https://arxiv.org/abs/2608.05987](https://arxiv.org/abs/2608.05987)。基于 Qwen2.5 模型的评估显示，该方法在 ALFWorld、WebShop 和 Search-QA 上均优于 GRPO 及强自蒸馏基线，特别是在 ALFWorld 上达到了 89.1% 的成功率。
+
+**EnvACE** 引入了“世界排练”（world rehearsal）机制，以替代传统智能体强化学习中对真实或合成执行环境的依赖。策略交替执行动作与排练，即生成工具调用后由策略本身扮演环境产生响应，从而将动作与环境响应的关系内化至参数中，形成支持决策的智能体世界模型 [https://arxiv.org/abs/2608.06197](https://arxiv.org/abs/2608.06197)。该方法在 BFCL-v4、tau^2-Bench 等多个基准上表现优异，且代码已公开。
+
+**OSReward** 针对计算机使用智能体（CUAs）的轨迹评估，构建了高质量基准 OSReward，揭示了当前 VLM 裁判存在系统性宽容偏差（leniency bias）的问题。研究据此训练了开源奖励模型 OS-Shepherd，能够在以商业裁判 30-60% 的成本下提供稳定可靠的奖励信号 [https://arxiv.org/abs/2607.28609](https://arxiv.org/abs/2607.28609)。
+
+**CalibForge** 提出了一种自主终端任务合成系统，通过对抗性求解器校准（adversarial solver calibration）和对比性校准，生成具有“求解器相对可学习性”的训练数据。系统共构建了 5,431 个校准后的终端任务，训练出的模型在 Terminal-Bench 2.0 和 SWE-bench Pro 上取得了显著性能提升 [https://arxiv.org/abs/2608.06352](https://arxiv.org/abs/2608.06352)。
+
+**HarnessOpt-Bench** 引入了一个评估 LLM 在昂贵且随机评估环境下进行端到端“Harness 优化”能力的基准。研究结果显示，优化器模型的性能差异大于其所在代码 Harness 的差异，且原生 Harness 并不总是优于共享 Harness，证实了 Harness 优化是一项可测量且具备区分度的能力 [https://arxiv.org/abs/2608.06301](https://arxiv.org/abs/2608.06301)。
+
+## 具身智能与机器人操作
+
+**DyPES-VLA** 旨在解决跨具身形态的机器人操作问题，通过学习共享的动态先验（shared dynamics priors）和特定形态的控制策略，实现了无需手动预处理即可将异构动作对齐到通用格式 [https://arxiv.org/abs/2608.06374](https://arxiv.org/abs/2608.06374)。该方法在 LIBERO、RoboCasa-GR1 和 RoboTwin 2.0 等基准上均达到了最先进水平。
+
+**World-to-Wrist (W2-VLA)** 通过引入任务条件的未来手腕建模，改进了精细机器人操作中的视觉-语言-动作（VLA）模型。该方法将视觉-语言模型与手腕预测器通过潜在接口连接，并利用合成的 W2-CoT 数据进行辅助监督，在单臂和双臂设置下均提升了接触敏感型操作的准确性 [https://arxiv.org/abs/2608.05369](https://arxiv.org/abs/2608.05369)。
+
+**SmartMage** 针对 3D 场景理解中的模态冗余问题，提出了动态模态编排机制。通过语义引导的模态自适应路由（SMART）和模态感知门控专家（MAGE）模块，该模型能够根据查询语义动态选择最相关的模态输入，在五个 3D 场景理解基准上取得了最先进性能 [https://arxiv.org/abs/2608.05137](https://arxiv.org/abs/2608.05137)。
+
+## 视觉理解与空间推理
+
+**GST-Bench** 填补了现有基准在连续长视野视频全局空间感知方面的空白，包含 6,790 分钟的合成视频数据及人工验证的问题。评估结果显示，最强零样本模型得分仅为 42.68，远低于人类水平的 79.08，主要差距在于模型无法将长视野观察整合为全局一致的场景表征 [https://arxiv.org/abs/2608.05747](https://arxiv.org/abs/2608.05747)。
+
+**ChronoVision** 提出通过潜在状态重建来解决多模态大模型在复杂时序推理任务中的局限性。该方法结合重建式视觉头部和 ROI 注意力定位模块，并在后训练阶段引入强化学习以对齐潜过程，在 Vbvr-VQA 和 IntPhys2 等基准上实现了最先进性能 [https://arxiv.org/abs/2608.05631](https://arxiv.org/abs/2608.05631)。
+
+**EffectLearner** 专注于真实世界视频中的对象移除任务，通过结合基于 VLM 的对象-效果推理器和基于 DiT 的视频擦除器，实现了语义推理增强的全面移除。配套构建的 EffectWorld 数据集专门针对复杂对象诱导效果，进一步验证了该方法在挑战性场景下的有效性 [https://arxiv.org/abs/2608.05565](https://arxiv.org/abs/2608.05565)。
+
+**Invisible Shortcuts** 揭示了视觉编码器在像素级嵌入的不可见元数据痕迹（如图像处理痕迹），表明大规模语义监督会诱导模型利用这些痕迹进行预测。研究通过控制实验验证了元数据敏感性对分布外泛化的负面影响，并提供了相应的缓解策略 [https://arxiv.org/abs/2608.05424](https://arxiv.org/abs/2608.05424)。
+
+## 多模态检索与文本处理
+
+**UniME-R1** 提出了一种基于检索反馈的推理框架，通过生成检索中心思维链（RC-CoT）来纠正嵌入器在相似候选项中的混淆。该方法利用硬负样本进行训练，并结合监督学习与检索导向的强化学习，在 MMEB-V2 等多个多模态检索基准上持续提升性能 [https://arxiv.org/abs/2608.06060](https://arxiv.org/abs/2608.06060)。
+
+**Task-Conditional Flow Matching (TCFM)** 针对多语言文本嵌入模型的适应问题，提出了任务条件的流匹配框架。该框架根据任务类型（如翻译、检索、分类）选择性地应用不同的优化目标，在 Indic Massive Text Embedding Benchmark 上建立了新的最先进水平 [https://arxiv.org/abs/2608.05785](https://arxiv.org/abs/2608.05785)。
+
+**Teaching Nemotron Greek** 完成了现代希腊语检索栈的全链路适配，包括语料挖掘、模型训练及 RAG 基准 HERA 的构建。研究发现，经过微调的 Nemotron 1B 嵌入器在专业希腊语语料上的 nDCG@10 从 0.362 提升至 0.835，且适配后的读者模型在接地生成任务中显著提高了答案正确性 [https://arxiv.org/abs/2608.05138](https://arxiv.org/abs/2608.05138)。
+
+## 文档解析与数据处理
+
+**PaDoc** 提出了一种基于布局的并行解码文档解析器，通过区域充分性假设推导出前缀条件因子分解，将解码深度降低至最长的布局-内容路径长度。在 OmniDocBench 上，PaDoc 取得了 94.24 的总分，并在 384 页子集测试中比序列 SFT 基线提升了 67.4-118% 的有效页面吞吐量 [https://arxiv.org/abs/2608.06146](https://arxiv.org/abs/2608.06146)。
+
+**DataSpace** 构建了一个用于评估数据智能体的基准，包含 410 个跨语言任务和 15 GB 的异构数据（CSV、JSON、SQLite 等）。评估显示，在固定骨干网络的情况下，Harness 的选择导致了 15.36 分的性能差距，且多模态证据整合与连接操作一致性地降低了各模型的准确率 [https://arxiv.org/abs/2608.03451](https://arxiv.org/abs/2608.03451)。
+
+## 3D 生成与世界模型
+
+**WorldClaw** 是一个完全智能体的粗到细框架，用于从开放文本生成大规模、可自由探索的 3D 世界。规划智能体负责将文本提示转化为结构化的区域、地形和资产规格，系统随后构建全局一致的地形基础并生成可编辑的纹理网格 [https://arxiv.org/abs/2608.05248](https://arxiv.org/abs/2608.05248)。
+
+**MASS** 针对多玩家环境下的视频世界模型，提出了权威共享状态（Authoritative Shared State）架构。通过解耦世界动态与视图渲染，MAS 使用学习的逻辑引擎推进全局状态，并使用渲染引擎生成独立视图，成功推进了包含 1,024 个并发玩家、10,000 步循环的预测世界 [https://arxiv.org/abs/2608.06257](https://arxiv.org/abs/2608.06257)。
+
+**ContextMaster** 解决了交互式多镜头视频创建中的上下文扩展挑战，通过固定预算稀疏上下文路由和可复用的清洁上下文状态，实现了单一模型在生成、参考条件约束和编辑任务中的灵活组合。该方法在保持任务一致性的同时，在单 GPU 上达到了 16 FPS 的推理速度 [https://arxiv.org/abs/2608.04956](https://arxiv.org/abs/2608.04956)。
+
+## 系统架构与持续性学习
+
+**From Economic Agents to Agentic Economies** 提出了经济世界模型（EWM）的实施蓝图，将系统划分为从固定规则智能体到自适应 LLM 智能体、自我进化智能体及制度进化世界等六个能力层级。研究指出，具备内源性制度、持续经验对齐和验证经济机制的高级系统仍十分罕见 [https://arxiv.org/abs/2608.06020](https://arxiv.org/abs/2608.06020)。
+
+**Continual Learning in Transition** 综述了持续性学习从参数中心范式向系统级适应范式的转变。研究从“何时”、“如何”和“何处”三个维度刻画了这一转变，指出 On-policy 学习、测试时训练以及外部 Harness 组件（如记忆、技能库）正在扩展模型能力的进化边界 [https://arxiv.org/abs/2608.06216](https://arxiv.org/abs/2608.06216)。
+
+## 低资源语言与神经科学
+
+**MameLoshnLM** 发布了首个开源的 8B 参数意第绪语语言模型。针对现有多语言语料中意第绪语噪声严重的问题，研究构建了高质量预训练语料 Oytser 和多任务基准 Kashes，实验表明该模型在捕捉语言特有的词汇和形态模式方面优于通用多语言模型 [https://arxiv.org/abs/2608.05850](https://arxiv.org/abs/2608.05850)。
+
+**On-Policy Delta Distillation** 研究了 OPD 及其变体 OPD^2 在多语言数学推理中的应用。研究发现，OPD^2 通过利用后训练教师模型与基础模型之间的概率差距作为学习信号，显著提升了韩语和日语的表现；同时指出仅使用英语数据会导致非英语输出向英语偏移 [https://arxiv.org/abs/2608.05802](https://arxiv.org/abs/2608.05802)。
+
+**Interpretable MEG Decoding** 改进了基于 MEG 信号检索感知语音的架构，使用三维球谐函数替代扁平化传感器布局的空间注意力，并减少了解码器参数量。模型权重现在能够映射到源空间，恢复了与语音感知网络一致的生成器，并通过刺激特征遮挡实验揭示了驱动检索的关键声学因素 [https://arxiv.org/abs/2608.01481](https://arxiv.org/abs/2608.01481)。
