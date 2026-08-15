@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>NewsReporter</title>
+    <title>每日HFDailyPaper-2026年08月15日</title>
     <style>
 
 :root {
@@ -382,10 +382,12 @@ img {
         <button class="toc-close" onclick="closeToc()">×</button>
         <div class="toc">
 <ul>
-<li><a href="#weekly-news">Weekly News</a></li>
-<li><a href="#huggingface-daily-papers">HuggingFace Daily Papers</a><ul>
-<li><a href="#7">近7天</a></li>
-<li><a href="#_1">历史归档</a></li>
+<li><a href="#hfdailypapers-20260815">每日HFDailyPapers-2026年08月15日</a><ul>
+<li><a href="#_1">世界模型与视频生成</a></li>
+<li><a href="#_2">代理系统与长期记忆</a></li>
+<li><a href="#_3">模型效率与架构优化</a></li>
+<li><a href="#_4">安全、公平性与可靠性</a></li>
+<li><a href="#_5">其他动态</a></li>
 </ul>
 </li>
 </ul>
@@ -393,105 +395,32 @@ img {
     </nav>
     <button id="toc-toggle" onclick="toggleToc()"></button>
     <article>
-        <!-- <h1>NewsReporter</h1> -->
-        <h2 id="weekly-news">Weekly News</h2>
-<h2 id="huggingface-daily-papers">HuggingFace Daily Papers</h2>
-<h3 id="7">近7天</h3>
+        <!-- <h1>每日HFDailyPaper-2026年08月15日</h1> -->
+        <h1 id="hfdailypapers-20260815">每日HFDailyPapers-2026年08月15日</h1>
+<h2 id="_1">世界模型与视频生成</h2>
+<p>近期研究聚焦于交互式视频世界模型的长程一致性、动作控制与评估基准。<a href="https://arxiv.org/abs/2608.13546">Alaya-EVOKE</a> 通过外部化场景几何至摄像机索引的世界状态库，并结合线性缩放监督，在单张H200上实现每1.5秒块2.11秒的生成，支持开放Ended持续生成。<a href="https://arxiv.org/abs/2608.13489">DreamX-Phi 1.0</a> 针对机器人操作任务，引入SE(3)变换的几何编码与深度分支，确保预测符合 commanded 路径与物体一致性，在WorldArena~2.0 Challenge中取得领先。评估方面，<a href="https://arxiv.org/abs/2608.13552">PlayWorld</a> 提出使用多模态代理玩家执行长程目标的基准，揭示当前模型在空间一致性与状态持久演化上的不足；<a href="https://arxiv.org/abs/2608.13049">H2R-Bench</a> 则系统评估视频世界模型在人类到机器人操作视频生成中的跨形态转移能力，发现现有模型在形态一致性与功能交互上仍存在局限。</p>
+<p>分析表明，世界模型正从单纯的视频合成转向支持长期交互与特定物理约束的专业化应用。外部状态管理与线性注意力机制是平衡内存消耗与生成长度的关键技术路径。同时，引入具身代理进行目标驱动的动态评估，比固定动作序列更能反映模型在真实交互场景下的可靠性。</p>
+<h2 id="_2">代理系统与长期记忆</h2>
+<p>针对长程代理任务的记忆整合与技能复用成为研究热点。<a href="https://arxiv.org/abs/2608.13505">Intern-S2-Preview</a> 构建了支持多模态科学推理的代理基础模型，通过统一后训练管线（包括多任务强化学习与在线投机解码）提升长程任务稳定性。<a href="https://arxiv.org/abs/2608.12990">LycheeMemory V2</a> 将记忆巩固粒度从交互轮次提升至语义段落级别，显著降低了构建开销，在LoCoMo和LongMemEval-S上达到SOTA。在技能层面，<a href="https://arxiv.org/abs/2608.10538">SKILLER</a> 提出语言级强化学习框架，为小型语言模型自动生成可复用的执行者技能，大幅降低部署成本。此外，<a href="https://arxiv.org/abs/2608.13560">AutoDesign</a> 将长程代理设计抽象为元Harness优化问题，通过滚动反馈递归改进；<a href="https://arxiv.org/abs/2608.07545">DarwinX</a> 则引入基于自然选择的人口级Harness演化机制，在冻结模型下提升代理的通用能力。</p>
+<p>分析显示，长期记忆与技能管理正从被动的存储检索转向结构化的主动构建与演化。分段记忆巩固与参数更新的解耦（如Memory Decoder）为低开销的持续学习提供了可行方案。Harness的系统性优化与演化表明，代理性能的提升不再单纯依赖模型规模，而 increasingly 取决于任务框架与经验积累机制的设计。</p>
+<h2 id="_3">模型效率与架构优化</h2>
+<p>研究致力于在保持性能的同时优化推理效率与计算开销。<a href="https://arxiv.org/abs/2608.08888">Full-bandwidth transformer</a> 通过引入潜在反馈通道，使未语言化的计算重新进入深度堆栈，在几乎不增加解码开销的情况下提升了数学与编码生成能力。针对视觉Token效率，<a href="https://arxiv.org/abs/2608.07193">AutoPrune</a> 利用语言模型设计残差修改策略进行Token剪枝，移除94.4%的Token后仍保持99%以上的性能并大幅降低延迟。在推理调度方面，<a href="https://arxiv.org/abs/2608.08020">Thought-Level Beam Search</a> 动态分配计算资源至有潜力的推理轨迹，显著提高了吞吐量并减少了Token消耗。架构层面，<a href="https://arxiv.org/abs/2608.12149">Massive Activations</a> 系统研究了混合线性注意力模型中的激活模式，揭示了其与全注意力机制的连续性。</p>
+<p>分析表明，效率优化正从单一的模型压缩扩展到计算图重构、推理调度与底层架构创新。潜在反馈机制和思维级搜索揭示了推理过程中计算分配的新维度。同时，针对特定任务（如视觉Token）的领域专用语言与元学习策略，显示了自动化架构搜索在解决复杂权衡问题上的潜力。</p>
+<h2 id="_4">安全、公平性与可靠性</h2>
+<p>多项研究关注模型输出的安全性、公平性及可靠性诊断。<a href="https://arxiv.org/abs/2608.09158">Low-Frequency Safety Risks in LALMs</a> 揭示了针对大型音视频语言模型的间歇性低频信号攻击风险，该攻击可导致准确率大幅下降，并提出基于分布重查询的防御机制。在生成公平性方面，<a href="https://arxiv.org/abs/2608.08606">Mitigating Gender Bias in English to Romanian MT</a> 结合LLM性别分类与标签感知翻译，显著缓解了机器翻译中的性别偏见。可靠性方面，<a href="https://arxiv.org/abs/2607.29211">Knowing When to Quit</a> 诊断了模型在超出能力任务上产生无效推理的问题，并通过能力对齐强化学习训练模型适时中止。此外，<a href="https://arxiv.org/abs/2608.08975">How Can Rhetoric Reward-Hack AI Reviewers</a> 分析了修辞对AI同行评审的影响，指出证据框架与新颖性立场对评分影响最大。</p>
+<p>分析表明，AI系统的可靠性评估正从准确率高阶指标深入到输出过程中的校准、公平性与抗扰动能力。跨模态（如音频-语言）与低资源场景（如非英语翻译）的安全漏洞凸显了泛化鲁棒性研究的重要性。对模型“能力边界”的显式建模与训练，是防止误导性输出和计算资源浪费的关键方向。</p>
+<h2 id="_5">其他动态</h2>
 <ul>
-<li><a href="public/2026/08/HFDailyPapers_20260815.html">HFDailyPapers_20260815</a></li>
-<li><a href="public/2026/08/HFDailyPapers_20260814.html">HFDailyPapers_20260814</a></li>
-<li><a href="public/2026/08/HFDailyPapers_20260813.html">HFDailyPapers_20260813</a></li>
-<li><a href="public/2026/08/HFDailyPapers_20260812.html">HFDailyPapers_20260812</a></li>
-<li><a href="public/2026/08/HFDailyPapers_20260811.html">HFDailyPapers_20260811</a></li>
-<li><a href="public/2026/08/HFDailyPapers_20260810.html">HFDailyPapers_20260810</a></li>
-<li><a href="public/2026/08/HFDailyPapers_20260809.html">HFDailyPapers_20260809</a></li>
+<li><strong>科学发现自动化</strong>：<a href="https://arxiv.org/abs/2608.13558">OmniScientist</a> 构建了端到端的全模态AI科学家，直接从异构原始证据（图像、信号、表格等）进行多学科研究，证明全生命周期感知对基于证据的发现至关重要。</li>
+<li><strong>视频表示学习</strong>：<a href="https://arxiv.org/abs/2608.12313">AVA-Encoder</a> 学习代理原生的视频表示，将视频转化为知识图谱，通过文本梯度优化框架提升了代理视频重建与政策学习效率。</li>
+<li><strong>知识编辑组合性</strong>：<a href="https://arxiv.org/abs/2608.11660">Hybrid-Policy Self-Editing</a> 解决了非结构化知识编辑中缺乏组合性的问题，通过混合 rollout 的自蒸馏方法，使模型能够基于编辑内容进行多跳推理。</li>
+<li><strong>极端事件数据增强</strong>：<a href="https://arxiv.org/abs/2608.11951">TailBooster</a> 提出双层生成框架，通过统计层提取极值与深度学习层确保操作有效性，显著提升了极端航班延误预测性能。</li>
+<li><strong>大规模代码重构</strong>：一项案例研究 <a href="https://arxiv.org/abs/2608.12440">Specification-first convergence</a> 展示了AI编码代理在规格优先协议下，成功完成了涉及189个文件的核心架构不变量拆解任务。</li>
+<li><strong>基础设施标准化</strong>：<a href="https://arxiv.org/abs/2608.06867">LLMRouter</a> 提出了统一的LLM路由形式化框架与开源基础设施，并构建了涵盖多种路由任务的基准测试xRouteBench。</li>
 </ul>
-<h3 id="_1">历史归档</h3>
-<details>
-<summary>2026年08月（8篇）</summary>
-
-<a href='public/2026/08/HFDailyPapers_20260808.html'>HFDailyPapers_20260808</a><br/>
-<a href='public/2026/08/HFDailyPapers_20260807.html'>HFDailyPapers_20260807</a><br/>
-<a href='public/2026/08/HFDailyPapers_20260806.html'>HFDailyPapers_20260806</a><br/>
-<a href='public/2026/08/HFDailyPapers_20260805.html'>HFDailyPapers_20260805</a><br/>
-<a href='public/2026/08/HFDailyPapers_20260804.html'>HFDailyPapers_20260804</a><br/>
-<a href='public/2026/08/HFDailyPapers_20260803.html'>HFDailyPapers_20260803</a><br/>
-<a href='public/2026/08/HFDailyPapers_20260802.html'>HFDailyPapers_20260802</a><br/>
-<a href='public/2026/08/HFDailyPapers_20260801.html'>HFDailyPapers_20260801</a><br/>
-
-</details>
-
-<details>
-<summary>2026年07月（30篇）</summary>
-
-<a href='public/2026/07/HFDailyPapers_20260731.html'>HFDailyPapers_20260731</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260730.html'>HFDailyPapers_20260730</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260729.html'>HFDailyPapers_20260729</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260728.html'>HFDailyPapers_20260728</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260727.html'>HFDailyPapers_20260727</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260726.html'>HFDailyPapers_20260726</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260725.html'>HFDailyPapers_20260725</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260724.html'>HFDailyPapers_20260724</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260723.html'>HFDailyPapers_20260723</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260722.html'>HFDailyPapers_20260722</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260721.html'>HFDailyPapers_20260721</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260720.html'>HFDailyPapers_20260720</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260719.html'>HFDailyPapers_20260719</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260718.html'>HFDailyPapers_20260718</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260717.html'>HFDailyPapers_20260717</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260716.html'>HFDailyPapers_20260716</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260715.html'>HFDailyPapers_20260715</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260714.html'>HFDailyPapers_20260714</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260713.html'>HFDailyPapers_20260713</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260712.html'>HFDailyPapers_20260712</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260711.html'>HFDailyPapers_20260711</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260710.html'>HFDailyPapers_20260710</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260709.html'>HFDailyPapers_20260709</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260707.html'>HFDailyPapers_20260707</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260706.html'>HFDailyPapers_20260706</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260705.html'>HFDailyPapers_20260705</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260704.html'>HFDailyPapers_20260704</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260703.html'>HFDailyPapers_20260703</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260702.html'>HFDailyPapers_20260702</a><br/>
-<a href='public/2026/07/HFDailyPapers_20260701.html'>HFDailyPapers_20260701</a><br/>
-
-</details>
-
-<details>
-<summary>2026年06月（26篇）</summary>
-
-<a href='public/2026/06/HFDailyPapers_20260630.html'>HFDailyPapers_20260630</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260629.html'>HFDailyPapers_20260629</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260628.html'>HFDailyPapers_20260628</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260627.html'>HFDailyPapers_20260627</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260626.html'>HFDailyPapers_20260626</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260625.html'>HFDailyPapers_20260625</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260624.html'>HFDailyPapers_20260624</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260623.html'>HFDailyPapers_20260623</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260622.html'>HFDailyPapers_20260622</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260621.html'>HFDailyPapers_20260621</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260620.html'>HFDailyPapers_20260620</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260619.html'>HFDailyPapers_20260619</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260618.html'>HFDailyPapers_20260618</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260617.html'>HFDailyPapers_20260617</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260616.html'>HFDailyPapers_20260616</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260615.html'>HFDailyPapers_20260615</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260614.html'>HFDailyPapers_20260614</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260613.html'>HFDailyPapers_20260613</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260612.html'>HFDailyPapers_20260612</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260611.html'>HFDailyPapers_20260611</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260610.html'>HFDailyPapers_20260610</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260609.html'>HFDailyPapers_20260609</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260608.html'>HFDailyPapers_20260608</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260607.html'>HFDailyPapers_20260607</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260606.html'>HFDailyPapers_20260606</a><br/>
-<a href='public/2026/06/HFDailyPapers_20260605.html'>HFDailyPapers_20260605</a><br/>
-
-</details>
-
 
         <div class="footer">
-            <p>生成时间: 2026年08月15日 12:49:36</p>
+            <p>生成时间: 2026年08月15日 12:49:35</p>
             <p style="text-align: right;">本报告由 NewsReporter 系统自动生成</p>
             <p style="text-align: right;">Generated by NewsReporter System</p>
         </div>
