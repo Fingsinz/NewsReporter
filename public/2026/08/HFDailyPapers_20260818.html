@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>每日HFDailyPaper-2026年08月18日</title>
+    <style>
+
+:root {
+    --primary-color: #1a365d;
+    --secondary-color: #2c5282;
+    --accent-color: #3182ce;
+    --text-color: #2d3748;
+    --bg-color: #ffffff;
+    --code-bg: #f7fafc;
+    --border-color: #e2e8f0;
+    --table-header-bg: #edf2f7;
+    --blockquote-border: #3182ce;
+    --link-color: #2b6cb0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", "华文中宋", "SimSun", serif;
+    font-size: 14pt;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    max-width: 75%;
+    margin-left: 17%;
+    margin-right: 8%;
+    padding: 40px 60px;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 25px 0 15px 0;
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    color: var(--text-color);
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+}
+
+p {
+    text-align: justify;
+    text-indent: 2em;
+    margin: 10px 0;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    margin: 15px 20px;
+    padding: 10px 20px;
+    border-left: 4px solid var(--blockquote-border);
+    background-color: var(--code-bg);
+    font-style: italic;
+}
+
+ul, ol {
+    margin: 10px 0 10px 40px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+code {
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 10pt;
+    background-color: var(--code-bg);
+    padding: 2px 6px;
+    border-radius: 3px;
+    border: 1px solid var(--border-color);
+}
+
+pre {
+    background-color: var(--code-bg);
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    overflow-x: auto;
+    margin: 15px 0;
+}
+
+pre code {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 11pt;
+}
+
+th, td {
+    border: 1px solid var(--border-color);
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--table-header-bg);
+    font-weight: bold;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 20px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+.meta-info {
+    text-align: center;
+    color: #666;
+    font-size: 10pt;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    font-size: 10pt;
+    color: #666;
+}
+
+#toc-sidebar {
+    position: fixed;
+    left: 20px;
+    top: 80px;
+    width: 20%;
+    max-width: 280px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#toc-sidebar .toc-close {
+    display: none;
+}
+
+#toc-sidebar h3 {
+    font-size: 12pt;
+    margin: 0 0 12px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--primary-color);
+}
+
+#toc-sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#toc-sidebar li {
+    margin: 4px 0;
+}
+
+#toc-sidebar ul ul {
+    margin-left: 15px;
+}
+
+#toc-sidebar a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: "Consolas", "霞鹜文楷";
+    font-size: 12pt;
+    display: block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    transition: all 0.2s;
+}
+
+#toc-sidebar a:hover {
+    background-color: var(--code-bg);
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+#toc-sidebar a.active {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+@media print {
+    #toc-sidebar {
+        display: none;
+    }
+}
+
+#toc-toggle {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    transition: all 0.3s;
+}
+
+#toc-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#toc-toggle::before {
+    content: "☰";
+}
+
+@media (max-width: 900px) {
+    #toc-sidebar {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        max-height: 100vh;
+        margin: 0;
+        padding: 20px;
+        border-radius: 0;
+        border-right: 1px solid var(--border-color);
+        transition: left 0.3s ease;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    #toc-sidebar.open {
+        left: 0;
+    }
+    
+    #toc-sidebar .toc-close {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background: var(--code-bg);
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    body {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    #toc-toggle {
+        display: block;
+    }
+}
+
+.toc {
+    background-color: var(--code-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin: 20px 0 30px 0;
+}
+
+.toc h2 {
+    font-size: 14pt;
+    margin: 0 0 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--primary-color);
+}
+
+.toc ul {
+    margin: 10px 0 0 0;
+    list-style-type: none;
+}
+
+.toc ul ul {
+    margin-left: 20px;
+}
+
+.toc li {
+    margin: 5px 0;
+}
+
+.toc a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
+@media print {
+    body {
+        padding: 20px 40px;
+        max-width: 100%;
+    }
+    
+    pre, code {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav id="toc-sidebar">
+        <h3>目录</h3>
+        <button class="toc-close" onclick="closeToc()">×</button>
+        <div class="toc">
+<ul>
+<li><a href="#hfdailypapers-20260818">每日HFDailyPapers-2026年08月18日</a><ul>
+<li><a href="#_1">世界模型与多模态生成评估</a></li>
+<li><a href="#agent">强化学习与Agent训练方法</a></li>
+<li><a href="#_2">视频理解与编辑</a></li>
+<li><a href="#gui-agent">视觉文档与GUI Agent</a></li>
+<li><a href="#3d">3D生成与世界探索</a></li>
+<li><a href="#llm">LLM安全、可靠性与系统架构</a></li>
+<li><a href="#_3">科学发现与智能系统</a></li>
+<li><a href="#_4">其他动态</a></li>
+</ul>
+</li>
+</ul>
+</div>
+    </nav>
+    <button id="toc-toggle" onclick="toggleToc()"></button>
+    <article>
+        <!-- <h1>每日HFDailyPaper-2026年08月18日</h1> -->
+        <h1 id="hfdailypapers-20260818">每日HFDailyPapers-2026年08月18日</h1>
+<h2 id="_1">世界模型与多模态生成评估</h2>
+<p><strong>概述</strong>：HarnessEval-W提出了一种agent化的评估流水线，将LLM生态中的harness范式引入世界模型基准测试，通过分层子agent结构为每次评估提供可验证的推理链，在18个代表性世界模型和330个评估案例上展现出与人类偏好高度一致的判断能力。TRACE-Bench则从能力视角出发，将多参考图像生成任务形式化为锚定、解耦、应用和组合四个原子操作算子，构建了包含约1,600个评估案例的基准，评估9个领先模型后发现解耦和属性绑定是主要瓶颈，最高模型在属性保真度上仅得分0.74。此外，<a href="https://arxiv.org/abs/2608.15265">VibeWorlding</a>构建了VWE-BENCH基准和RL训练框架，评估多模态agent构建3D开放世界的能力，发现即使是GPT-5.5和Qwen3.8-Max等前沿模型成功率也低于60%，瓶颈在于精确的3D世界编辑。</p>
+<p><strong>分析</strong>：评估范式的转变是这些工作的共同趋势——从单一标量分数转向可解释、可分解的诊断框架。HarnessEval-W的"证据树"机制和TRACE-Bench的算子分解均旨在提供细粒度的失败归因，这反映了世界模型和多模态生成领域从"能力测试"向"机制理解"的演进。多模态3D构建任务的低成功率表明，当前前沿模型的视觉-空间推理能力仍存在显著局限，特别是在精确工具调用和复杂场景编辑方面。</p>
+<h2 id="agent">强化学习与Agent训练方法</h2>
+<p><strong>概述</strong>：SA-MRPO针对多奖励策略优化中固定权重标量化的问题，提出饱和度感知的优势重加权方法，通过对每个奖励目标独立标准化并自适应折扣，将优化重点转向尚未充分优化的目标，在数学推理任务上较GDPO提升达5%，编码任务提升达2.3%。ClawGym II则提出统一的黑盒RL框架，通过沙盒隔离、代理捕获和prefix tree重构等技术，实现复杂agent harness下的稳定可扩展优化，使用Qwen3-30A3B在ClawGym-Bench上分别获得9.98和14.81点的Pass@1提升。</p>
+<p><strong>分析</strong>：多奖励优化和复杂harness训练是当前agent系统训练的核心挑战。SA-MRPO揭示了传统固定权重方法在目标间梯度预算分配上的根本缺陷，证明了饱和度感知可以逆转更新方向而非仅调整幅度。ClawGym II的工程贡献在于解耦了策略优化与不透明harness执行，并通过mix-harness训练实现单一模型在异构执行系统中的统一优化，为复杂agent系统的规模化训练提供了可行路径。</p>
+<h2 id="_2">视频理解与编辑</h2>
+<p><strong>概述</strong>：GRNEdit提出轻量级两阶段视频编辑框架，将编辑语义建模为对二进制位编码的局部保留或翻转决策，仅使用0.6M训练对和不到3%的条件参数，GRNEdit-2B模型在OpenVE-Bench上得分4.03，超越多个14B开源编辑器。VideoGAIA则针对单轮视频问答饱和的问题，构建多轮工具增强交互基准，包含271个任务，所有被评估模型（包括GPT-5.5和Kimi-K3）准确率均低于60%。</p>
+<p><strong>分析</strong>：视频编辑和理解的评估正在经历从静态到动态、从单轮到多轮的转变。GRNEdit通过二进制证据视角大幅降低条件参数开销，证明了高效编辑语义建模的可行性。VideoGAIA的"工具增强交互"范式反映了领域对复杂视频推理的需求升级，低准确率表明当前模型在多轮规划、外部工具调用和跨轮信息整合方面仍存在显著不足。</p>
+<h2 id="gui-agent">视觉文档与GUI Agent</h2>
+<p><strong>概述</strong>：ConceptFormer提出潜在概念表示学习框架，使用query-conditioned连续潜在概念桥接局部视觉证据与语义相关性，在视觉文档检索基准上较最强OCR基线提升22.1%。UI-Mate是开放权重基础GUI agent，整合环境Grounded训练栈和上下文演示学习，在OSWorkerBench上达到41.0%严格成功率，单条演示将严格成功率从17.2%提升至35.4%。NaviDC-OCR提出变形感知学习和自适应采样机制，在OmniDocBench v1.6上获得96.87分，在ICDAR 2026 Sci-ImageMiner挑战赛中获得第一名。</p>
+<p><strong>分析</strong>：文档理解和GUI交互是agent落地的关键场景。ConceptFormer的潜在概念桥梁机制避免了传统方法对文本中间表示或直接视觉标注的依赖，为复杂文档结构理解提供了新范式。UI-Mate的上下文演示学习表明，展示优于指令在复杂GUI任务中更有效，单条演示带来的成功率翻倍反映了长视域任务中的规划可靠性瓶颈。文档解析领域则通过变形感知和结构解耦显式建模几何与语义，在复杂布局场景下显著提升鲁棒性。</p>
+<h2 id="3d">3D生成与世界探索</h2>
+<p><strong>概述</strong>：MegaParts提出基于token高效自回归的3D对象生成框架，结合结构化序列建模和向量量化形状tokenizer，可处理最多300个部件和256k token序列长度，生成质量超越基线自回归和扩散模型。HiFi-BRep针对边界表示生成的表示脆弱性和生成脆弱性问题，提出拓扑感知编码器和单阶段解码器，实现几何与拓扑的并行预测。WorldRover构建百万级合成视频数据集，通过Unreal Engine管道提供RGB、度量深度、相机轨迹和行动信号的丰富标注。</p>
+<p><strong>分析</strong>：3D生成正从静态对象向复杂结构、从几何向语义部件层次演进。MegaParts证明了token高效自回归建模在可扩展性上的优势，压缩离散部件token反而提升了几何保真度。HiFi-BRep通过可微分流形约束避免级联误差，解决了B-Rep生成的结构性有效性问题。WorldRover提供的长程探索数据填补了世界模型训练中对密集几何和长程对应关系监督的缺口，将长视域世界探索转化为可扩展的数据生成问题。</p>
+<h2 id="llm">LLM安全、可靠性与系统架构</h2>
+<p><strong>概述</strong>：Ventor-QTest提出黑盒审计框架，通过重复请求重建分类输出分布并报告平均保真度损失(AFL)和极端保真度损失(EFL)，开源实现可用于第三方LLM API的质量审计。D-SCAN检测RAG中毒攻击，发现对抗性文档注入会导致注意力坍缩（熵降低、注意力集中于中毒文档），即使攻击未改变最终答案也可检测。Prior Audit研究发现审计-修复上下文会使LLM验证器阈值趋于宽松，false alarms降低2.8至11.5个百分点，但82%的false alarms本身是错误的。Agentic Transaction提出ACID兼容的agent系统框架，通过语义原子性、一致性、隔离性和持久性保障agent执行的可靠性，在基准上较Claude Code等SOTA agent提升10.6%。</p>
+<p><strong>分析</strong>：LLM系统的安全与可靠性研究正从输出侧信号转向内部机制分析。Ventor-QTest和D-SCAN均揭示了模型内部表征（分布保真度、注意力模式）比输出指标更能反映系统质量问题。Prior Audit的发现挑战了审计-修复提升准确性的直觉假设，表明上下文依赖可能引入系统性偏差。Agentic Transaction将数据库事务理论引入agent系统，为应对模型不确定性和动态执行环境提供了形式化基础。这些工作共同指向LLM工程化部署中"可验证性"和"可预测性"的核心需求。</p>
+<h2 id="_3">科学发现与智能系统</h2>
+<p><strong>概述</strong>：Large Discovery Model (LDM)将生成模型与贝叶斯非参数奖励代理模型结合，通过持续更新发现记忆和不确定性感知价值指导候选生成、精炼和选择，在抗体设计和分子优化任务中实现60%以上的相对性能提升。AutoResearchEval构建100个前沿科学研究任务的端到端基准，评估8组harness-model组合产生800条轨迹，提出包含45种失败模式的分类框架，发现当前agent缺乏元认知循环是根本性局限。</p>
+<p><strong>分析</strong>：AI辅助科学发现正从单一任务优化向全流程自主研究演进。LDM的"生成-评估-更新"闭环架构有效缓解了LLM似然不可靠的问题，通过不确定性量化实现更高效的开放假设空间搜索。AutoResearchEval的失败分类表明，现有agent在假设-执行-验证的元认知循环上存在系统性缺陷，且该缺陷独立于特定scaffold，位于模型层面。这表明未来研究需要超越工具调用能力，发展更强的自我监控和修正机制。</p>
+<h2 id="_4">其他动态</h2>
+<p><strong>概述</strong>：像素空间扩散模型训练研究提出潜空间到像素空间的后训练转换策略，在保证生成质量的同时实现3.18至4.75倍端到端推理加速。GenRouter提出统一工作流路由框架，通过需求分析、经验匹配和Pareto过滤将提示路由到最优工作流，在agentic图像生成中降低95%执行成本和65%延迟。<a href="https://arxiv.org/abs/2608.16033">R³-Bench</a>评估共享预算下的资源理性推理，发现智能体在共享预算下的表现远低于单任务能力，暴露了规划策略更新不足的局限。任何Talk通过视频扩散模型实现任意角色的语音动画生成，无需动画训练数据。<a href="https://arxiv.org/abs/2608.14441">PACE-Bench</a>构建物理自适应基准，发现即使揭示精确物理变化也无法提升性能上限，机制重构而非参数推断是核心瓶颈。<a href="https://arxiv.org/abs/2608.10679">ENTLORE</a>构建企业信息问答基准，发现即使提供黄金文档，30.4%的隐性组织推理问题仍无法回答。<a href="https://arxiv.org/abs/2608.15045">MOSS-VL</a>是支持实时交互的开源视觉语言模型，通过门控交叉注意力和分阶段课程训练实现5.1倍首token延迟优势。<a href="https://arxiv.org/abs/2608.16143">AnyTalk</a>实现任意角色的3D语音动画生成。<a href="https://arxiv.org/abs/2608.15037">PRISM</a>提出无训练的时间测试适应框架，在严重声学噪声下提升12.94个百分点。<a href="https://arxiv.org/abs/2608.14614">DumpsterCluster</a>证明二手GPU集群的经济可行性但存在碳足迹问题。<a href="https://arxiv.org/abs/2608.16765">TRACE-Bench</a>提出多参考图像生成的算子分解评估方法。<a href="https://arxiv.org/abs/2608.15304">Cognition-Induced Risks</a>系统性分析agent AI的认知安全风险。<a href="https://arxiv.org/abs/2608.15022">Gathered Not Admitted</a>通过Jacobain透镜研究发现注意力中介的聚合而非门控机制使潜变量可报告。<a href="https://arxiv.org/abs/2608.15984">2D Motion Interface</a>实现3D预训练运动语言模型的即插即用2D接口。<a href="https://arxiv.org/abs/2608.16435">Travelling Thief Problem with Drone</a>提出地面车辆与无人机协同的旅行推销员问题新变体。</p>
+
+        <div class="footer">
+            <p>生成时间: 2026年08月18日 12:58:29</p>
+            <p style="text-align: right;">本报告由 NewsReporter 系统自动生成</p>
+            <p style="text-align: right;">Generated by NewsReporter System</p>
+        </div>
+    </article>
+    <script>
+    function toggleToc() {
+        const sidebar = document.getElementById('toc-sidebar');
+        sidebar.classList.toggle('open');
+    }
+    
+    function closeToc() {
+        const sidebar = document.getElementById('toc-sidebar');
+        sidebar.classList.remove('open');
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        const tocLinks = document.querySelectorAll('#toc-sidebar a');
+        const headings = [];
+        
+        tocLinks.forEach(link => {
+            const id = link.getAttribute('href').substring(1);
+            const heading = document.getElementById(id);
+            if (heading) {
+                headings.push({ link, heading });
+            }
+        });
+        
+        function updateActiveLink() {
+            let currentId = '';
+            const scrollPosition = window.scrollY + 100;
+            
+            headings.forEach(({ link, heading }) => {
+                if (heading.offsetTop <= scrollPosition) {
+                    currentId = heading.id;
+                }
+            });
+            
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', updateActiveLink);
+        updateActiveLink();
+        
+        if (window.innerWidth <= 900) {
+            tocLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    closeToc();
+                });
+            });
+        }
+    });
+    </script>
+</body>
+</html>
