@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>每日HFDailyPaper-2026年08月26日</title>
+    <style>
+
+:root {
+    --primary-color: #1a365d;
+    --secondary-color: #2c5282;
+    --accent-color: #3182ce;
+    --text-color: #2d3748;
+    --bg-color: #ffffff;
+    --code-bg: #f7fafc;
+    --border-color: #e2e8f0;
+    --table-header-bg: #edf2f7;
+    --blockquote-border: #3182ce;
+    --link-color: #2b6cb0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", "华文中宋", "SimSun", serif;
+    font-size: 14pt;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    max-width: 75%;
+    margin-left: 17%;
+    margin-right: 8%;
+    padding: 40px 60px;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 25px 0 15px 0;
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    color: var(--text-color);
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+}
+
+p {
+    text-align: justify;
+    text-indent: 2em;
+    margin: 10px 0;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    margin: 15px 20px;
+    padding: 10px 20px;
+    border-left: 4px solid var(--blockquote-border);
+    background-color: var(--code-bg);
+    font-style: italic;
+}
+
+ul, ol {
+    margin: 10px 0 10px 40px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+code {
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 10pt;
+    background-color: var(--code-bg);
+    padding: 2px 6px;
+    border-radius: 3px;
+    border: 1px solid var(--border-color);
+}
+
+pre {
+    background-color: var(--code-bg);
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    overflow-x: auto;
+    margin: 15px 0;
+}
+
+pre code {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 11pt;
+}
+
+th, td {
+    border: 1px solid var(--border-color);
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--table-header-bg);
+    font-weight: bold;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 20px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+.meta-info {
+    text-align: center;
+    color: #666;
+    font-size: 10pt;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    font-size: 10pt;
+    color: #666;
+}
+
+#toc-sidebar {
+    position: fixed;
+    left: 20px;
+    top: 80px;
+    width: 20%;
+    max-width: 280px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#toc-sidebar .toc-close {
+    display: none;
+}
+
+#toc-sidebar h3 {
+    font-size: 12pt;
+    margin: 0 0 12px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--primary-color);
+}
+
+#toc-sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#toc-sidebar li {
+    margin: 4px 0;
+}
+
+#toc-sidebar ul ul {
+    margin-left: 15px;
+}
+
+#toc-sidebar a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: "Consolas", "霞鹜文楷";
+    font-size: 12pt;
+    display: block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    transition: all 0.2s;
+}
+
+#toc-sidebar a:hover {
+    background-color: var(--code-bg);
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+#toc-sidebar a.active {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+@media print {
+    #toc-sidebar {
+        display: none;
+    }
+}
+
+#toc-toggle {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    transition: all 0.3s;
+}
+
+#toc-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#toc-toggle::before {
+    content: "☰";
+}
+
+@media (max-width: 900px) {
+    #toc-sidebar {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        max-height: 100vh;
+        margin: 0;
+        padding: 20px;
+        border-radius: 0;
+        border-right: 1px solid var(--border-color);
+        transition: left 0.3s ease;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    #toc-sidebar.open {
+        left: 0;
+    }
+    
+    #toc-sidebar .toc-close {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background: var(--code-bg);
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    body {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    #toc-toggle {
+        display: block;
+    }
+}
+
+.toc {
+    background-color: var(--code-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin: 20px 0 30px 0;
+}
+
+.toc h2 {
+    font-size: 14pt;
+    margin: 0 0 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--primary-color);
+}
+
+.toc ul {
+    margin: 10px 0 0 0;
+    list-style-type: none;
+}
+
+.toc ul ul {
+    margin-left: 20px;
+}
+
+.toc li {
+    margin: 5px 0;
+}
+
+.toc a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
+@media print {
+    body {
+        padding: 20px 40px;
+        max-width: 100%;
+    }
+    
+    pre, code {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav id="toc-sidebar">
+        <h3>目录</h3>
+        <button class="toc-close" onclick="closeToc()">×</button>
+        <div class="toc">
+<ul>
+<li><a href="#hfdailypapers-20260826">每日HFDailyPapers-2026年08月26日</a><ul>
+<li><a href="#_1">多模态表示与大规模数据集</a></li>
+<li><a href="#_2">强化学习与大模型后训练</a></li>
+<li><a href="#_3">智能体系统与自我改进</a></li>
+<li><a href="#_4">世界模型与具身智能</a></li>
+<li><a href="#_5">视频理解与多任务学习</a></li>
+<li><a href="#_6">推荐系统与工业应用</a></li>
+<li><a href="#_7">网络安全与工具基础设施</a></li>
+<li><a href="#_8">其他动态</a></li>
+</ul>
+</li>
+</ul>
+</div>
+    </nav>
+    <button id="toc-toggle" onclick="toggleToc()"></button>
+    <article>
+        <!-- <h1>每日HFDailyPaper-2026年08月26日</h1> -->
+        <h1 id="hfdailypapers-20260826">每日HFDailyPapers-2026年08月26日</h1>
+<h2 id="_1">多模态表示与大规模数据集</h2>
+<p>WeChat团队发布了WeMM-Embedding多模态嵌入模型系列，支持文本、图像、视频、视觉文档及任意交错的多模态输入，包含2B、4B、9B三种规模版本<a href="https://arxiv.org/abs/2608.24053">1</a>。该模型采用两阶段训练策略，在MMEB-v2等基准上取得领先性能，9B版本整体得分达80.6，已在视频号、公众号、朋友圈及电商等场景中大规模部署。与此同时，LAION团队推出了LAION-BVD数据集，包含从CommonCrawl收集的13亿条视频URL，实际下载8000万个视频共1000万小时，用于视频、音频和图像的多模态预训练<a href="https://arxiv.org/abs/2608.24845">2</a>。Game2World Engine则提出通过游戏视频构建世界模型训练数据的自动化方案，开发GameCleaner模型去除HUD界面，在96K合成配对视频和1079个真实游戏片段上验证了UI-free数据可提升世界模型VideoReward 6.83%<a href="https://arxiv.org/abs/2608.24680">3</a>。</p>
+<p>分析表明，多模态统一表示正从单一模态向任意交错的多模态输入演进，WeMM-Embedding的2B版本已超越此前8B开源基线，显示出模型效率的显著提升。数据规模方面，LAION-BVD和Game2World共同指向开放视频数据在预训练中的核心价值。游戏视频通过UI去除技术转化为世界模型训练数据，为具身智能提供了可扩展的数据来源。</p>
+<h2 id="_2">强化学习与大模型后训练</h2>
+<p>多项研究聚焦于大语言模型和扩散模型的强化学习后训练方法。BPCO（Best Practice Critic Optimization）系统研究了基于组的强化学习方法（如GRPO）之外，Critic训练不稳定问题，提出结合DPPO、值预测有界化、蒙特卡洛值目标等技术路线<a href="https://arxiv.org/abs/2608.23566">4</a>。OPDVR（On-policy Distillation with Verifiable Reward）将在线蒸馏与可验证奖励学习结合，通过ReLU门控机制确保正确轨迹获得非负奖励，实现两种范式的无缝融合<a href="https://arxiv.org/abs/2608.24696">5</a>。在扩散模型方面，DiffusionOPSD提出在线策略自蒸馏框架，将图像级奖励转化为去噪预测的明确目标，在SD 3.5-M和Z-Image-Turbo上分别减少40%和63%的训练GPU时间<a href="https://arxiv.org/abs/2608.24646">6</a>。针对视频MLLM，OraRL将标注数据作为Oracle rollout纳入强化学习，通过解耦优势估计器避免优势反转问题，使9B模型推理时间从4780ms降至130ms<a href="https://arxiv.org/abs/2608.20492">7</a>。</p>
+<p>这些方法表明，后训练正从单一的奖励信号向更细粒度的token级监督和结构化的训练流程演进。BPCO和OPDVR的核心贡献在于降低了对组采样和额外超参数的依赖。扩散模型中的在线策略蒸馏将训练效率提升40%-63%，显示出后训练优化的巨大潜力。OraRL利用现有标注数据缓解强化学习样本效率问题，为视频理解模型的训练成本提供了可行方案。</p>
+<h2 id="_3">智能体系统与自我改进</h2>
+<p>长程智能体任务中的可靠性问题推动了多个自我改进与记忆架构的研究。Recuris提出递归式经验-工作记忆架构，通过固定Meta-Agent将执行证据转化为对Skill Memory的局部化更新，形成有界的递归记忆演化循环<a href="https://arxiv.org/abs/2608.24876">8</a>。在四个长程基准上，该方法使GPT-5.6 Sol和Claude Opus 5等前沿模型达到SOTA级任务成功率，tau-bench上分别提升17.8和15.6分。Meta^n则通过递归应用固定操作Ω到自身输出，实现深度的自我改进，在ARC-AGI-2基准上实现零分以上得分，这是此前方法未能达到的<a href="https://arxiv.org/abs/2608.24735">9</a>。CAFE框架采用共享参数的模型交替扮演搜索智能体和Critic角色，实现Agent与反馈的协同进化，在七个Agentic搜索基准上降低了答案幻觉<a href="https://arxiv.org/abs/2608.24794">10</a>。AutoSaddler将Harness优化形式化为离线学习问题，通过失败轨迹诊断和结构化补丁生成，在GAIA2、SWE-Bench Pro和Terminal-Bench 2.0上分别提升9.0、9.6和10.0个百分点<a href="https://arxiv.org/abs/2608.23041">11</a>。</p>
+<p>分析表明，长程任务的可靠性提升正从人工调优转向自动化迭代优化。Recuris和Meta^n共同指向递归自我改进的可行性，但前者强调记忆的局部化更新，后者强调操作固定性与输入增长的分离。CAFE的关键发现是单方面改进Agent或Critic都会遇到瓶颈，协同进化是持续改进的必要条件。AutoSaddler验证了Harness作为代码进行自动优化的工程可行性。</p>
+<h2 id="_4">世界模型与具身智能</h2>
+<p>LAWA（Latent Action as Intention）针对世界动作模型（WAM）在测试时生成未来观测的高延迟问题，提出使用紧凑的潜在动作作为未来意图的操作表征<a href="https://arxiv.org/abs/2608.24882">12</a>。该方法在推理时省略未来视频分支，通过离散标记器和行动自由的预训练产生操作码本目标。在RoboCasa上，LAWA在少样本和全数据设置下分别达到65.6%和80.8%的平均成功率，推理延迟降低42.9%。同时，<a href="https://arxiv.org/abs/2608.24646">6</a>中提出的扩散模型后训练方法也为世界模型的改进提供了可能的训练手段。</p>
+<p>LAWA在性能、泛化性和延迟之间取得了有效权衡，表明未来想象不必被完全舍弃，而是可以通过紧凑的潜在表示保留其优势。世界动作模型的改进与扩散模型的后训练技术存在潜在交叉，两者共同服务于具身智能的发展。</p>
+<h2 id="_5">视频理解与多任务学习</h2>
+<p>MoTE（Mixture of Task Experts）针对程序化视频-语言模型需要解决异构任务的挑战，提出将LLM的前馈网络转换为任务特定的专家，同时保持多模态骨干网络的共享<a href="https://arxiv.org/abs/2608.24763">13</a>。在五个COIN基准上，五专家模型每样本激活约2B LLM参数，平均top-1准确率优于最新VideoLLM基线，且在相同专家拓扑下优于稠密全专家激活和学习的稀疏路由控制。</p>
+<p>MoTE的核心价值在于任务结构化的路由提供了可解释且计算高效的解码器替代方案，解决了稠密Transformer解码器中任务行为纠缠的问题。这一设计为多任务视频理解提供了新的架构思路。</p>
+<h2 id="_6">推荐系统与工业应用</h2>
+<p>DREAM（Developing Recommender Engine with Agentic Methods）提出在现有推荐管道之上添加感知-aware的编排策略层，通过三层意图引擎融合设备端信号，以及使用MetaModel进行分层推理的参数翻译<a href="https://arxiv.org/abs/2608.09408">14</a>。在淘宝首页信息流的A/B测试中，重排控制单独提升IPV 2.06%、核心IPV 2.39%、GMV 0.88%，扩展至精细排序后分别提升至2.71%、3.06%和1.31%。</p>
+<p>分析表明，Agentic方法在工业推荐系统中展现了可行的优化路径，DREAM通过感知-编排-审计的策略层实现了在现有管道上的非侵入式改进，避免了替换管道模型的风险。</p>
+<h2 id="_7">网络安全与工具基础设施</h2>
+<p>CyberFactory提出统一的开源框架，将CVE等公开漏洞工件转换为可执行和可验证的任务实例，训练的安全模型在CyberGym上达到52.4% Pass@1，较Qwen 3.5基础模型提升22.8分<a href="https://arxiv.org/abs/2608.23181">15</a>。TorchMorph作为轻量级PyTorch扩展，提供22个形态学算子的GPU加速实现，在灰度形态学上达到scipy.ndimage单线程CPU 1100倍的吞吐量<a href="https://arxiv.org/abs/2608.24738">16</a>。在机器翻译领域，Entropy-Valley（EV）提出训练无关的长度选择器，通过平均预测熵评估目标画布，在ZhtoEn上优于同等微调数据的LLaMA-3-8B自回归模型<a href="https://arxiv.org/abs/2608.22274">17</a>。智能眼镜综述<a href="https://arxiv.org/abs/2608.24877">18</a>首次系统性地通过统一框架研究了从感知到行动的第一人称智能平台。</p>
+<p>这些工作覆盖了从安全到工具到应用的多层次研究。CyberFactory通过可验证奖励和工具交互构建了闭环的网络安全训练范式。TorchMorph填补了PyTorch生态中形态学变换的GPU加速空白。EV研究揭示了掩码扩散翻译中长度决策的重要性超过token揭示顺序。智能眼镜综述则提出了L0-L5框架，为第一人称智能系统提供了可比较、可部署、可复现评估的基础设施。</p>
+<h2 id="_8">其他动态</h2>
+<p>部分研究涉及特定领域的应用探索，如掩码扩散机器翻译中的长度自适应解码技术，以及智能眼镜作为第一人称智能平台的技术路线图。这些方向显示出AI技术在垂直领域的持续渗透。</p>
+
+        <div class="footer">
+            <p>生成时间: 2026年08月26日 13:04:20</p>
+            <p style="text-align: right;">本报告由 NewsReporter 系统自动生成</p>
+            <p style="text-align: right;">Generated by NewsReporter System</p>
+        </div>
+    </article>
+    <script>
+    function toggleToc() {
+        const sidebar = document.getElementById('toc-sidebar');
+        sidebar.classList.toggle('open');
+    }
+    
+    function closeToc() {
+        const sidebar = document.getElementById('toc-sidebar');
+        sidebar.classList.remove('open');
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        const tocLinks = document.querySelectorAll('#toc-sidebar a');
+        const headings = [];
+        
+        tocLinks.forEach(link => {
+            const id = link.getAttribute('href').substring(1);
+            const heading = document.getElementById(id);
+            if (heading) {
+                headings.push({ link, heading });
+            }
+        });
+        
+        function updateActiveLink() {
+            let currentId = '';
+            const scrollPosition = window.scrollY + 100;
+            
+            headings.forEach(({ link, heading }) => {
+                if (heading.offsetTop <= scrollPosition) {
+                    currentId = heading.id;
+                }
+            });
+            
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', updateActiveLink);
+        updateActiveLink();
+        
+        if (window.innerWidth <= 900) {
+            tocLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    closeToc();
+                });
+            });
+        }
+    });
+    </script>
+</body>
+</html>
