@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>每日HFDailyPaper-2026年09月05日</title>
+    <style>
+
+:root {
+    --primary-color: #1a365d;
+    --secondary-color: #2c5282;
+    --accent-color: #3182ce;
+    --text-color: #2d3748;
+    --bg-color: #ffffff;
+    --code-bg: #f7fafc;
+    --border-color: #e2e8f0;
+    --table-header-bg: #edf2f7;
+    --blockquote-border: #3182ce;
+    --link-color: #2b6cb0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", "华文中宋", "SimSun", serif;
+    font-size: 14pt;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    max-width: 75%;
+    margin-left: 17%;
+    margin-right: 8%;
+    padding: 40px 60px;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 25px 0 15px 0;
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    color: var(--text-color);
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+}
+
+p {
+    text-align: justify;
+    text-indent: 2em;
+    margin: 10px 0;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    margin: 15px 20px;
+    padding: 10px 20px;
+    border-left: 4px solid var(--blockquote-border);
+    background-color: var(--code-bg);
+    font-style: italic;
+}
+
+ul, ol {
+    margin: 10px 0 10px 40px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+code {
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 10pt;
+    background-color: var(--code-bg);
+    padding: 2px 6px;
+    border-radius: 3px;
+    border: 1px solid var(--border-color);
+}
+
+pre {
+    background-color: var(--code-bg);
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    overflow-x: auto;
+    margin: 15px 0;
+}
+
+pre code {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 11pt;
+}
+
+th, td {
+    border: 1px solid var(--border-color);
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--table-header-bg);
+    font-weight: bold;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 20px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+.meta-info {
+    text-align: center;
+    color: #666;
+    font-size: 10pt;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    font-size: 10pt;
+    color: #666;
+}
+
+#toc-sidebar {
+    position: fixed;
+    left: 20px;
+    top: 80px;
+    width: 20%;
+    max-width: 280px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#toc-sidebar .toc-close {
+    display: none;
+}
+
+#toc-sidebar h3 {
+    font-size: 12pt;
+    margin: 0 0 12px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--primary-color);
+}
+
+#toc-sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#toc-sidebar li {
+    margin: 4px 0;
+}
+
+#toc-sidebar ul ul {
+    margin-left: 15px;
+}
+
+#toc-sidebar a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: "Consolas", "霞鹜文楷";
+    font-size: 12pt;
+    display: block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    transition: all 0.2s;
+}
+
+#toc-sidebar a:hover {
+    background-color: var(--code-bg);
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+#toc-sidebar a.active {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+@media print {
+    #toc-sidebar {
+        display: none;
+    }
+}
+
+#toc-toggle {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    transition: all 0.3s;
+}
+
+#toc-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#toc-toggle::before {
+    content: "☰";
+}
+
+@media (max-width: 900px) {
+    #toc-sidebar {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        max-height: 100vh;
+        margin: 0;
+        padding: 20px;
+        border-radius: 0;
+        border-right: 1px solid var(--border-color);
+        transition: left 0.3s ease;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    #toc-sidebar.open {
+        left: 0;
+    }
+    
+    #toc-sidebar .toc-close {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background: var(--code-bg);
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    body {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    #toc-toggle {
+        display: block;
+    }
+}
+
+.toc {
+    background-color: var(--code-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin: 20px 0 30px 0;
+}
+
+.toc h2 {
+    font-size: 14pt;
+    margin: 0 0 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--primary-color);
+}
+
+.toc ul {
+    margin: 10px 0 0 0;
+    list-style-type: none;
+}
+
+.toc ul ul {
+    margin-left: 20px;
+}
+
+.toc li {
+    margin: 5px 0;
+}
+
+.toc a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
+@media print {
+    body {
+        padding: 20px 40px;
+        max-width: 100%;
+    }
+    
+    pre, code {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav id="toc-sidebar">
+        <h3>目录</h3>
+        <button class="toc-close" onclick="closeToc()">×</button>
+        <div class="toc">
+<ul>
+<li><a href="#hfdailypapers-20260905">每日HFDailyPapers-2026年09月05日</a><ul>
+<li><a href="#agent">终端Agent训练与环境演化</a></li>
+<li><a href="#3d">多模态与3D世界生成</a></li>
+<li><a href="#_1">长上下文压缩与推理效率</a></li>
+<li><a href="#_2">物理推理与视频理解评估</a></li>
+<li><a href="#_3">组合推理与嵌入模型</a></li>
+<li><a href="#_4">量化与模型效率</a></li>
+<li><a href="#_5">强化学习与信用分配</a></li>
+<li><a href="#agent_1">Agent行为分析与自主训练</a></li>
+<li><a href="#_6">机器人学习与代码智能体</a></li>
+<li><a href="#_7">视频理解与物理验证</a></li>
+<li><a href="#_8">翻译与通信评估</a></li>
+<li><a href="#_9">其他动态</a></li>
+</ul>
+</li>
+</ul>
+</div>
+    </nav>
+    <button id="toc-toggle" onclick="toggleToc()"></button>
+    <article>
+        <!-- <h1>每日HFDailyPaper-2026年09月05日</h1> -->
+        <h1 id="hfdailypapers-20260905">每日HFDailyPapers-2026年09月05日</h1>
+<h2 id="agent">终端Agent训练与环境演化</h2>
+<p>Terminal-Universe框架通过将现有Agent轨迹中的工具执行历史还原为可交互工作区，实现了从轨迹到环境的转换，并支持任务合成与多轮会话扩展，最终在Terminal-Bench 2.1和EvoCode-Bench v2上分别提升了11.9和13.8点(<a href="https://arxiv.org/abs/2609.04148">Terminal-Universe</a>)。Environment Evolution研究提出off-policy环境下难度递增策略，通过多Agent编排实现训练环境迭代演化，在Qwen3.6系列模型上提升了14.4至18.0个百分点(<a href="https://arxiv.org/abs/2609.04128">Environment Evolution for Terminal Agents</a>)。分析表明，基于轨迹还原环境构建和off-policy难度调度正在成为终端Agent高效训练的两个重要方向，减少了对外部环境的依赖。</p>
+<h2 id="3d">多模态与3D世界生成</h2>
+<p>LLaDA-Image采用6B扩散Transformer配合冻结的视觉语言模块，通过图像优先预训练策略实现高保真图像生成，在Qwen-Image-Bench中英文榜单均创开源模型新纪录(<a href="https://arxiv.org/abs/2609.03796">LLaDA-Image</a>)。Puffin-World构建统一多模态架构，联合建模物理、几何和外观三态，并在Puffin-16M数据集上实现闭环3D世界探索(<a href="https://arxiv.org/abs/2609.04196">Puffin-World</a>)。WorldReward通过VLM构建配对偏好奖励模型，统一评估相机条件世界模型的动作一致性与视觉质量，在HY-WorldPlay 1.5上取得RL后训练增益(<a href="https://arxiv.org/abs/2609.03952">WorldReward</a>)。FlashRender通过离散化误差修正和MeanFlow目标实现25倍采样成本降低的少步生成式渲染(<a href="https://arxiv.org/abs/2609.03563">FlashRender</a>)。数据表明，3D世界建模与视频生成正从多模块组合向统一架构演进，物理一致性与效率优化成为核心驱动力。</p>
+<h2 id="_1">长上下文压缩与推理效率</h2>
+<p>Random Attention研究颠覆传统KV Cache驱逐范式，证明随机保留策略即可匹配最强选择器性能，并揭示推理轨迹在文本和注意力头层面存在冗余保护机制，vLLM部署吞吐量提升32-43%(<a href="https://arxiv.org/abs/2609.03430">Random Attention</a>)。LatentPress提出将对话历史和长文档直接压缩为连续记忆token，压缩比达4-16倍且读取速度提升5-9倍，在LongMemEval上超越文本摘要和OCR压缩方法(<a href="https://arxiv.org/abs/2609.01507">LatentPress</a>)。Select, Compress, Reinvest控制实验表明，帧选择是长视频MLLM最大杠杆，正交匹配追踪算法在固定预算下匹配或超越专用选择器，而压缩收益需通过再投资才能转化为精度提升(<a href="https://arxiv.org/abs/2609.03820">Select, Compress, Reinvest</a>)。分析表明，高效长上下文处理正从复杂选择器转向结构化压缩和冗余利用策略。</p>
+<h2 id="_2">物理推理与视频理解评估</h2>
+<p>Principia基准测试通过关系一致性而非绝对运动测量评估视频模型的牛顿物理推理能力，发现所有主流视频生成模型得分均低于0.42，VLM物理违规检测准确率最高仅67%(<a href="https://arxiv.org/abs/2609.04200">Principia</a>)。VeriPhy构建可审计物理验证系统，将提示编译为类型化物理义务并通过冻结低层专家执行验证，在149剪辑核心数据集上识别228条违规记录且保留完整证据链(<a href="https://arxiv.org/abs/2609.03153">VeriPhy</a>)。LatentStream框架将流式视频记忆从"存储-检索"范式转向"检索-内化"，通过分层潜在记忆演化实现历史证据的紧凑内化(<a href="https://arxiv.org/abs/2609.04131">LatentStream</a>)。时序上下文路由(TCR)方法将脚本时间映射至音视频共享时间轴，将镜头边界误差降低96%，对话准确率从28.3%提升至84.1%(<a href="https://arxiv.org/abs/2609.02367">The Missing Temporal Link</a>)。物理推理评估和长视频理解正从生成质量评价转向可验证关系一致性和因果推理能力。</p>
+<h2 id="_3">组合推理与嵌入模型</h2>
+<p>CORE通过重排器蒸馏改进MLLM嵌入模型组合推理能力，利用Rank-KL目标训练嵌入模型复现重排器的细粒度排序判断，在三个组合推理基准上达到0.666总平均分，超越Jina-Reranker 10.7点(<a href="https://arxiv.org/abs/2609.04083">CORE</a>)。可编辑视觉设计(Editable Visual Design)提出VLM作为创意大脑、图像生成模型作为视觉模拟器的协同范式，实现分层解耦的HTML/CSS输出和交互式编辑能力(<a href="https://arxiv.org/abs/2609.04034">Editable Visual Design</a>)。分析表明，组合推理和视觉生成的可编辑性正通过蒸馏和智能体协作实现质量与可控性的双重提升。</p>
+<h2 id="_4">量化与模型效率</h2>
+<p>NVFP4 W4A4量化研究针对混合架构LLM的门控DeltaNet层，证明4位全量化在17.5 GiB体积下匹配BF16精度，预填充速度提升14-19%，并揭示递归层易量化的四个机制原因：NVFP4块缩放局部化异常值、门投影误差压缩效应、delta规则噪声平坦化、逐token量化成本稀释(<a href="https://arxiv.org/abs/2609.04098">Why Gated DeltaNet Survives 4-Bit Quantization</a>)。CORD后校准修复方法通过修复校准概率向量实现零Top-1预测变更率，同时在CIFAR和ImageNet上降低ECE和NLL指标(<a href="https://arxiv.org/abs/2609.01072">Prediction-Preserving Repair</a>)。混合架构和量化的研究表明，递归层误差传播的非累积特性为全参数量化提供了理论基础。</p>
+<h2 id="_5">强化学习与信用分配</h2>
+<p>DRACO方法通过动态评分标准在GRPO中实现轨迹级信用的闭式再分配，在AppWorld上较基础模型提升15.9点，无需任何验证器即可生成差异化步骤优势(<a href="https://arxiv.org/abs/2609.04094">DRACO</a>)。RLVR解空间研究揭示强化学习可验证奖励导致策略解空间收缩67%，且瓶颈集中于首个算术运算前的入口选择而非内部执行，晚期层参数插值可恢复37%覆盖率而不损失pass@1(<a href="https://arxiv.org/abs/2608.29188">Locked at the Entrance</a>)。单样本On-Policy蒸馏研究证明单一查询可在数百步内恢复大部分全数据蒸馏收益，首次访问71.5%状态空间，表明算法效率而非数据规模是OPD瓶颈(<a href="https://arxiv.org/abs/2609.04172">Rethinking On-Policy Distillation</a>)。SGD渗流动力学建模揭示架构对称性导致子网离散合并和方差尖峰，Scaling cascade延伸至Adam系列(<a href="https://arxiv.org/abs/2609.02373">Percolation Dynamics</a>)。信用分配和训练动力学研究正从经验优化转向机制解释和瓶颈定位。</p>
+<h2 id="agent_1">Agent行为分析与自主训练</h2>
+<p>AutoTraceGT将扎根理论引入Agent轨迹分析，通过六阶段编码和饱和标准自动生成行为分类法，在六个轨迹语料库中恢复73-91%人工标注失效模式并发现额外模式(<a href="https://arxiv.org/abs/2608.30391">Using Grounded Theory for Agent Behavior Analysis</a>)。Boundary-Calibrated Intervention Transfer(BCIT)方法处理自主LLM后期训练中的经验复用问题，通过绑定上下文条件和硬冲突否决减少有害更新，在4B模型跨领域适应中取得更高最终质量(<a href="https://arxiv.org/abs/2608.26730">Knowing When Not to Reuse</a>)。PACE数据集和PaceMaker框架评估个性化助手识别隐式冲突的能力，多Agent协调实现查询重构、多跳图遍历和冲突感知过滤(<a href="https://arxiv.org/abs/2609.03293">PACE</a>)。Agent分析和自主训练正从黑盒评估转向可审计机制和情境化经验复用。</p>
+<h2 id="_6">机器人学习与代码智能体</h2>
+<p>RoboTok构建互联网规模数据引擎，通过3D手部轨迹潜空间检索人类操作演示用于灵巧操作策略训练，支持跨视角和遮挡的紧凑表征(<a href="https://arxiv.org/abs/2609.03199">RoboTok</a>)。RealSWE基准发现真实用户请求仅占88%为问题陈述且87%为随意书写，而基准任务7%含问题陈述且94%为正式表达，含期望行为和动机信息显著提升编码性能(<a href="https://arxiv.org/abs/2608.27831">RealSWE</a>)。QCell通过实例重组和对比查询对齐实现显微镜重叠细胞分割，在ISBI2014上提升2.2 AP和2.7 AJI(<a href="https://arxiv.org/abs/2608.29253">QCell</a>)。编译训练方法将自然语言规范转化为可复用神经网络函数，在FuzzyBench-Hard上达到83.6%语义准确率，支持版本控制与组合(<a href="https://arxiv.org/abs/2609.04199">Compile by Training</a>)。机器人和代码智能体的数据瓶颈正通过互联网规模检索和真实分布基准得到缓解。</p>
+<h2 id="_7">视频理解与物理验证</h2>
+<p>Scal3R将在线3D重建 reformulate 为多参考相对位姿查询，通过轻量学习token注入冻结骨干网络，在KITTI上降低60% ATE并实现SOTA(<a href="https://arxiv.org/abs/2609.04201">Scal3R</a>)。在线重建的精度衰减源于固定锚点的外推而非深度估计退化，多参考策略有效抑制长程漂移。</p>
+<h2 id="_8">翻译与通信评估</h2>
+<p>Last Translation Benchmark(LTB)收集人工审核的失败案例并配套手工验证规则，解决自动指标不可靠和人工评估不可复现的问题(<a href="https://arxiv.org/abs/2609.04173">Last Translation Benchmark</a>)。开放词汇互信息(OVMI)为语音BCI提供通用通信度量，揭示传统准确率指标可能高估系统通信能力，词汇优化提升16.3%相对准确率(<a href="https://arxiv.org/abs/2609.02887">A Common Measure of Communication</a>)。</p>
+<h2 id="_9">其他动态</h2>
+<p>可编辑视觉设计通过"先想象后行动"闭环工作流实现分层解耦设计输出；时空上下文路由解决脚本驱动的音视频生成时序对齐问题。</p>
+
+        <div class="footer">
+            <p>生成时间: 2026年09月05日 14:58:09</p>
+            <p style="text-align: right;">本报告由 NewsReporter 系统自动生成</p>
+            <p style="text-align: right;">Generated by NewsReporter System</p>
+        </div>
+    </article>
+    <script>
+    function toggleToc() {
+        const sidebar = document.getElementById('toc-sidebar');
+        sidebar.classList.toggle('open');
+    }
+    
+    function closeToc() {
+        const sidebar = document.getElementById('toc-sidebar');
+        sidebar.classList.remove('open');
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        const tocLinks = document.querySelectorAll('#toc-sidebar a');
+        const headings = [];
+        
+        tocLinks.forEach(link => {
+            const id = link.getAttribute('href').substring(1);
+            const heading = document.getElementById(id);
+            if (heading) {
+                headings.push({ link, heading });
+            }
+        });
+        
+        function updateActiveLink() {
+            let currentId = '';
+            const scrollPosition = window.scrollY + 100;
+            
+            headings.forEach(({ link, heading }) => {
+                if (heading.offsetTop <= scrollPosition) {
+                    currentId = heading.id;
+                }
+            });
+            
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', updateActiveLink);
+        updateActiveLink();
+        
+        if (window.innerWidth <= 900) {
+            tocLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    closeToc();
+                });
+            });
+        }
+    });
+    </script>
+</body>
+</html>
