@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>每日HFDailyPaper-2026年09月19日</title>
+    <style>
+
+:root {
+    --primary-color: #1a365d;
+    --secondary-color: #2c5282;
+    --accent-color: #3182ce;
+    --text-color: #2d3748;
+    --bg-color: #ffffff;
+    --code-bg: #f7fafc;
+    --border-color: #e2e8f0;
+    --table-header-bg: #edf2f7;
+    --blockquote-border: #3182ce;
+    --link-color: #2b6cb0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", "华文中宋", "SimSun", serif;
+    font-size: 14pt;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    max-width: 75%;
+    margin-left: 17%;
+    margin-right: 8%;
+    padding: 40px 60px;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 25px 0 15px 0;
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    color: var(--text-color);
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+}
+
+p {
+    text-align: justify;
+    text-indent: 2em;
+    margin: 10px 0;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    margin: 15px 20px;
+    padding: 10px 20px;
+    border-left: 4px solid var(--blockquote-border);
+    background-color: var(--code-bg);
+    font-style: italic;
+}
+
+ul, ol {
+    margin: 10px 0 10px 40px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+code {
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 10pt;
+    background-color: var(--code-bg);
+    padding: 2px 6px;
+    border-radius: 3px;
+    border: 1px solid var(--border-color);
+}
+
+pre {
+    background-color: var(--code-bg);
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    overflow-x: auto;
+    margin: 15px 0;
+}
+
+pre code {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 11pt;
+}
+
+th, td {
+    border: 1px solid var(--border-color);
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--table-header-bg);
+    font-weight: bold;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 20px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+.meta-info {
+    text-align: center;
+    color: #666;
+    font-size: 10pt;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    font-size: 10pt;
+    color: #666;
+}
+
+#toc-sidebar {
+    position: fixed;
+    left: 20px;
+    top: 80px;
+    width: 20%;
+    max-width: 280px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#toc-sidebar .toc-close {
+    display: none;
+}
+
+#toc-sidebar h3 {
+    font-size: 12pt;
+    margin: 0 0 12px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--primary-color);
+}
+
+#toc-sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#toc-sidebar li {
+    margin: 4px 0;
+}
+
+#toc-sidebar ul ul {
+    margin-left: 15px;
+}
+
+#toc-sidebar a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: "Consolas", "霞鹜文楷";
+    font-size: 12pt;
+    display: block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    transition: all 0.2s;
+}
+
+#toc-sidebar a:hover {
+    background-color: var(--code-bg);
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+#toc-sidebar a.active {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+@media print {
+    #toc-sidebar {
+        display: none;
+    }
+}
+
+#toc-toggle {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    transition: all 0.3s;
+}
+
+#toc-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#toc-toggle::before {
+    content: "☰";
+}
+
+@media (max-width: 900px) {
+    #toc-sidebar {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        max-height: 100vh;
+        margin: 0;
+        padding: 20px;
+        border-radius: 0;
+        border-right: 1px solid var(--border-color);
+        transition: left 0.3s ease;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    #toc-sidebar.open {
+        left: 0;
+    }
+    
+    #toc-sidebar .toc-close {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background: var(--code-bg);
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    body {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    #toc-toggle {
+        display: block;
+    }
+}
+
+.toc {
+    background-color: var(--code-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin: 20px 0 30px 0;
+}
+
+.toc h2 {
+    font-size: 14pt;
+    margin: 0 0 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--primary-color);
+}
+
+.toc ul {
+    margin: 10px 0 0 0;
+    list-style-type: none;
+}
+
+.toc ul ul {
+    margin-left: 20px;
+}
+
+.toc li {
+    margin: 5px 0;
+}
+
+.toc a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
+@media print {
+    body {
+        padding: 20px 40px;
+        max-width: 100%;
+    }
+    
+    pre, code {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav id="toc-sidebar">
+        <h3>目录</h3>
+        <button class="toc-close" onclick="closeToc()">×</button>
+        <div class="toc">
+<ul>
+<li><a href="#hfdailypapers-20260919">每日HFDailyPapers-2026年09月19日</a><ul>
+<li><a href="#kv-cache">KV Cache压缩与长上下文推理</a></li>
+<li><a href="#on-policy-distillation">On-Policy Distillation与训练动态</a></li>
+<li><a href="#agent">编码Agent与执行框架</a></li>
+<li><a href="#agent_1">环境观测监督与Agent探索</a></li>
+<li><a href="#gui-agent">GUI Agent技能演化</a></li>
+<li><a href="#_1">世界模型与跨域预测</a></li>
+<li><a href="#_2">视频生成与高效注意力</a></li>
+<li><a href="#_3">自我演化检索索引</a></li>
+<li><a href="#_4">文档解析框架</a></li>
+<li><a href="#_5">具身空间智能评估</a></li>
+<li><a href="#_6">推理效率与动态长度控制</a></li>
+<li><a href="#3d">3D姿态建模与稀疏观测</a></li>
+<li><a href="#_7">多模态图像生成评估</a></li>
+<li><a href="#_8">细粒度视觉感知优化</a></li>
+<li><a href="#omni-modal">Omni-Modal物理推理评估</a></li>
+<li><a href="#_9">测试时扩展与系统效率</a></li>
+<li><a href="#ai">企业AI合规与压力测试</a></li>
+<li><a href="#_10">社会推理评估与多智能体模拟</a></li>
+<li><a href="#_11">风险链评估与网络调查</a></li>
+<li><a href="#_12">低资源语言语音问答</a></li>
+<li><a href="#_13">其他动态</a></li>
+</ul>
+</li>
+</ul>
+</div>
+    </nav>
+    <button id="toc-toggle" onclick="toggleToc()"></button>
+    <article>
+        <!-- <h1>每日HFDailyPaper-2026年09月19日</h1> -->
+        <h1 id="hfdailypapers-20260919">每日HFDailyPapers-2026年09月19日</h1>
+<h2 id="kv-cache">KV Cache压缩与长上下文推理</h2>
+<p>DeepSeek发布DeepSeek-V4.1-Flash模型，针对长上下文Agent工作负载优化KV Cache管理<a href="https://arxiv.org/abs/2609.19969">DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression</a>。该模型采用552B参数MoE架构，支持百万token上下文，通过Causal Encoder-Decoder（CED）架构实现prefill阶段8B参数激活与decode阶段16B参数激活的差异化配置。在KV Cache方面，模型结合CSA2的跨层缓存复用与FP4缓存技术，将全局KV Cache占用降至每token 890字节（约为DeepSeek-V4-Flash的1/4），并通过SWA Bounded Replay优化将持久缓存降至约1/8。模型在45T token多模态语料上预训练，并在文本与多模态Agent场景中展现优异性能。</p>
+<p>分析表明，长上下文推理的成本瓶颈已从计算转向存储与带宽，KV Cache压缩成为降低部署成本的关键路径。DeepSeek-V4.1-Flash通过架构层面的参数激活差异设计与量化缓存技术结合，为Agent工作负载提供了可量化的成本优化方案。其缓存压缩策略与推理效率的协同设计，代表了当前长上下文模型工程化的主要方向。</p>
+<h2 id="on-policy-distillation">On-Policy Distillation与训练动态</h2>
+<p>三项研究聚焦On-Policy Distillation（OPD）的不同维度。首篇研究识别EOS Token不匹配为OPD长度膨胀的重要来源，发现Qwen3、Llama、Gemma系列模型在相同停止集声明下，停止概率分布可能落在不同Token上，导致学生模型生成过度延长<a href="https://arxiv.org/abs/2609.20511">When EOS Tokens Disagree: Understanding Length Inflation in On-Policy Distillation</a>。研究提出将功能等价的EOS Token视为共享语义停止动作可显著缓解该问题。第二篇提出RetireOPD框架，引入自适应退役机制，学生模型在教师-学生差异停止缩小且达到目标成功率阈值后自主终止蒸馏<a href="https://arxiv.org/abs/2609.20784">RetireOPD: Self-Retiring On-Policy Distillation for Agentic Reinforcement Learning</a>。在ALFWorld与WebShop上，Qwen2.5模型（1.5B-7B）的RetireOPD相比纯RL基线提升14.1%-18.8%与11.8%-19.0%。第三篇通过AMPLE-Math数据集量化特权信息贡献，发现参考-free蒸馏已覆盖Qwen3-1.7B大部分提升，特权参考额外收益有限<a href="https://arxiv.org/abs/2609.20612">What Does Privileged Information Add to On-Policy Self-Distillation?</a>。</p>
+<p>分析表明，OPD研究正从效果验证转向机制理解与优化。EOS不匹配问题的揭示补充了长度膨胀的归因分析，RetireOPD的自适应退役机制解决了固定蒸馏策略的僵化问题。特权信息价值评估显示，蒸馏的核心收益更多来自跨模式推理能力转移，而非参考内容的信息量本身。这些发现为OPD的工业化应用提供了更精细的训练策略设计依据。</p>
+<h2 id="agent">编码Agent与执行框架</h2>
+<p>两项研究关注编码Agent的Harness设计与执行效率。SoL-Pi通过递归扩展自动研究循环，在多样化环境中筛选出四种可复用机制（动作执行、上下文压缩、观测处理、委派读取），在EdgeBench 51任务上达到与Pi相当性能，同时降低44.7%-49.0%的Token流量与约三分之一API成本<a href="https://arxiv.org/abs/2609.20519">SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness</a>。另一项研究对编码Harness进行组件级对比，在176种配置下评估SWE-Bench与Terminal-Bench的表现，发现上下文管理在预算收紧时价值显著提升，基于规则的先筛选再摘要策略效率最优，规划从弱模型的准确性支架转变为强模型的成本节约工具<a href="https://arxiv.org/abs/2609.20804">An Empirical Study of Harness Design for Coding Agents</a>。</p>
+<p>分析表明，编码Agent正从单体系统评估转向模块化组件优化。SoL-Pi的递归扩展方法为Agent Harness的自动化发现提供了可迁移的机制库，而组件级研究揭示了上下文管理与规划在不同模型能力下的差异化价值。这两个方向共同指向Agent工程化中效率与能力的平衡路径。</p>
+<h2 id="agent_1">环境观测监督与Agent探索</h2>
+<p>一项研究提出ActObs方法，在标准SFT基础上增加对观测Token的监督，使策略模型学习预测动作后果<a href="https://arxiv.org/abs/2609.20715">Don't Mask the Environment: Observation Supervision Changes How Agents Explore Under RL</a>。实验显示，Qwen3-4B在Terminal-Bench 2.0上，ActObs的GRPO相比仅监督动作的变体在每个采样预算下达到更高pass@k；Qwen3-8B在pass@16时提升3.4个百分点。分析指出，动作与观测梯度在SFT后迅速正交化，仅监督动作会导致观测预测能力退化，而联合监督保持了后果预测能力，为下游探索做好准备。</p>
+<p>分析表明，环境建模的缺失是当前Agent训练的重要盲区。ActObs以零额外计算成本的方式强化策略对后果的预测，这一设计在RL阶段显著放大探索效果。梯度正交化的发现为多目标监督的初始化策略提供了理论依据，提示训练框架需避免单一目标的过度专业化。</p>
+<h2 id="gui-agent">GUI Agent技能演化</h2>
+<p>一项研究提出EvoSkill-GUI框架，使GUI Agent技能在部署时通过反思-修订-复用循环自我演化<a href="https://arxiv.org/abs/2609.17653">Reflect, Revise, Reuse: Training-Free Skill Evolution for GUI Agents</a>。每个技能为包含检索元数据、执行计划、失败恢复规则的结构化多文件包，由隔离评估器诊断失败轨迹并驱动 executor 修订特定技能文件。在MobileWorld、AndroidWorld、OSWorld三个基准上，该框架无需训练即可分别提升16.2%、6.0%、10.5%，且演化后的技能库可持续惠及相关任务。</p>
+<p>分析表明，GUI Agent技能从静态预设转向动态演化是应对界面动态性的必要路径。EvoSkill-GUI通过严格的信息隔离设计确保评估可靠性，同时以文件级修订避免全局重训练的成本。技能库的跨任务继承性表明，演化机制能够积累可复用的过程性知识，为Agent的长期部署提供可持续改进能力。</p>
+<h2 id="_1">世界模型与跨域预测</h2>
+<p>一项研究提出JEPA-Anything框架，基于正交预测因子分解（OPF）实现跨域世界建模<a href="https://arxiv.org/abs/2609.20800">JEPA-Anything: Learning Predictive Models across Different Worlds</a>。该框架将潜在目标分解为互补因子，通过专用路径学习并在共享预测设计中重组，在视觉、生物、临床轨迹、控制、分子动力学、物理场、天气七个领域验证。实验涵盖10个动力学任务、1000+临床事件预测与4系统的100步分子 rollout，JEPA-Anything在所有动力学任务上超越基线，在Interventional Pong上降低34.8%单干预预测误差，并在分子误差上取得最低记录。生物干预预测获得细胞共培养、类器官、肿瘤片段与小鼠实验验证。</p>
+<p>分析表明，世界建模从领域专用向通用原则演进的趋势明确。JEPA-Anything的正交因子分解为跨域预测提供了统一的数学框架，实验验证不仅涵盖合成任务，更延伸至生物干预等科学发现场景。这一结果表明，预测建模的因子化原则可能成为连接人工智能与科学发现的桥梁。</p>
+<h2 id="_2">视频生成与高效注意力</h2>
+<p>一项研究提出Video DeltaNet（VDN），结合局部Softmax注意力与双向线性记忆处理长视频序列<a href="https://arxiv.org/abs/2609.20744">Video DeltaNet: A Video-Native Hybrid Attention for Livestream Video Generation</a>。VDN引入Video Delta Attention（VDA），每帧联合空间Token更新记忆，通过分离输出投影与可学习门控校准双分支。基于MiniMax H3的VDN变体在视频-视频交互中应用混合注意力，文本/音频交互保留Softmax。经8步蒸馏与SGLang优化，VDN-H3在8张B200 GPU上用6.70秒完成14.3秒768p视频去噪，较50步密集H3基线实现14.5倍加速。</p>
+<p>分析表明，视频生成对细粒度时空交互的依赖与线性注意力的计算效率之间存在张力。VDN的混合设计通过帧级记忆更新与门控校准实现平衡，蒸馏与 Serving 栈优化的协同进一步放大效率收益。这一路径为视频生成模型的部署成本优化提供了可量化的技术方案。</p>
+<h2 id="_3">自我演化检索索引</h2>
+<p>一项研究提出SELF-INDEX框架，使检索索引在无人工干预下自我演化<a href="https://arxiv.org/abs/2609.19656">self-evolving Search Index</a>。Optimizer自动诊断检索不足、选择性修订相关索引键并验证更新，Query Simulator主动探索查询空间以驱动索引超越当前优化目标。跨多样化语料与检索器的实验表明，SELF-INDEX持续改善检索性能并优于现有索引优化方法，且下游搜索Agent与Agent记忆系统均获益。</p>
+<p>分析表明，检索索引的静态优化假设在动态查询环境中存在局限。SELF-INDEX将索引从被动存储结构转变为主动适应系统，通过诊断-修订-验证闭环实现持续演化。Query Simulator的引入使索引优化从反应式转向 proactive，这一设计为RAG系统的长期部署提供了自适应基础设施。</p>
+<h2 id="_4">文档解析框架</h2>
+<p>一项研究提出WeVisDoc，通过两阶段数据驱动方法提升端到端文档解析鲁棒性<a href="https://arxiv.org/abs/2609.20423">WeVisDoc: From Coverage to Capability for Robust End-to-End Document Parsing</a>。第一阶段通过异构数据与结构保持退化合成扩展语义、结构与外观覆盖；第二阶段使用保留探针测量固定视觉-结构簇内的残余误差，指导靶向数据构建与token预算重新分配。WeVisDoc-4B在OmniDocBench v1.6达到95.38 Overall分数，在PureDocBench三轨平均75.54，四项设置均居首。退化场景下4B模型Real Degraded轨提升4.03分。</p>
+<p>分析表明，文档解析的性能瓶颈从覆盖率转向鲁棒性。WeVisDoc的诊断-修正循环将数据构建从覆盖率驱动转向误差驱动，阶段二的残余误差测量为靶向优化提供了量化依据。在退化场景的显著提升表明，该框架对实际部署中的非理想输入具有更强适应性。</p>
+<h2 id="_5">具身空间智能评估</h2>
+<p>一项研究提出VA-Bench，评估MLLM通过视觉演示、主动感知与度量控制完成观察-推理-行动-修正闭环的能力<a href="https://arxiv.org/abs/2609.19554">VABench: Measuring Embodied Spatial Intelligence through Visual Demonstrations, Active Perception, and Metric Control</a>。基准包含14个基础任务族（11单臂+3双臂）、7个保留几何变体与5对象长程组合轨，模型仅接收RGB演示、无特权位姿或oracle轨迹。最佳模型在标注运行中目标定位达100%、空间关系78.9%，但三运行宏平均成功率仅53.93%±3.17%。主动相机控制将成功率从27.86%提升至57.50%，保留几何转移导致成功率下降超30个百分点，无模型完成严格长程episode。</p>
+<p>分析表明，具身空间智能评估从静态定位转向动态感知-行动循环。VA-Bench揭示当前MLLM在主动证据获取与跨几何迁移方面的显著局限，长程任务的失败表明过程性知识的累积仍是挑战。主动相机控制的有效性验证了感知策略对任务完成的决定性作用。</p>
+<h2 id="_6">推理效率与动态长度控制</h2>
+<p>一项研究提出When2Think，通过实例级难度感知控制（IDAC）实现混合推理模型的计算动态分配<a href="https://arxiv.org/abs/2609.19671">When2Think: Learning Difficulty-Aware Length Control for Efficient Hybrid Reasoning Models</a>。IDAC利用预计算参考统计（准确率与Token用量）进行奖励塑形，结合验证器奖励与批量标准化优势实现无Critic优化。实验显示，AIME24上Pass@3提升10.0%且Token使用减少27.9%，AIME25达到40.0% Pass@3，超越仅压缩或路由的基线。</p>
+<p>分析表明，推理长度控制从统一惩罚转向实例自适应分配。When2Think通过难度感知的奖励塑形实现System 1与System 2模式的动态切换，避免了刚性路由的效率损失。无Critic设计降低了训练复杂度，精度-效率权衡的量化改善验证了计算分配策略的有效性。</p>
+<h2 id="3d">3D姿态建模与稀疏观测</h2>
+<p>一项研究提出FAMOS，从稀疏无序点云集合预测可动部件分割与关节参数<a href="https://arxiv.org/abs/2609.20817">FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations</a>。模型引入多态姿态Transformer，通过交替状态级与全局注意力聚合跨观测的姿态线索，并设计观测姿态跨度目标监督部件运动范围。配套程序化数据生成器合成自标注资产以扩展训练数据多样性。在PartNet-Mobility、ACD、ArtiCraft-10K上超越前馈与优化基线。</p>
+<p>分析表明，稀疏观测下的姿态建模挑战来自几何证据的局部性与运动范围的未知性。FAMOS的多态注意力机制使模型能够联合推理多个部分观测，观测跨度目标鼓励充分利用输入集合。程序化数据生成填补了真实数据多样性不足的缺口，为稀疏观测姿态学习提供了可扩展的训练基础设施。</p>
+<h2 id="_7">多模态图像生成评估</h2>
+<p>一项研究提出UFO框架，通过原子化评估链（Atomized Chain-of-Evaluation）实现多条件对齐的同步评估<a href="https://arxiv.org/abs/2609.12397">UFO: Chain-of-Evaluation for Omni-Condition Alignment in Multi-Modal Image Generation</a>。框架将多条件对齐分解为细粒度原子评估单元（AEU），按模态相关性分类后调用通用或专用功能调用验证。UFO-human相关性较现有方法提升15.25%，并发布UFO-Bench基准支持定制化模型的综合评估。</p>
+<p>分析表明，多模态图像评估从单条件孤立验证转向多条件同步对齐。UFO的原子化分解避免了条件间相互作用的评估盲区，分类验证策略兼顾了通用性与专用性。相关性提升验证了同步评估框架与人类判断的一致性，为生成模型评估提供了更可靠的方法学。</p>
+<h2 id="_8">细粒度视觉感知优化</h2>
+<p>一项研究提出Vision-RL2，通过区域级强化学习优化多模态大模型的细粒度视觉感知<a href="https://arxiv.org/abs/2609.19745">Region-Level Policy Optimization for Fine-grained MLLM Perception</a>。研究发现定位与识别对分辨率的需求差异（定位可容忍3-4倍更强压缩），据此设计粗粒度定位-高分辨率聚焦的分阶段策略。通过冻结MLLM读取器评分区域重要性，补偿性减加目标抑制干扰提议并恢复缺失证据，仅需约4倍更少视觉Token即可超越最大预算基线精度。代码开源。</p>
+<p>分析表明，细粒度感知的效率瓶颈来自全分辨率编码的冗余计算。Vision-RL2通过分辨率需求差异的实证发现与区域级RL优化，实现了精度与Token效率的协同改进。无标注、无采样、无推理轨迹的设计降低了优化成本，稀疏编码策略为多模态模型的视觉预处理提供了高效替代方案。</p>
+<h2 id="omni-modal">Omni-Modal物理推理评估</h2>
+<p>一项研究评估MiniMax-H3在物理世界推理中的能力，提出四维评估框架整合隐式提示多帧、音频-图像、前缀视频、音频-视频输入<a href="https://arxiv.org/abs/2609.18323">Can MiniMax-H3 Reason About the Physical World? An Evaluation of Omni-Modal Generative Model</a>。517个评估实例中，MiniMax-H3总成功率41.97%，视频决策推理56.00%最高，音频消歧推理27.40%最低。研究表明有效多模态整合仍是充分挖掘输入模态优势的关键。项目代码开源。</p>
+<p>分析表明，Omni-Modal模型的能力评估从生成质量转向推理深度。MiniMax-H3在多模态整合任务中展现不均衡表现，音频模态的消歧能力显著弱于视频模态的决策推理。这一差异提示当前模型的跨模态语义对齐仍存在模态特异性局限，有效整合机制是释放多模态潜力的核心挑战。</p>
+<h2 id="_9">测试时扩展与系统效率</h2>
+<p>一项研究揭示测试时扩展的系统效率不仅取决于候选数N，更受生成调度策略影响<a href="https://arxiv.org/abs/2609.19499">Sample Count Is Not Enough: Candidate-Generation Strategy Shapes the Energy and Performance of LLM Test-Time Scaling</a>。固定N=8对比四种调度（1×8、2×4、4×2、8×1），A100上8次串行调用相比1次批量调用使用4.64-4.86倍GPU设备能耗，P95延迟增加5.77-6.12倍。结论建议在内存允许时将候选合并为少次大批量调用以提升效率。</p>
+<p>分析表明，测试时扩展的评估需从算法层面延伸至系统层面。候选数N作为单一指标掩盖了调度策略对能耗与延迟的决定性影响，串行调用的效率损失显著。这一发现要求多候选推理的benchmark报告补充生成调度与GPU级系统指标，为算法-系统协同优化提供依据。</p>
+<h2 id="ai">企业AI合规与压力测试</h2>
+<p>一项研究提出PACT基准，测试AI助手在十二个监管企业领域、四十八个场景下的规则遵循能力<a href="https://arxiv.org/abs/2609.18605">PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?</a>。基准通过多轮对话施加用户压力、时间压力与违规便利性，使用22个常见LLM模型验证。结果显示模型间合规性差异显著，最强助手仍有6%-10%规则误用率，普通用户压力使违规率平均上升65%。</p>
+<p>分析表明，企业AI部署的合规风险从静态规则遵循转向动态压力测试。PACT的组件化构建与LLM-as-judge审计确保了样本的无歧义性与真实性，压力场景的引入揭示了模型在复杂对话中的脆弱性。65%的违规率增幅表明，用户压力是当前企业AI助手鲁棒性的主要挑战维度。</p>
+<h2 id="_10">社会推理评估与多智能体模拟</h2>
+<p>一项研究提出Fuse多智能体模拟框架，通过隐藏动机的目标Agent与用户代理的交互生成可验证社会推理评估<a href="https://arxiv.org/abs/2609.17496">Verifiable Social Reasoning for LLM Assistants</a>。评估24k人工标注验证仿真保真度，测试12个LLM发现：用户中介放大社会推理难度，模型对偏差框架系统性敏感，需比人类更多细节达成正确预测，长对话不必然提升性能。框架与21k示例数据集开源。</p>
+<p>分析表明，社会推理评估从静态问答转向动态多智能体交互。Fuse通过隐藏动机设计生成构造性验证真相，解决了社会属性缺乏客观ground truth的评估难题。用户中介的放大效应与偏差敏感性揭示了当前模型在社会情境下的系统性脆弱，长对话无效性挑战了增加交互轮次的性能假设。</p>
+<h2 id="_11">风险链评估与网络调查</h2>
+<p>一项研究提出RiskChainBench，评估隐式平台消息恢复与证据驱动网络调查能力<a href="https://arxiv.org/abs/2609.16900">RiskChainBench: A Benchmark for Obfuscated Platform Message Restoration and Evidence-Grounded Web Investigation</a>。基准配对3600个合成token-text恢复输入与600个对应本地Web环境，模型先恢复消息与意图，再以VLM驱动Web Agent调查关联网站生成证据报告。10模型测试显示入口Top-1范围35.2%-95.2%，Web决策准确率26.3%-62.8%，执行失败占Web运行的31.9%。基准与可重置沙箱开源。</p>
+<p>分析表明，风险链评估从单点检测转向端到端调查流程。消息恢复与Web调查的耦合设计更贴近实际滥用场景，执行失败的高占比暴露了稳定探索与风险判断的瓶颈。可重置沙箱与多模态证据评估器为安全研究提供了可复现的基础设施。</p>
+<h2 id="_12">低资源语言语音问答</h2>
+<p>一项研究提出VākQA，构建2001对泰卢固语事实型问答对的语音问答基准，含2.53小时语音、双语转录与人工验证答案<a href="https://arxiv.org/abs/2609.19879">VākQA: A Benchmark and Evaluation Study for Telugu Spoken Factoid Question Answering</a>。评估显示Gemini-as-judge最接近人工但严格度不均，开放权重评估器系统性惩罚表面形式不同的正确答案。泰卢固语表述保留翻译丢失的文化特异性，语音输入引入改变语义的音素混淆，级联ASR-MT误差逐步累积。基准已公开。</p>
+<p>分析表明，低资源语言的语音问答评估面临自动评估可靠性与语言文化特异性双重挑战。泰卢固语的文化保留与音素混淆现象揭示了翻译依赖路径的局限性，级联误差累积验证了端到端语音理解的重要性。基准的发布为低资源语音智能提供了可复现的评估基础。</p>
+<h2 id="_13">其他动态</h2>
+<p>Srijika提出基于OpenType布局复用的字体风格迁移系统，对九种婆罗米系文字生成安装型字体，通过latent diffusion重绘模板字符并保持cmap、GSUB与GPOS数据完整性<a href="https://arxiv.org/abs/2609.05661">Srijika: OpenType-Layout-Reusing Font Restyling for Nine Indic Scripts</a>。生成66个TTF（57预设+9开源展示），通过OpenType Sanitizer与HarfBuzz/CoreText字形序列验证，覆盖80915字符的闭合审计量化度量变化。</p>
+
+        <div class="footer">
+            <p>生成时间: 2026年09月19日 15:46:13</p>
+            <p style="text-align: right;">本报告由 NewsReporter 系统自动生成</p>
+            <p style="text-align: right;">Generated by NewsReporter System</p>
+        </div>
+    </article>
+    <script>
+    function toggleToc() {
+        const sidebar = document.getElementById('toc-sidebar');
+        sidebar.classList.toggle('open');
+    }
+    
+    function closeToc() {
+        const sidebar = document.getElementById('toc-sidebar');
+        sidebar.classList.remove('open');
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        const tocLinks = document.querySelectorAll('#toc-sidebar a');
+        const headings = [];
+        
+        tocLinks.forEach(link => {
+            const id = link.getAttribute('href').substring(1);
+            const heading = document.getElementById(id);
+            if (heading) {
+                headings.push({ link, heading });
+            }
+        });
+        
+        function updateActiveLink() {
+            let currentId = '';
+            const scrollPosition = window.scrollY + 100;
+            
+            headings.forEach(({ link, heading }) => {
+                if (heading.offsetTop <= scrollPosition) {
+                    currentId = heading.id;
+                }
+            });
+            
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', updateActiveLink);
+        updateActiveLink();
+        
+        if (window.innerWidth <= 900) {
+            tocLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    closeToc();
+                });
+            });
+        }
+    });
+    </script>
+</body>
+</html>
