@@ -1,0 +1,61 @@
+
+
+# 每日HFDailyPapers-2026年09月20日
+
+## 长上下文推理与计算效率优化
+
+DeepSeek-V4.1-Flash采用Causal Encoder-Decoder架构，在预填充阶段仅激活8B参数，解码阶段激活16B参数，结合CSA2的跨层KV Cache复用与FP4缓存技术，将全局KV Cache降至每token 890字节，约为DeepSeek-V4-Flash的四分之一[DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression](https://arxiv.org/abs/2609.19969)。When2Think通过实例级难度感知控制（IDAC）实现混合推理模型的计算动态分配，在AIME24上Pass@3提升10.0%的同时token使用量减少27.9%[When2Think: Learning Difficulty-Aware Length Control for Efficient Hybrid Reasoning Models](https://arxiv.org/abs/2609.19671)。另一项研究指出测试时扩展的能效不仅取决于候选数量N，还强烈依赖于生成调度策略，在A100上8次串行调用的GPU能耗是1次批处理调用的4.64-4.86倍[Sample Count Is Not Enough: Candidate-Generation Strategy Shapes the Energy and Performance of LLM Test-Time Scaling](https://arxiv.org/abs/2609.19499)。
+
+分析表明，长上下文推理的成本瓶颈已从单纯计算开销转向存储与带宽约束，KV Cache压缩成为关键突破口。结合架构创新（如MoE参数分离激活）与部署优化，可实现数量级效率提升。测试时策略同样显著影响系统级能耗，候选数量本身不足以描述多候选测试时扩展的系统成本。难度感知的计算分配为不同复杂度任务提供了自适应资源优化路径。
+
+## 编码Agent与执行Harness设计
+
+SoL-Pi采用递归自改进方法，通过action execution、context compaction、observation handling和delegated reading四种机制在EdgeBench 51个任务上实现与Pi相当的性能，同时将token流量降低44.7%-49.0%[SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness](https://arxiv.org/abs/2609.20519)。针对编码Agent harness的实证研究表明，上下文管理在窗口预算收紧时价值显著提升，预定义工具对bash能力较弱的模型更有效，bash型模型通过纯bash接口即可实现更低成本[An Empirical Study of Harness Design for Coding Agents](https://arxiv.org/abs/2609.20804)。ActObs方法通过在SFT阶段同时对观察token进行监督，使GRPO训练后的策略在Terminal-Bench 2.0上获得更高的pass@k，并保留更多探索熵[Don't Mask the Environment: Observation Supervision Changes How Agents Explore Under RL](https://arxiv.org/abs/2609.20715)。
+
+分析显示，编码Agent规模化不仅依赖模型能力，更取决于执行层的token效率与组件设计。harness模块化评估揭示了各组件的差异化作用：上下文管理影响执行轨迹长度，规划决定轨迹终止点，动作空间控制代码编写粒度。观察监督的引入避免了动作-观察梯度的正交化，为后续RL探索保留了更好的初始化状态。
+
+## On-Policy Distillation机制与优化
+
+针对OPD中长度膨胀问题，研究识别出基础模型与后训练教师模型之间终止token不匹配是重要成因，即使声明停止集相同，不同模型族也可能将停止概率置于不同token[When EOS Tokens Disagree: Understanding Length Inflation in On-Policy Distillation](https://arxiv.org/abs/2609.20511)。RetireOPD采用自适应退出机制，学生模型在师生差异停止缩小且达到目标成功率比例后自行停用教师，在Qwen2.5模型上ALFWorld成功率提升14.1%-18.8%[RetireOPD: Self-Retiring On-Policy Distillation for Agentic Reinforcement Learning](https://arxiv.org/abs/2609.20784)。对特权信息作用的实证研究表明，在AMPLE-Math的5,319道数学题上，reference-free distillation已能解释Qwen3-1.7B的大部分改进，特权参考额外收益相对有限[What Does Privileged Information Add to On-Policy Self-Distillation?](https://arxiv.org/abs/2609.20612)。
+
+分析表明，OPD有效性不仅取决于教师质量，更受训练动态与对齐机制影响。终止token不匹配揭示了跨模型族蒸馏中的隐藏对齐问题。自适应退出机制避免了固定调度可能导致的过度依赖或不足。特权信息价值主要体现在跨推理模式（直接响应与思维链）的能力迁移，而非单纯信息量传递。
+
+## 跨域世界建模与物理推理
+
+JEPA-Anything基于正交预测因子分解（OPF），在视觉、生物、临床轨迹、控制、分子动力学、物理场和天气七个领域实现统一世界建模框架，在10个动力学任务上全面超越基线，干预预测中降低34.8%误差[JEPA-Anything: Learning Predictive Models across Different Worlds](https://arxiv.org/abs/2609.20800)。对MiniMax-H3的物理世界推理评估涵盖隐式提示配对多帧、音频-图像、前缀视频和音频-视频四种场景，整体成功率41.97%，视频决策推理达56.00%而音频消歧推理仅27.40%[Can MiniMax-H3 Reason About the Physical World? An Evaluation of Omni-Modal Generative Model](https://arxiv.org/abs/2609.18323)。
+
+分析显示，跨域世界建模核心挑战在于保持架构通用性同时适配各领域特殊动态。因子分解预测架构通过互补因子学习与重组实现平衡。多模态输入融合能力仍是物理推理关键瓶颈，单一模态提供有限证据，有效利用跨模态互补信息需要更强对齐与推理机制。
+
+## 多模态生成与视觉评估
+
+UFO提出原子化评估链范式，将多条件对齐分解为细粒度单元并分类验证，在人类偏好相关性上实现15.25%提升[UFO: Chain-of-Evaluation for Omni-Condition Alignment in Multi-Modal Image Generation](https://arxiv.org/abs/2609.12397)。Video DeltaNet结合局部Softmax注意力与双向线性记忆，在MiniMax H3上实现14.5倍加速，8步蒸馏后6.7秒生成14.3秒768p视频[Video DeltaNet: A Video-Native Hybrid Attention for Livestream Video Generation](https://arxiv.org/abs/2609.20744)。VABench评估具身空间智能的observe-reason-act-revise闭环，主动相机控制使成功率从27.86%提升至57.50%，长程五物体任务尚无模型完成[VABench: Measuring Embodied Spatial Intelligence through Visual Demonstrations, Active Perception, and Metric Control](https://arxiv.org/abs/2609.19554)。
+
+分析表明，多模态生成评估正从单一条件对齐转向全条件联合评估，更贴近实际应用场景。视频生成效率突破依赖注意力机制创新设计，混合架构在质量与速度间取得平衡。具身智能评估揭示当前MLLM在主动感知与长程规划方面存在显著局限，几何迁移性能下降超30个百分点。
+
+## GUI Agent技能演化与检索系统
+
+EvoSkill-GUI通过reflect-revise-reuse循环实现无需训练的GUI Agent技能演化，在MobileWorld、AndroidWorld和OSWorld上分别实现最高16.2%、6.0%和10.5%提升，演化后技能库可持续服务相关任务[Reflect, Revise, Reuse: Training-Free Skill Evolution for GUI Agents](https://arxiv.org/abs/2609.17653)。SELF-INDEX框架使检索索引具备自主演化能力，通过Optimizer诊断检索缺陷并选择性修订索引键，同时通过Query Simulator主动探索额外需求[Self-Evolving Search Index](https://arxiv.org/abs/2609.19656)。
+
+分析显示，GUI Agent长期部署需要技能具备适应界面动态变化能力，静态技能难以应对弹窗、延迟加载和控件迁移等挑战。技能演化框架通过执行反馈驱动结构化修订实现持续改进。检索系统自进化能力降低人工维护成本，主动探索机制使索引超越现有查询分布持续优化。
+
+## 企业AI合规性评估与社会推理
+
+PACT基准在12个受监管企业领域和48个场景中测试LLM在压力下的规则遵循能力，发现即使最强助手也有6-10%项目误用规则，普通用户压力使违规率平均上升65%[PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?](https://arxiv.org/abs/2609.18605)。Fuse多智能体模拟框架通过隐藏动机目标智能体与用户智能体交互，为LLM社会推理评估提供可验证事实真相，发现用户中介放大社会推理难度，模型对偏见框架系统性敏感[Verifiable Social Reasoning for LLM Assistants](https://arxiv.org/abs/2609.17496)。RiskChainBench评估混淆平台消息恢复与证据驱动web调查能力，3,600个合成输入配对600个本地web环境，执行失败占web运行的31.9%[RiskChainBench: A Benchmark for Obfuscated Platform Message Restoration and Evidence-Grounded Web Investigation](https://arxiv.org/abs/2609.16900)。
+
+分析表明，企业AI部署面临合规性风险双重挑战：模型内在规则理解偏差与外部压力触发人为违规。社会推理评估揭示用户中介效应复杂性，更长对话不必然提升性能。平台安全检测需端到端能力评估，混淆恢复与web调查是两个独立但关联瓶颈。
+
+## 细粒度视觉感知与文档解析
+
+WeVisDoc采用两阶段数据驱动框架，Stage I通过异构数据与结构保持退化合成扩大覆盖，Stage II通过探针诊断残差误差并指导针对性数据构建，在OmniDocBench v1.6上取得95.38分[WeVisDoc: From Coverage to Capability for Robust End-to-End Document Parsing](https://arxiv.org/abs/2609.20423)。Vision-RL2通过区域级强化学习优化提议网络，将区域视为动作并由冻结MLLM阅读器评分，在六个细粒度基准上以约四分之一视觉token实现超越最大预算精度[Region-Level Policy Optimization for Fine-grained MLLM Perception](https://arxiv.org/abs/2609.19745)。FAMOS通过多状态articulation transformer聚合稀疏观测中运动线索，在PartNet-Mobility等数据集上持续超越基线[FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations](https://arxiv.org/abs/2609.20817)。
+
+分析显示，细粒度视觉感知效率提升依赖分辨率需求空间差异化：定位任务可容忍更强压缩，识别任务需要高分辨率。区域级强化学习避免离散区域选择监督难题，通过减法与加法目标联合优化。稀疏观测下3D articulation建模需跨视图运动线索聚合，过程化数据生成缓解数据集规模与多样性限制。
+
+## 低资源语言与特殊领域
+
+VākQA构建2,001对泰卢固语事实型问答语音基准，涵盖六个领域与2.53小时语音，发现泰卢固语表达保留文化特异性在翻译中丢失，语音输入引入音素混淆会改变问题含义[VākQA: A Benchmark and Evaluation Study for Telugu Spoken Factoid Question Answering](https://arxiv.org/abs/2609.19879)。Srijika通过复用OpenType布局从模板字体重 stylize九种婆罗米文字，保留cmap、GSUB和GPOS数据，生成66个TTF字体全部通过OpenType Sanitizer验证[Srijika: OpenType-Layout-Reusing Font Restyling for Nine Indic Scripts](https://arxiv.org/abs/2609.05661)。
+
+分析显示，低资源语言SQA评估需同时考虑语言特异性与语音转换误差，自动评估方法选择显著影响模型排名。Indic字体生成面临连字与变体一致性特殊挑战，布局复用策略在保证功能完整性同时实现风格迁移。
+
+## 其他动态
+
+部分研究因主题较为分散或信息有限，未能归入上述核心主题。包括面向九种 Indic 脚本的字体生成系统、多智能体模拟社会推理框架的开源实现等探索性工作。
