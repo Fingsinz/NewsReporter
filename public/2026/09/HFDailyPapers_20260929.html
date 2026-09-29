@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>每日HFDailyPaper-2026年09月29日</title>
+    <style>
+
+:root {
+    --primary-color: #1a365d;
+    --secondary-color: #2c5282;
+    --accent-color: #3182ce;
+    --text-color: #2d3748;
+    --bg-color: #ffffff;
+    --code-bg: #f7fafc;
+    --border-color: #e2e8f0;
+    --table-header-bg: #edf2f7;
+    --blockquote-border: #3182ce;
+    --link-color: #2b6cb0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", "华文中宋", "SimSun", serif;
+    font-size: 14pt;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    max-width: 75%;
+    margin-left: 17%;
+    margin-right: 8%;
+    padding: 40px 60px;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 25px 0 15px 0;
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    color: var(--text-color);
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+}
+
+p {
+    text-align: justify;
+    text-indent: 2em;
+    margin: 10px 0;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    margin: 15px 20px;
+    padding: 10px 20px;
+    border-left: 4px solid var(--blockquote-border);
+    background-color: var(--code-bg);
+    font-style: italic;
+}
+
+ul, ol {
+    margin: 10px 0 10px 40px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+code {
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 10pt;
+    background-color: var(--code-bg);
+    padding: 2px 6px;
+    border-radius: 3px;
+    border: 1px solid var(--border-color);
+}
+
+pre {
+    background-color: var(--code-bg);
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    overflow-x: auto;
+    margin: 15px 0;
+}
+
+pre code {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 11pt;
+}
+
+th, td {
+    border: 1px solid var(--border-color);
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--table-header-bg);
+    font-weight: bold;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 20px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+.meta-info {
+    text-align: center;
+    color: #666;
+    font-size: 10pt;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    font-size: 10pt;
+    color: #666;
+}
+
+#toc-sidebar {
+    position: fixed;
+    left: 20px;
+    top: 80px;
+    width: 20%;
+    max-width: 280px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#toc-sidebar .toc-close {
+    display: none;
+}
+
+#toc-sidebar h3 {
+    font-size: 12pt;
+    margin: 0 0 12px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--primary-color);
+}
+
+#toc-sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#toc-sidebar li {
+    margin: 4px 0;
+}
+
+#toc-sidebar ul ul {
+    margin-left: 15px;
+}
+
+#toc-sidebar a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: "Consolas", "霞鹜文楷";
+    font-size: 12pt;
+    display: block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    transition: all 0.2s;
+}
+
+#toc-sidebar a:hover {
+    background-color: var(--code-bg);
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+#toc-sidebar a.active {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+@media print {
+    #toc-sidebar {
+        display: none;
+    }
+}
+
+#toc-toggle {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    transition: all 0.3s;
+}
+
+#toc-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#toc-toggle::before {
+    content: "☰";
+}
+
+@media (max-width: 900px) {
+    #toc-sidebar {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        max-height: 100vh;
+        margin: 0;
+        padding: 20px;
+        border-radius: 0;
+        border-right: 1px solid var(--border-color);
+        transition: left 0.3s ease;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    #toc-sidebar.open {
+        left: 0;
+    }
+    
+    #toc-sidebar .toc-close {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background: var(--code-bg);
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    body {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    #toc-toggle {
+        display: block;
+    }
+}
+
+.toc {
+    background-color: var(--code-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin: 20px 0 30px 0;
+}
+
+.toc h2 {
+    font-size: 14pt;
+    margin: 0 0 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--primary-color);
+}
+
+.toc ul {
+    margin: 10px 0 0 0;
+    list-style-type: none;
+}
+
+.toc ul ul {
+    margin-left: 20px;
+}
+
+.toc li {
+    margin: 5px 0;
+}
+
+.toc a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
+@media print {
+    body {
+        padding: 20px 40px;
+        max-width: 100%;
+    }
+    
+    pre, code {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav id="toc-sidebar">
+        <h3>目录</h3>
+        <button class="toc-close" onclick="closeToc()">×</button>
+        <div class="toc">
+<ul>
+<li><a href="#hfdailypapers-20260929">每日HFDailyPapers-2026年09月29日</a><ul>
+<li><a href="#_1">多教师蒸馏与在线策略优化</a></li>
+<li><a href="#_2">多模态视觉语言模型架构与效率</a></li>
+<li><a href="#_3">推理增强与测试时计算</a></li>
+<li><a href="#_4">长上下文与高效推理</a></li>
+<li><a href="#_5">多智能体与具身智能</a></li>
+<li><a href="#_6">检索增强与文档处理</a></li>
+<li><a href="#_7">安全、对齐与可解释性</a></li>
+<li><a href="#_8">生成模型与视觉合成</a></li>
+<li><a href="#_9">语音、音频与多模态任务</a></li>
+<li><a href="#_10">其他动态</a></li>
+</ul>
+</li>
+</ul>
+</div>
+    </nav>
+    <button id="toc-toggle" onclick="toggleToc()"></button>
+    <article>
+        <!-- <h1>每日HFDailyPaper-2026年09月29日</h1> -->
+        <h1 id="hfdailypapers-20260929">每日HFDailyPapers-2026年09月29日</h1>
+<h2 id="_1">多教师蒸馏与在线策略优化</h2>
+<p>多篇研究聚焦于多教师蒸馏（MOPD）与在线策略自蒸馏（OPSD）的技术改进。<a href="https://arxiv.org/abs/2609.35347">Beyond Teacher Assignment</a> 指出标准MOPD中反馈不平衡问题：指令遵循反馈比数学反馈分散程度更高，导致学生模型难以获得数学专家的优势。研究者提出域归一化MOPD（DN-MOPD），通过重缩放各域反馈分布改善性能，在六项公开基准上平均得分提升。<a href="https://arxiv.org/abs/2609.35505">An RL View of OPD</a> 从强化学习视角分析OPD，提出最小二乘策略蒸馏（LSPD），引入乐观探索与离线数据复用机制，在数学推理基准上平均提升1.59分。<a href="https://arxiv.org/abs/2609.33391">Decision-Aligned On-Policy Distillation</a> 识别决策-时间戳不匹配问题，提出AlignOPSD框架，在ALFWorld和WebShop上较GRPO提升5.5-8.7%。</p>
+<p>分析表明，蒸馏领域正从单一"谁教学"转向"教学强度"的精细化控制，域归一化与决策对齐是提升多教师融合效果的关键方向。在线策略蒸馏与强化学习的理论融合（LSPD与OPD的KL正则化联系）为样本效率提升提供了新路径。</p>
+<h2 id="_2">多模态视觉语言模型架构与效率</h2>
+<p><a href="https://arxiv.org/abs/2609.35457">Encoder-Free MLLMs</a> 系统比较有无视觉编码器的多模态模型缩放规律，发现去除编码器将计算最优分配转向更大模型，且在约10²² FLOPs处可追赶有编码器架构。<a href="https://arxiv.org/abs/2609.34972">Just MLPs</a> 提出δ-Vision，用轻量级低秩适配器替代视觉标记的重复Transformer演化，在图像与视频基准上实现更高精度同时保留全部视觉标记。<a href="https://arxiv.org/abs/2609.33616">SpatialSpeak</a> 通过QA原生重建预训练连接局部几何与全局场景上下文，在ReVSI上达62.8分，超越最强基线8.7分。<a href="https://arxiv.org/abs/2609.35247">AnswerMap</a> 构建黑盒可解释方法，通过输出头生成空间解释图，定位准确率达AUC 0.85。<a href="https://arxiv.org/abs/2609.34044">SCOPD</a> 针对视觉Token剪枝后的表示-利用差距，提出稀疏上下文在线策略自蒸馏，10%视觉Token保留率下性能恢复至92.43%。</p>
+<p>分析表明，视觉编码器正在从多模态模型的必要组件转向可选模块，缩放定律显示其优势随计算规模增长而递减。视觉Token效率优化从剪枝转向保留与利用并重，蒸馏与适配器技术成为关键手段。</p>
+<h2 id="_3">推理增强与测试时计算</h2>
+<p><a href="https://arxiv.org/abs/2609.34327">Knowing When Thinking Is Not Enough</a> 揭示小推理模型（sRMs）的自我精炼主要巩固现有概率质量而非创造新解，区分执行瓶颈与知识瓶颈，提出FlyBy框架在知识瓶颈时查询更强模型，FlyBy-4B以2.7倍更低成本超越Qwen3-14B。<a href="https://arxiv.org/abs/2609.35748">Improving Test-Time Scaling</a> 提出TaH2，通过前瞻深度监督实现自适应迭代，在AIME基准上精度-计算斜率提升53%。<a href="https://arxiv.org/abs/2609.35472">Why Deterministic PRM Guidance Underperforms</a> 证明离散扩散语言模型中确定性PRM引导弱于独立采样加ORM重排序，指出PRM在早期去噪阶段信号衰减严重。<a href="https://arxiv.org/abs/2609.33803">Diffusion Reward Models</a> 将奖励建模重构为条件密度估计，保留奖励分布的多模态结构，下游RLHF实验验证其实际收益。</p>
+<p>分析表明，测试时计算扩展正从"更多思考"转向"更智能的思考"，区分瓶颈类型与自适应迭代深度成为提升推理效率的关键。PRM引导的有效性受限于去噪阶段信号质量，混合策略（独立采样+ORM重排）优于单一确定性引导。</p>
+<h2 id="_4">长上下文与高效推理</h2>
+<p><a href="https://arxiv.org/abs/2609.32712">MassAlloc Attention</a> 提出MALA，按归一化注意力贡献分配后续计算，在128K token基准上训练前向延迟降低2.2倍。<a href="https://arxiv.org/abs/2609.32704">CoWindow Attention</a> 证明全因果覆盖可为头集合的集体属性，通过互补长程窗口实现稀疏注意力，128K token下训练延迟降低7.4倍。<a href="https://arxiv.org/abs/2609.32534">DepthBench</a> 系统评估残差连接设计对计算深度的贡献，发现HC和Full AttnRes在极深架构下持续提升性能。<a href="https://arxiv.org/abs/2609.23033">WaveFront Decoding</a> 提出环形语言模型的波前解码框架，Huginn-3.5B上实现3.54倍加速。<a href="https://arxiv.org/abs/2609.35760">TokenCast</a> 学习可组合成本表示预测Agent执行token消耗，平均预测误差降低14.5%。<a href="https://arxiv.org/abs/2609.34060">KVCMAS</a> 和<a href="https://arxiv.org/abs/2609.34054">PReCache</a> 分别针对多Agent系统提出低秩KV缓存修正与共享框架，前者TTFT加速2.0倍，后者峰值内存降低3.7倍。</p>
+<p>分析表明，长上下文推理的效率优化正从架构创新（稀疏注意力、环形解码）转向计算分配优化（MALA的贡献感知、CoWA的集合覆盖）。多Agent场景下的缓存共享已成为独立研究方向，低秩近似是实现高效修正的核心技术。</p>
+<h2 id="_5">多智能体与具身智能</h2>
+<p><a href="https://arxiv.org/abs/2609.35432">Self-Evolving Coding Agents</a> 提出Physical Coding框架，将任务状态与执行表示为代码，HexaAnything在RoboCasa365上超越XR-1 VLA，并实现数据、模型、工具自进化。<a href="https://arxiv.org/abs/2609.33378">Recursive Harness Distillation</a> 通过递归蒸馏将强Agent经验转化为可复用指导，真实操作成功率从37.3%提升至64.0%。<a href="https://arxiv.org/abs/2609.33665">CompoWorld</a> 通过组合服务库扩展任务空间，Qwen3.6-35B-A3B在八个基准上平均提升9.17分。<a href="https://arxiv.org/abs/2609.33382">WideSWE</a> 评估跨仓库代码Agent，发现独立执行难以纠正已尝试但未成功的实现，联合执行可利用相关仓库信息。<a href="https://arxiv.org/abs/2609.32862">RoboFoundry</a> 提出系统即策略进化框架，在EmbodiedBench上GPT-5.5提升27.8%。<a href="https://arxiv.org/abs/2609.30247">Rolling-WAM</a> 将联合去噪分布到连续重规划周期，实现4.5倍稳态加速。</p>
+<p>分析表明，多智能体正从单次任务执行转向跨任务经验积累与系统级进化。具身智能的关键突破在于将执行轨迹转化为可复用代码/协议，而非仅优化单一策略。跨仓库协调与长程规划仍是当前Agent的主要瓶颈。</p>
+<h2 id="_6">检索增强与文档处理</h2>
+<p><a href="https://arxiv.org/abs/2609.35069">RenderRank</a> 证明压缩视觉文档表示可支持准确的相关性评分，16.5-35.5%更少输入Token下NDCG@10达55.96，吞吐量提升1.7倍。<a href="https://arxiv.org/abs/2609.34899">ColNanoVDR</a> 将无文档蒸馏扩展至多向量视觉检索，149M参数学生保留教师95% NDCG@5且查询编码速度提升26倍。<a href="https://arxiv.org/abs/2609.32472">AdaTutoRank</a> 提出自适应辅导优化，按 rollout 质量动态选择提示形式，在十个基准上实现最佳整体性能。<a href="https://arxiv.org/abs/2609.35504">SolveEdiT</a> 构建视觉问题解决基准，指出当前最强模型仅达57%得分，提出两阶段规划器提升9.1分。</p>
+<p>分析表明，文档检索正从纯文本转向视觉压缩表示，Token效率与评分精度可同时提升。多向量检索的蒸馏瓶颈通过最优传输对齐得到突破，无文档训练避免了TB级页面Token缓存。</p>
+<h2 id="_7">安全、对齐与可解释性</h2>
+<p><a href="https://arxiv.org/abs/2609.35261">Imprint Reader</a> 训练模型描述冻结权重更新，通过MetaEdit干预提升有害提示拒绝率（57.9%→64.1%）与数学推理回溯频率。<a href="https://arxiv.org/abs/2609.34771">When Do Model Internals Help?</a> 比较表征工程与行为对齐方法，发现DPO提供最强整体控制，表征探测在低数据场景更具竞争力。<a href="https://arxiv.org/abs/2609.34241">AdaGuard</a> 提出自适应守卫模型，支持推理时用户提供策略，4B模型在AdaptiveSafety达89.3%准确率。<a href="https://arxiv.org/abs/2609.35699">Distillation Defenses Break After RL</a> 揭示蒸馏防御在后续强化学习后易被突破，简单攻击即可窃取推理能力。<a href="https://arxiv.org/abs/2609.16145">Safe Error Correction</a> 验证冻结基座+逻辑层修正可保留53.3%错误修正同时不降级能力。<a href="https://arxiv.org/abs/2609.30074">How Reproducible Are Evaluation Conclusions?</a> 自我审计显示LLM推断提示结构排名的顶部两个模型仅68%稳定性，结论可靠性受限。</p>
+<p>分析表明，模型安全正从静态防御转向动态适应（AdaGuard的运行时策略），但蒸馏防御的RL脆弱性揭示了评估威胁模型的局限性。可解释性研究从文本解释转向权重更新描述，为模型自我反思提供新路径。</p>
+<h2 id="_8">生成模型与视觉合成</h2>
+<p><a href="https://arxiv.org/abs/2609.35560">WorldPlay2</a> 提出因子化混合控制接口与稳定蒸馏，实现实时交互式世界模型。<a href="https://arxiv.org/abs/2609.34470">EditWorld</a> 支持流式编辑指令与参考图像，WBench-Editing得分73.8。<a href="https://arxiv.org/abs/2609.33203">Structural Residual Connectivity</a> 重新设计DiT残差连接为主动检索机制，REPA-XL/2模型FID从5.9降至4.34。<a href="https://arxiv.org/abs/2609.33253">VGGT-Diff</a> 通过视觉几何路由器将3D点关联引入视频扩散模型。<a href="https://arxiv.org/abs/2609.33757">YuE2</a> 统一符号与音频音乐生成，专家偏好率49.3%，WildSongBench得分6.73。<a href="https://arxiv.org/abs/2609.32540">In-Flight KV Cache</a> 复用飞行中KV缓存加速自回归视频扩散，20秒视频生成速度提升1.42-2.92倍。</p>
+<p>分析表明，世界模型正从导航扩展至精确编辑，控制接口与内存压缩是关键技术创新。视觉生成架构通过结构化残差连接与几何路由实现质量突破，音乐生成通过符号规划统一了两个原本分离的范式。</p>
+<h2 id="_9">语音、音频与多模态任务</h2>
+<p><a href="https://arxiv.org/abs/2609.35743">InfiniHand</a> 提出端到端流式框架联合估计手部几何与相机轨迹，ARCTIC PA-p降低21.4%且达11.19 FPS。<a href="https://arxiv.org/abs/2609.33645">Pruned CTC</a> 将CTC训练限制于目标Token子集，180K词汇下内存降低5.1倍。<a href="https://arxiv.org/abs/2609.33999">Rethinking Voice Similarity</a> 揭示感知对齐由嵌入几何而非EER决定，维度瓶颈可提升对齐度从0.08至0.74。<a href="https://arxiv.org/abs/2609.33095">REALM</a> 提出粗到细的响应式听模型，在ViCo和L2L基准上提升多项运动质量指标。<a href="https://arxiv.org/abs/2609.31948">Duplex-MPE</a> 构建全双工对话基准，评估助手在多人对话中的响应时机决策。</p>
+<p>分析表明，语音与音频任务正从独立模块转向联合估计（手部+相机、音频+动作），CTC训练的效率突破为LLM原生词汇ASR奠定基础。语音相似性评估从准确率指标转向嵌入几何分析，揭示模型训练目标对感知对齐的决定性影响。</p>
+<h2 id="_10">其他动态</h2>
+<p><a href="https://arxiv.org/abs/2609.35718">Hard Vision, Easy Vision</a> 评估GPT-6 Astra在34项能力、55个基准的表现，发现语义推理与结构化预测已接近专用模型，但度量几何精度、时序一致密集预测仍存在较大差距。<a href="https://arxiv.org/abs/2604.04204">How Does "English (US)" Become the Default?</a> 系统审计AmE偏好，发现其在所有预训练语料与 tokenizer 中占主导，British English提示仅部分改变偏好。<a href="https://arxiv.org/abs/2609.34065">Who Gets a Token, and What Does It Carry?</a> 揭示不同姓名在词汇层获得的不平等支持 persisted 至任务相关内部表示，NameTrace框架测量概念可访问性差异。<a href="https://arxiv.org/abs/2609.29233">Post-Training Leaves Behavioral Shadows</a> 发现仅用教师单个词即可实现能力迁移，5,664样本在HumanEval+提升5.34个百分点。<a href="https://arxiv.org/abs/2609.31669">NanoForecast v0.5</a> 通过训练管道优化使6.5M参数模型在时间序列预测上超越200M参数TimesFM。<a href="https://arxiv.org/abs/2609.32146">Playing to Par</a> 训练RL智能体构建四边形网格分解，在96个测试域中90%达证明最优。<a href="https://arxiv.org/abs/2606.29521">Not All Objectives Are Born Equal</a> 提出优先级约束下降（PCD）处理层次化多目标优化。<a href="https://arxiv.org/abs/2609.32821">Routing Drift Alone Does Not Diagnose Failure</a> 证明MoE合并后的路由漂移不足以诊断路由失败，需通过任务干预验证。<a href="https://arxiv.org/abs/2609.32241">Residual Transferability in Neural Image Watermarking</a> 揭示架构设计决定水印残差可移植性，提出CoverLock即插即用增强方案。<a href="https://arxiv.org/abs/2609.35616">EvolvingAvatar</a> 通过测试时训练适应对话模式，最困难分布减少11.1%表达失配。<a href="https://arxiv.org/abs/2609.35734">GeoVerse</a> 在几何潜空间中合成世界一致新视角，DL3DV上PSNR提升2.23dB。<a href="https://arxiv.org/abs/2609.35578">FactorEngram</a> 提出因子化n-gram记忆，相关模式可复用公共成分。<a href="https://arxiv.org/abs/2609.34479">SentZero</a> 增强句子级VL预训练用于零样本胸部X光分析。<a href="https://arxiv.org/abs/2609.35673">FlowTool</a> 将工具参数建模为流匹配问题，推理延迟降低50倍。<a href="https://arxiv.org/abs/2609.33855">Program-Verified Self-Evolution</a> 通过程序验证替代多数投票实现自进化，人类评估正确率达94%。<a href="https://arxiv.org/abs/2609.33419">TT-VidT</a> 解耦时间轴进行运动中心视频预训练，编码器FLOPs降低48-55%。<a href="https://arxiv.org/abs/2609.33148">DroneWAM</a> 提出无人机世界动作模型，自适应 rollout 将预测深度从8降至4.58。<a href="https://arxiv.org/abs/2609.34645">Controlling LLM Post-Training</a> 提出成本感知运行时Nereus，8B PPO吞吐量提升2.14-7.27倍。<a href="https://arxiv.org/abs/2609.35551">BaRe-Mem</a> 贝叶斯可靠记忆提升多Agent咨询鲁棒性。<a href="https://arxiv.org/abs/2609.31009">G^2PTQ</a> 统一一阶与二阶信息实现全局监督PTQ。<a href="https://arxiv.org/abs/2609.32577">Groupwise Agentic Grading</a> 通过群体级Agent评分改进代码Agent RL。<a href="https://arxiv.org/abs/2609.32754">Adaptive Consistency Graph</a> 为长程Agent提供结构化上下文视图，GPT-5.6-luna平均成功率从44.5%提升至50.2%。<a href="https://arxiv.org/abs/2609.32353">Limitations of On-Policy Self-Distillation</a> 极端视觉Token缩减下LT-OPD在5%预算下性能恢复至82.3%。<a href="https://arxiv.org/abs/2609.35505">RL View of OPD</a> 理论分析LSPD达到O(log K) regret界。<a href="https://arxiv.org/abs/2609.33781">Surprising Success, Repeated Failure</a> 熵引导信用分配强化意外成功、纠正重复失败。<a href="https://arxiv.org/abs/2609.33642">Learning to Learn from Context</a> 扰动公开文档生成10K样本，Qwen3.6-35B-A3B在CL-bench达24.6%。<a href="https://arxiv.org/abs/2609.33772">Skill2Env</a> 从技能合成可执行环境，1.5K轨迹支持SFT训练。<a href="https://arxiv.org/abs/2609.32400">QCQ-DRE</a> 双阶段红队进化框架，平均攻击成功率45.28%。<a href="https://arxiv.org/abs/2609.33295">TraceDance</a> 从部署轨迹构建行为基准，95.3%构建目标满足率。<a href="https://arxiv.org/abs/2609.35767">MM-Reflection</a> 统一模型反射轨迹RL，BAGEL上GenEval提升12.05分。<a href="https://arxiv.org/abs/2609.33074">KernelZero</a> 共同进化Proposer与Coder，CUDA pass@1达75.8%。<a href="https://arxiv.org/abs/2609.33325">VisionHOPE</a> 自修改学习系统视觉主干，在ImageNet/COCO/ADE20K达竞争力结果。<a href="https://arxiv.org/abs/2609.33487">What Masking Geometry Works Best</a> 系统评估58个EEG模型，识别JEPA特有失败模式。<a href="https://arxiv.org/abs/2609.33312">When Privacy Moves ML</a> 分析隐私保护拍卖信息错位，50 tick后超支1,669%。<a href="https://arxiv.org/abs/2609.35706">Reinforcing Agentic Creativity</a> Night Science框架扩展研究路径27.8%、原创性提升66.2分。<a href="https://arxiv.org/abs/2609.28236">EmbdodiedMemory-Bench</a> 评估2,554交互 episode，EMem-8B表现最佳。<a href="https://arxiv.org/abs/2609.34130">PLDR-LLMs Dynamics</a> 统一训练与推理动力学分析。<a href="https://arxiv.org/abs/2609.35611">On-Policy Self-Distillation for Image Editing</a> MT-OPSD改善多轮编辑长期鲁棒性。</p>
+
+        <div class="footer">
+            <p>生成时间: 2026年09月29日 17:59:15</p>
+            <p style="text-align: right;">本报告由 NewsReporter 系统自动生成</p>
+            <p style="text-align: right;">Generated by NewsReporter System</p>
+        </div>
+    </article>
+    <script>
+    function toggleToc() {
+        const sidebar = document.getElementById('toc-sidebar');
+        sidebar.classList.toggle('open');
+    }
+    
+    function closeToc() {
+        const sidebar = document.getElementById('toc-sidebar');
+        sidebar.classList.remove('open');
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        const tocLinks = document.querySelectorAll('#toc-sidebar a');
+        const headings = [];
+        
+        tocLinks.forEach(link => {
+            const id = link.getAttribute('href').substring(1);
+            const heading = document.getElementById(id);
+            if (heading) {
+                headings.push({ link, heading });
+            }
+        });
+        
+        function updateActiveLink() {
+            let currentId = '';
+            const scrollPosition = window.scrollY + 100;
+            
+            headings.forEach(({ link, heading }) => {
+                if (heading.offsetTop <= scrollPosition) {
+                    currentId = heading.id;
+                }
+            });
+            
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', updateActiveLink);
+        updateActiveLink();
+        
+        if (window.innerWidth <= 900) {
+            tocLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    closeToc();
+                });
+            });
+        }
+    });
+    </script>
+</body>
+</html>
